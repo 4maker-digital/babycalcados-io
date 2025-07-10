@@ -1,0 +1,284 @@
+.container {
+  display: block;
+}
+
+.heading--shelfTitle {
+  color: #212529;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  font-size: 32px;
+  line-height: 39.14px;
+  text-transform: uppercase;
+  margin: 20px 0 10px;
+  text-align: center;
+  font-family: "Commissioner";
+}
+
+.paragraph--description-header-seo {
+  text-align: center;
+}
+
+.container--shelfTitleCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.paragraph--title-layout {
+  color: #034EA1;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.heading--shelfTitleCenter {
+  color: #212529;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  text-align: center;
+  font-family: "Commissioner";
+}
+
+.paragraph--shelfSubtitleCenter {
+  color: #212529;
+  font-weight: 400;
+  font-size: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.paragraph--shelfTitleCenter {
+  color: #212529;
+  font-weight: 400;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.paragraph--shelfTitleCenter::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: #86D4ED;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.heading--seoTitle {
+  color: #212529;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0 0 30px;
+  font-family: "Commissioner";
+}
+
+.paragraph--seoText {
+  color: #212529;
+  font-weight: 400;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.paragraph--footer__legal-information {
+  color: #183249;
+  margin: 0;
+  font-size: 10px;
+}
+
+.link--footer__legal-information {
+  color: #183249;
+  text-decoration: none;
+}
+
+.wrapper--institucional-content {
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.wrapper--institucional-content .headingLevel1--institucional-content {
+  font-size: 30px;
+}
+
+.wrapper--institucional-content .headingLevel2--institucional-content {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.wrapper--institucional-content .headingLevel3--institucional-content {
+  color: #212529;
+  font-size: 19px;
+}
+
+.wrapper--institucional-content .paragraph--institucional-content {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.paragraph--inst-title {
+  color: #034EA1;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container--inst-disc-button {
+  color: #034EA1;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 19px;
+  justify-content: center;
+  height: 30px;
+  justify-content: center;
+}
+
+.container--inst-disc-button .paragraph--inst-disc-button {
+  margin: 0;
+  text-align: center;
+}
+
+.container--text-medidas .paragraph {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.63px;
+  color: #034EA1;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container--text-medidas .paragraph::after {
+  content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M23.0022 7.27029C23.0022 6.17878 22.26 5.23041 21.1139 4.82601C18.8174 4.01722 15.2346 3.81681 13.2184 4.8797C11.1528 5.96763 7.09175 5.96763 5.01791 5.79585C4.92308 5.78869 2.74617 5.62765 1.6371 6.50444C1.21244 6.84084 0.998047 7.28818 0.998047 7.83215C0.998047 8.50853 1.2413 9.05608 1.71544 9.46405C2.7338 10.3373 4.56027 10.4911 7.18246 10.4625C8.69594 10.4447 10.2502 10.6359 11.756 10.8211L11.7795 10.824C13.0535 10.9814 14.2533 11.1282 15.3789 11.1496C16.6446 11.1711 19.139 10.5234 21.3118 9.6072C22.3178 9.18133 22.9651 8.31528 23.0022 7.34544V7.27029ZM1.7 13.4999C1.7 13.3066 1.5433 13.1499 1.35 13.1499C1.1567 13.1499 1 13.3066 1 13.4999L1 19.4999C1 19.6932 1.1567 19.8499 1.35 19.8499C1.5433 19.8499 1.7 19.6932 1.7 19.4999L1.7 13.4999ZM3.4749 13.4999C3.4749 13.3066 3.3182 13.1499 3.1249 13.1499C2.9316 13.1499 2.7749 13.3066 2.7749 13.4999L2.7749 16.4999C2.7749 16.6932 2.9316 16.8499 3.1249 16.8499C3.3182 16.8499 3.4749 16.6932 3.4749 16.4999L3.4749 13.4999ZM4.8998 13.1499C5.0931 13.1499 5.2498 13.3066 5.2498 13.4999V16.4999C5.2498 16.6932 5.0931 16.8499 4.8998 16.8499C4.7065 16.8499 4.5498 16.6932 4.5498 16.4999V13.4999C4.5498 13.3066 4.70651 13.1499 4.8998 13.1499ZM7.02471 13.4999C7.02471 13.3066 6.86801 13.1499 6.67471 13.1499C6.48141 13.1499 6.32471 13.3066 6.32471 13.4999L6.32471 16.4999C6.32471 16.6932 6.48141 16.8499 6.67471 16.8499C6.86801 16.8499 7.02471 16.6932 7.02471 16.4999V13.4999ZM8.44961 13.1499C8.64291 13.1499 8.79961 13.3066 8.79961 13.4999L8.79961 19.4999C8.79961 19.6932 8.64291 19.8499 8.44961 19.8499C8.25631 19.8499 8.09961 19.6932 8.09961 19.4999L8.09961 13.4999C8.09961 13.3066 8.25631 13.1499 8.44961 13.1499ZM10.575 13.4999C10.575 13.3066 10.4183 13.1499 10.225 13.1499C10.0317 13.1499 9.875 13.3066 9.875 13.4999V16.4999C9.875 16.6932 10.0317 16.8499 10.225 16.8499C10.4183 16.8499 10.575 16.6932 10.575 16.4999V13.4999ZM11.9999 13.1499C12.1932 13.1499 12.3499 13.3066 12.3499 13.4999V16.4999C12.3499 16.6932 12.1932 16.8499 11.9999 16.8499C11.8066 16.8499 11.6499 16.6932 11.6499 16.4999V13.4999C11.6499 13.3066 11.8066 13.1499 11.9999 13.1499ZM14.1248 13.4999C14.1248 13.3066 13.9681 13.1499 13.7748 13.1499C13.5815 13.1499 13.4248 13.3066 13.4248 13.4999V16.4999C13.4248 16.6932 13.5815 16.8499 13.7748 16.8499C13.9681 16.8499 14.1248 16.6932 14.1248 16.4999V13.4999ZM15.5497 13.1499C15.743 13.1499 15.8997 13.3066 15.8997 13.4999V19.4999C15.8997 19.6932 15.743 19.8499 15.5497 19.8499C15.3564 19.8499 15.1997 19.6932 15.1997 19.4999V13.4999C15.1997 13.3066 15.3564 13.1499 15.5497 13.1499ZM17.6746 13.4999C17.6746 13.3066 17.5179 13.1499 17.3246 13.1499C17.1313 13.1499 16.9746 13.3066 16.9746 13.4999V16.4999C16.9746 16.6932 17.1313 16.8499 17.3246 16.8499C17.5179 16.8499 17.6746 16.6932 17.6746 16.4999V13.4999ZM19.1 13.1499C19.2933 13.1499 19.45 13.3066 19.45 13.4999V16.4999C19.45 16.6932 19.2933 16.8499 19.1 16.8499C18.9067 16.8499 18.75 16.6932 18.75 16.4999V13.4999C18.75 13.3066 18.9067 13.1499 19.1 13.1499ZM21.2249 13.4999C21.2249 13.3066 21.0682 13.1499 20.8749 13.1499C20.6816 13.1499 20.5249 13.3066 20.5249 13.4999V16.4999C20.5249 16.6932 20.6816 16.8499 20.8749 16.8499C21.0682 16.8499 21.2249 16.6932 21.2249 16.4999V13.4999ZM22.6498 13.1499C22.8431 13.1499 22.9998 13.3066 22.9998 13.4999V19.4999C22.9998 19.6932 22.8431 19.8499 22.6498 19.8499C22.4565 19.8499 22.2998 19.6932 22.2998 19.4999V13.4999C22.2998 13.3066 22.4565 13.1499 22.6498 13.1499Z' fill='%23034EA1'/%3E%3C/svg%3E%0A");
+  margin-left: 10px;
+}
+
+.heading--shelfTitleSports {
+  font-size: 28px;
+  width: 100%;
+  color: #00689E;
+  text-align: left;
+}
+
+.paragraph--shelfTitleSports {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #262626;
+}
+
+.heading.headingLevel2--sports-footer-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #174195
+}
+
+.paragraph--sports-footer-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #262626;
+}
+
+.paragraph--title-banners {
+  margin: 0;
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.paragraph--subtitle-banners {
+  margin: 0;
+  color: #C7C7C7;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+
+.headingLevel2--tech-shelf-text-title {
+  font-weight: 700;
+  font-size: 46px;
+  color: #00689E;
+  margin: 0;
+}
+
+.heading--tech-banner-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #034EA1;
+  margin: 0 0 24px;
+}
+
+.paragraph--tech-banner-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212529;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .heading--shelfTitle {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .heading--shelfTitleCenter,
+  .heading--seoTitle {
+    font-size: 28px;
+  }
+
+  .wrapper--institucional-content {
+    padding: 0 0.5rem;
+  }
+
+  .container--text-medidas .paragraph {
+    margin-bottom: 15px;
+  }
+
+  .wrapper--not-found {
+    font-size: 24px;
+  }
+
+  .wrapper--institucional-content .headingLevel1--institucional-content {
+    font-size: 16px;
+  }
+
+  .container--sports-footer-title {
+    padding: 0 15px;
+  }
+
+  .heading.headingLevel2--sports-footer-title {
+    font-size: 20px
+  }
+
+  .paragraph--sports-footer-title {
+    font-size: 12px;
+  }
+
+  .heading--tech-banner-title {
+    margin-top: 30px;
+  }
+
+  .headingLevel2--tech-shelf-text-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}

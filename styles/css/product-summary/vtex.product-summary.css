@@ -1,0 +1,192 @@
+.container {
+    margin: 0;
+    padding: 20px 0;
+    max-width: 100% !important;
+    border-radius: 0;
+}
+
+.clearLink {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.container .element {
+    padding: 0;
+    position: relative;
+    background: transparent;
+}
+
+.container .element .imageContainer {
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    border-radius: 0;
+}
+
+.container .element .image::first-child {
+    width: 100%;
+    height: auto;
+    max-width: unset;
+    max-height: unset;
+    z-index: 1 !important;
+}
+
+.container .element .image{
+    z-index: 10;
+}
+
+
+.nameContainer {
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    padding: 5px 0 9px;
+}
+
+.brandName {
+    color: rgba(33, 37, 41, 1);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    text-transform: initial;
+    font-weight: 700;
+    line-height: 19.57px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.similars-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.similars-item-link {
+    width: 30px;
+    height: 30px;
+}
+
+.similars-item-link-img {
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.buy--item-content--button {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iNSIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOS45OTkzIDkuNDI3MTZDMTkuMTk4NyA5LjQyNzE2IDE4LjQzMDkgOS43NDU0MyAxNy44NjQ4IDEwLjMxMTlDMTcuMjk4NyAxMC44Nzg1IDE2Ljk4MDcgMTEuNjQ2OCAxNi45ODA3IDEyLjQ0OFYxNS40Njg4SDIzLjAxOFYxMi40NDhDMjMuMDE4IDExLjY0NjggMjIuNyAxMC44Nzg1IDIyLjEzMzkgMTAuMzExOUMyMS41Njc4IDkuNzQ1NDMgMjAuOCA5LjQyNzE2IDE5Ljk5OTMgOS40MjcxNlpNMjQuNTI3NCAxNS40Njg4VjEyLjQ0OEMyNC41Mjc0IDExLjI0NjIgMjQuMDUwMyAxMC4wOTM3IDIzLjIwMTEgOS4yNDM5MkMyMi4zNTIgOC4zOTQxNSAyMS4yMDAzIDcuOTE2NzUgMTkuOTk5MyA3LjkxNjc1QzE4Ljc5ODQgNy45MTY3NSAxNy42NDY3IDguMzk0MTUgMTYuNzk3NiA5LjI0MzkyQzE1Ljk0ODQgMTAuMDkzNyAxNS40NzEzIDExLjI0NjIgMTUuNDcxMyAxMi40NDhWMTUuNDY4OEgxMi45OTc1QzEyLjQ1NTUgMTUuNDY5IDExLjkzMTUgMTUuNjYzNyAxMS41MjA3IDE2LjAxNzZDMTEuMTEgMTYuMzcxNiAxMC44Mzk4IDE2Ljg2MTIgMTAuNzU5MiAxNy4zOTc2TDkuMjA3NTcgMjcuNzQ4NUM5LjEyNzI2IDI4LjI4NTYgOS4xNjM2NSAyOC44MzM3IDkuMzE0MjcgMjkuMzU1NEM5LjQ2NDg4IDI5Ljg3NzEgOS43MjYxOCAzMC4zNjAyIDEwLjA4MDMgMzAuNzcxN0MxMC40MzQ1IDMxLjE4MzEgMTAuODczMiAzMS41MTMzIDExLjM2NjQgMzEuNzM5N0MxMS44NTk3IDMxLjk2NjEgMTIuMzk2IDMyLjA4MzMgMTIuOTM4NyAzMi4wODM0SDI3LjA2QzI3LjYwMjcgMzIuMDgzMyAyOC4xMzkgMzEuOTY2MSAyOC42MzIzIDMxLjczOTdDMjkuMTI1NSAzMS41MTMzIDI5LjU2NDIgMzEuMTgzMSAyOS45MTg0IDMwLjc3MTdDMzAuMjcyNSAzMC4zNjAyIDMwLjUzMzggMjkuODc3MSAzMC42ODQ0IDI5LjM1NTRDMzAuODM1MSAyOC44MzM3IDMwLjg3MTQgMjguMjg1NiAzMC43OTExIDI3Ljc0ODVMMjkuMjM5NSAxNy4zOTc2QzI5LjE1OSAxNi44NjE1IDI4Ljg4OSAxNi4zNzIgMjguNDc4NiAxNi4wMTgxQzI4LjA2ODEgMTUuNjY0MiAyNy41NDQ1IDE1LjQ2OTMgMjcuMDAyNyAxNS40Njg4SDI0LjUyNzRaTTIzLjAxOCAxNi45NzkyVjE5LjI0NDlDMjMuMDE4IDE5LjQ0NTIgMjMuMDk3NSAxOS42MzczIDIzLjIzOTEgMTkuNzc4OUMyMy4zODA2IDE5LjkyMDUgMjMuNTcyNSAyMC4wMDAxIDIzLjc3MjcgMjAuMDAwMUMyMy45NzI5IDIwLjAwMDEgMjQuMTY0OCAxOS45MjA1IDI0LjMwNjMgMTkuNzc4OUMyNC40NDc5IDE5LjYzNzMgMjQuNTI3NCAxOS40NDUyIDI0LjUyNzQgMTkuMjQ0OVYxNi45NzkySDI3LjAwMTJDMjcuMTgxOCAxNi45Nzk0IDI3LjM1NjUgMTcuMDQ0NSAyNy40OTMzIDE3LjE2MjVDMjcuNjMwMSAxNy4yODA2IDI3LjcyMDEgMTcuNDQzOSAyNy43NDY4IDE3LjYyMjdMMjkuMjk4NCAyNy45NzA2QzI5LjM0NjggMjguMjkyOSAyOS4zMjUyIDI4LjYyMTkgMjkuMjM0OSAyOC45MzUxQzI5LjE0NDcgMjkuMjQ4MyAyOC45ODggMjkuNTM4MyAyOC43NzU1IDI5Ljc4NTNDMjguNTYzIDMwLjAzMjQgMjguMjk5NyAzMC4yMzA3IDI4LjAwMzcgMzAuMzY2NkMyNy43MDc2IDMwLjUwMjUgMjcuMzg1OCAzMC41NzI5IDI3LjA2IDMwLjU3M0gxMi45Mzg3QzEyLjYxMjkgMzAuNTcyOSAxMi4yOTExIDMwLjUwMjUgMTEuOTk1IDMwLjM2NjZDMTEuNjk5IDMwLjIzMDcgMTEuNDM1NyAzMC4wMzI0IDExLjIyMzIgMjkuNzg1M0MxMS4wMTA3IDI5LjUzODMgMTAuODU0IDI5LjI0ODMgMTAuNzYzOCAyOC45MzUxQzEwLjY3MzUgMjguNjIxOSAxMC42NTE5IDI4LjI5MjkgMTAuNzAwMyAyNy45NzA2TDEyLjI1MTkgMTcuNjIyN0MxMi4yNzg2IDE3LjQ0NDEgMTIuMzY4MyAxNy4yODExIDEyLjUwNDkgMTcuMTYzQzEyLjY0MTQgMTcuMDQ1IDEyLjgxNTYgMTYuOTc5OCAxMi45OTYgMTYuOTc5MkgxNS40NzEzVjE5LjI0NDlDMTUuNDcxMyAxOS40NDUyIDE1LjU1MDggMTkuNjM3MyAxNS42OTI0IDE5Ljc3ODlDMTUuODMzOSAxOS45MjA1IDE2LjAyNTggMjAuMDAwMSAxNi4yMjYgMjAuMDAwMUMxNi40MjYyIDIwLjAwMDEgMTYuNjE4MSAxOS45MjA1IDE2Ljc1OTYgMTkuNzc4OUMxNi45MDEyIDE5LjYzNzMgMTYuOTgwNyAxOS40NDUyIDE2Ljk4MDcgMTkuMjQ0OVYxNi45NzkySDIzLjAxOFoiIGZpbGw9IiMwMzRFQTEiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMC4wMDA3IDIwQzIwLjEzODggMjAgMjAuMjcxMyAyMC4wNTQ5IDIwLjM2ODkgMjAuMTUyNUMyMC40NjY2IDIwLjI1MDIgMjAuNTIxNSAyMC4zODI3IDIwLjUyMTUgMjAuNTIwOFYyMy42NDU4SDIzLjY0NjVDMjMuNzg0NiAyMy42NDU4IDIzLjkxNzEgMjMuNzAwNyAyNC4wMTQ4IDIzLjc5ODRDMjQuMTEyNCAyMy44OTYxIDI0LjE2NzMgMjQuMDI4NSAyNC4xNjczIDI0LjE2NjdDMjQuMTY3MyAyNC4zMDQ4IDI0LjExMjQgMjQuNDM3MyAyNC4wMTQ4IDI0LjUzNUMyMy45MTcxIDI0LjYzMjYgMjMuNzg0NiAyNC42ODc1IDIzLjY0NjUgMjQuNjg3NUgyMC41MjE1VjI3LjgxMjVDMjAuNTIxNSAyNy45NTA2IDIwLjQ2NjYgMjguMDgzMSAyMC4zNjg5IDI4LjE4MDhDMjAuMjcxMyAyOC4yNzg1IDIwLjEzODggMjguMzMzMyAyMC4wMDA3IDI4LjMzMzNDMTkuODYyNSAyOC4zMzMzIDE5LjczIDI4LjI3ODUgMTkuNjMyNCAyOC4xODA4QzE5LjUzNDcgMjguMDgzMSAxOS40Nzk4IDI3Ljk1MDYgMTkuNDc5OCAyNy44MTI1VjI0LjY4NzVIMTYuMzU0OEMxNi4yMTY3IDI0LjY4NzUgMTYuMDg0MiAyNC42MzI2IDE1Ljk4NjUgMjQuNTM1QzE1Ljg4ODkgMjQuNDM3MyAxNS44MzQgMjQuMzA0OCAxNS44MzQgMjQuMTY2N0MxNS44MzQgMjQuMDI4NSAxNS44ODg5IDIzLjg5NjEgMTUuOTg2NSAyMy43OTg0QzE2LjA4NDIgMjMuNzAwNyAxNi4yMTY3IDIzLjY0NTggMTYuMzU0OCAyMy42NDU4SDE5LjQ3OThWMjAuNTIwOEMxOS40Nzk4IDIwLjM4MjcgMTkuNTM0NyAyMC4yNTAyIDE5LjYzMjQgMjAuMTUyNUMxOS43MyAyMC4wNTQ5IDE5Ljg2MjUgMjAgMjAuMDAwNyAyMFoiIGZpbGw9IiMwMzRFQTEiLz4KPC9zdmc+Cg==");
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-size: 100% 100%;
+}
+
+.buy--item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.buy--item-content {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    width: max-content;
+}
+
+.buy--item-content--title {
+    margin: 0;
+    font-family: 'Montserrat';
+    color: rgba(3, 78, 161, 1);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17.07px;
+    white-space: nowrap;
+    margin-left: 10px;
+    padding-right: 9px;
+    display: none;
+}
+
+.buy--item-sku-list {
+    display: flex;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.buy--item-sku-list-button {
+    border: 1px solid rgba(3, 78, 161, 1);
+    width: 35px !important;
+    height: 35px !important;
+    display: block;
+    background: transparent;
+    border-radius: 20px;
+    font-family: 'Montserrat';
+    color: rgba(3, 78, 161, 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.63px;
+    cursor: pointer;
+}
+
+.buy--item-sku-list-button--inactive {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: inherit;
+}
+
+.buy--item-sku-list-button:hover {
+    border: 2px solid rgba(3, 78, 161, 1);
+    background: rgba(3, 78, 161, 1);
+    color: #fff;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--product-info-buy-list) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: auto !important;
+}
+
+:global(.vtex-product-price-1-x-savings) {
+    text-align: start;
+    background: #000000;
+    width: max-content;
+    font-family: Inter;
+    color: rgba(255, 255, 255, 1);
+    font-size: 10px;
+    padding: 4px 7px;
+    border-radius: 2px;
+    line-height: 10.89px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+@media (min-width: 700px) and (max-width: 1025px) {
+    .nameContainer {
+        padding: 5px 5px 9px;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexCol--product-info-buy),
+    :global(.vtex-product-summary-2-x-similars-item) {
+        padding: 0 5px;
+    }
+
+    :global(.vtex-product-summary-2-x-buy--item-sku-list) {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .buy--item {
+        position: relative;
+    }
+
+    .similars-item {
+      display: none;
+  }
+}

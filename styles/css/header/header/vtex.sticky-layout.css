@@ -1,0 +1,25 @@
+.wrapper--header--sticky {
+    height: 86px !important;
+}
+
+@media (max-width: 1024px) {
+    .wrapper--e-header {
+        background: rgba(3, 78, 161, 1);
+        height: 80px!important;
+        padding: 26px 15px 20px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .container--e-header {
+        width: 100%;
+    }
+
+    .wrapper--stuck.wrapper--e-header--stuck .container--e-header {
+        background: rgba(3, 78, 161, 1);
+        /* height: 155px !important; */
+        padding: 26px 15px 20px;
+    }
+}

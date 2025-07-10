@@ -1,0 +1,118 @@
+{
+    "custom-top-bar": {
+        "component": "TopBarComponent"
+    },
+    "custom-menu": {
+        "component": "MenuCustom"
+    },
+    "custom-menu-mobile": {
+        "component": "MenuCustomMobile"
+    },
+    "custom-newsletter": {
+        "component": "Newsletter"
+    },
+    "custom-see-more": {
+        "component": "SeeMore"
+    },
+    "custom-filter": {
+        "component": "CustomFilter"
+    },
+    "search-bar-control": {
+        "component": "SearchBarControl"
+    },
+    "selected-filters-bar": {
+        "component": "SelectedFiltersBar"
+    },
+    "notify-me": {
+        "component": "NotifyMe",
+        "composition": "children"
+    },
+    "custom-shelf-similars": {
+        "component": "ShelfSimilars"
+    },
+    "custom-buy-shelf-sku": {
+        "component": "BuyShelfSku"
+    },
+    "custom-pdp-similars": {
+        "component": "PDPSimilars"
+    },
+    "custom-minicart": {
+        "component": "CustomMinicart"
+    },
+    "searchHead-desktop": {
+        "component": "searchHead"
+    },
+    "searchHead-mobile": {
+        "component": "searchHeadMobile"
+    },
+    "searchHead-tablet": {
+        "component": "searchHeadTablet"
+    },
+    "rate-iframe": {
+        "component": "RateIframe"
+    },
+    "searchShelf": {
+        "component": "SearchShelf"
+    },
+    "search-number": {
+        "component": "SearchNumber"
+    },
+    "search-number-category": {
+        "component": "SearchNumberCategory"
+    },
+    "text-seo-category": {
+        "component": "TextSEOCategory"
+    },
+    "text-seo-category-mobile": {
+        "component": "TextSEOCategoryMobile"
+    },
+    "custom-meta-tag": {
+        "component": "MetaTag"
+    },
+    "form-contact": {
+        "component": "FormContact"
+    },
+    "banner-custom": {
+        "component": "BannerCustom"
+    },
+    "size-table": {
+        "component": "SizeTable"
+    },
+    "hide-size-table": {
+        "component": "HideSizeTable"
+    },
+    "video-frame": {
+        "component": "VideoFrame"
+    },
+    "custom-flag": {
+        "component": "CustomFlag"
+    },
+    "custom-stars": {
+        "component": "CustomStars"
+    },
+    "cookies": {
+        "component": "Cookies"
+    },
+    "benefits": {
+        "component": "Benefits"
+    },
+    "custom-imagem-flag": {
+        "component": "CustomImagemFlag"
+    },
+    "custom-categories" : {
+        "component": "CustomCategories"
+    },
+    "sliderCustom": {
+        "component": "SliderCustom"
+    },
+    "header-mobile-handler" : {
+        "component": "HeaderMobileHandler"
+    },
+
+    "floating-buy-button": {
+        "component": "FloatingBuyButton"
+    },
+    "custom-video": {
+        "component": "CustomVideo"
+    }
+}

@@ -1,0 +1,70 @@
+.main-banner {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.main-banner-next {
+  position: absolute;
+  right: 5px;
+  top: 40%;
+  z-index: 99;
+}
+
+.main-banner-prev {
+  position: absolute;
+  left: 5px;
+  top: 40%;
+  z-index: 99;
+}
+
+.main-banner-video,
+.main-banner-video iframe {
+  border: none;
+  outline: none;
+  width: 100%
+}
+
+.main-banner .slick-dots {
+  position: absolute;
+  bottom: 20px;
+  display: flex !important;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-banner .slick-dots li {
+  height: 0.625rem;
+  width: 0.625rem;
+  background: #E9ECEF;
+  margin: 0 0.25rem;
+  padding: 0.25rem;
+  list-style: none;
+  border-radius: 50%;
+}
+
+.main-banner .slick-dots li.slick-active {
+  background: #034EA1;
+}
+
+.main-banner .slick-dots li button {
+  display: none;
+}
+
+.main-banner img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .main-banner {
+    margin-bottom: 20px
+  }
+  .main-banner .slick-dots {
+    bottom: -20px
+  }
+}

@@ -1,0 +1,627 @@
+{
+  "store.home": {
+    "blocks": [
+      // "experimental__visibility-layout#custom-video",
+      "experimental__visibility-layout#banner-principal",
+      // "flex-layout.row#benefits",
+      // "flex-layout.row#banners-new",
+      // "flex-layout.row#shelf-home",
+      // "flex-layout.row#banners-new-2",
+      // "flex-layout.row#shelf2-home",
+      // "custom-categories",
+      "responsive-layout.desktop#home-footer"
+      // "responsive-layout.tablet#home-footer",
+      // "responsive-layout.phone#home-footer"
+    ]
+  },
+  "experimental__visibility-layout#custom-video": {
+    "children": [
+      "custom-video"
+    ]
+  },
+  "experimental__visibility-layout#banner-principal": {
+    "children": [
+      "flex-layout.row#banner-principal"
+    ]
+  },
+  "info-card#home": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+      "headline": "Vintage Pink",
+      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
+      "callToActionMode": "button",
+      "callToActionText": "Explore",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.row#banner-principal": {
+    "title": "Banner Principal",
+    "children": [
+      "list-context.image-list#banner-principal-new"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "carousel"
+    }
+  },
+  "list-context.image-list#banner-principal-new": {
+    "title": "Imagens Banner Principal",
+    "children": [
+      "slider-layout#banners"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154.png",
+          "mobileImage": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154-mobile.png"
+        },
+        {
+          "image": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154.png",
+          "mobileImage": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154-mobile.png"
+        },
+        {
+          "image": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154.png",
+          "mobileImage": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154-mobile.png"
+        },
+        {
+          "image": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154.png",
+          "mobileImage": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#banners": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": [
+        "carousel",
+        "e-banner-principal",
+        "e-default-arrow",
+        "pb-20"
+      ]
+    }
+  },
+  "flex-layout.row#benefits": {
+    "title": "Barra de benefícios",
+    "children": [
+      "benefits"
+    ],
+    "props": {
+      "blockClass": [
+        "benefits"
+      ]
+    }
+  },
+  "flex-layout.row#banners-new": {
+    "title": "Imagens Banners Novo",
+    "children": [
+      "banner-custom"
+    ],
+    "props": {
+      "blockClass": [
+        "banners",
+        "banners-desktop",
+        "banners-grid"
+      ]
+    }
+  },
+  "flex-layout.row#banners-new-2": {
+    "title": "Imagens Banners Novo 2",
+    "children": [
+      "banner-custom"
+    ],
+    "props": {
+      "blockClass": [
+        "banners",
+        "banners-desktop"
+      ]
+    }
+  },
+  "flex-layout.row#shelf-home": {
+    "children": [
+      "flex-layout.col#shelf2-landing"
+    ],
+    "props": {
+      "blockClass": "container-shelf"
+    },
+    "title": "Vitrine de Produtos"
+  },
+  "flex-layout.col#shelf-home": {
+    "children": [
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf"
+    ]
+  },
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Lançamentos td2154",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": [
+      "list-context.product-list#shelf"
+    ]
+  },
+  "list-context.product-list#shelf": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#shelf-products"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "installmentCriteria": "MAX_WITHOUT_INTEREST",
+      "titleText": "Lançamentos td2154"
+    }
+  },
+  "slider-layout#shelf-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": false
+    }
+  },
+  "flex-layout.row#shelf2-home": {
+    "children": [
+      "flex-layout.col#shelf2-landing"
+    ],
+    "props": {
+      "blockClass": "container-shelf"
+    },
+    "title": "Vitrine de Produtos 2"
+  },
+  "flex-layout.col#shelf2-home": {
+    "children": [
+      "rich-text#shelf-title1",
+      "flex-layout.row#shelf1"
+    ]
+  },
+  "rich-text#shelf-title1": {
+    "props": {
+      "text": "## Lançamentos td2154",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf1": {
+    "children": [
+      "list-context.product-list#shelf"
+    ]
+  },
+  "responsive-layout.desktop#home-footer": {
+    "children": [
+      "flex-layout.row#tech-container",
+      "flex-layout.row#rate-container",
+      "flex-layout.row#seo-text"
+    ],
+    "title": "Footer Desktop",
+    "props": {
+      "blockClass": "home-footer-tablet"
+    }
+  },
+  "responsive-layout.tablet#home-footer": {
+    "title": "Footer Tablet",
+    "children": [
+      "flex-layout.row#tech-container-mobile",
+      "flex-layout.row#rate-container",
+      "flex-layout.row#seo-text"
+    ],
+    "props": {
+      "blockClass": "home-footer-tablet"
+    }
+  },
+  "responsive-layout.phone#home-footer": {
+    "title": "Footer Mobile",
+    "children": [
+      "flex-layout.row#tech-container-mobile",
+      "flex-layout.row#rate-container",
+      "flex-layout.row#seo-text"
+    ],
+    "props": {
+      "blockClass": "home-footer-mobile"
+    }
+  },
+  "flex-layout.row#tech-container": {
+    "children": [
+      "flex-layout.col#tech-container"
+    ],
+    "props": {
+      "blockClass": "container-tech"
+    }
+  },
+  "flex-layout.col#tech-container": {
+    "children": [
+      "rich-text#tech-title",
+      "rich-text#tech-subtitle",
+      "flex-layout.row#grid-tech-banners",
+       "link#todas-tecnologias"
+    ],
+    "props": {
+      "blockClass": "container-tech"
+    }
+  },
+  "flex-layout.row#tech-container-mobile": {
+    "children": [
+      "flex-layout.col#tech-container-mobile"
+    ],
+    "props": {
+      "blockClass": "container-tech"
+    }
+  },
+  "flex-layout.col#tech-container-mobile": {
+    "children": [
+      "rich-text#tech-title",
+      "rich-text#tech-subtitle",
+      "slider-layout#grid-tech-banners",
+      "link#todas-tecnologias"
+    ],
+    "props": {
+      "blockClass": "container-tech"
+    }
+  },
+  "link#todas-tecnologias": {
+    "props": {
+      "label": "Acesse todas as tecnologias",
+      "href": "/",
+      "blockClass": "link-cta-home"
+    }
+  },
+  "rich-text#tech-title": {
+    "title": "Título Tecnologias",
+    "props": {
+      "text": "## Tecnologias td2154",
+      "blockClass": "shelfTitleCenter"
+    }
+  },
+  "rich-text#tech-subtitle": {
+    "title": "Subtítulo Tecnologias",
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur. Dui suspendisse varius quisque id aliquet pellentesque vulputate. Diam leo semper condimentum maecenas felis. In aliquet neque nunc etiam. Id gravida nascetur laoreet sed. Bibendum blandit sed eget ante eget id. Libero luctus adipiscing enim a pharetra sodales quis. Tincidunt mauris ultrices faucibus volutpat at et sem nunc. Lectus adipiscing sem tincidunt amet duis eu eget. Sapien scelerisque fringilla malesuada orci. Dui felis risus nibh neque dolor in. Commodo gravida eu in urna.",
+      "blockClass": "shelfSubtitleCenter"
+    }
+  },
+  "flex-layout.row#rate-container": {
+    "children": [
+      "flex-layout.col#rate-container"
+    ],
+    "props": {
+      "blockClass": "container-rate"
+    }
+  },
+  "flex-layout.col#rate-container": {
+    "children": [
+      "flex-layout.row#shelf-trust"
+    ],
+    "props": {
+      "blockClass": "container-rate"
+    }
+  },
+  "flex-layout.row#grid-tech-banners": {
+    "title": "Banners Tecnologias",
+    "props": {
+      "blockClass": "grid-tech-banners"
+    },
+    "children": [
+      "flex-layout.col#grid-banners-01",
+      "flex-layout.col#grid-banners-02",
+      "flex-layout.col#grid-banners-03",
+      // "flex-layout.col#grid-banners-04",
+      // "flex-layout.col#grid-banners-05",
+      "flex-layout.col#grid-banners-06",
+      "flex-layout.col#grid-banners-07",
+      "flex-layout.col#grid-banners-08"
+      // "flex-layout.col#grid-banners-09"
+    ]
+  },
+  "flex-layout.col#grid-banners-01": {
+    "children": [
+      "image#grid-tech-banners-image-1",
+      "rich-text#tech-subtitle-1"
+    ],
+    "props": {
+      "marginLeft": 4,
+      "marginRight": 4
+    }
+  },
+  "flex-layout.col#grid-banners-02": {
+    "children": [
+      "image#grid-tech-banners-image-2",
+      "rich-text#tech-subtitle-2"
+    ],
+    "props": {
+      "marginLeft": 4,
+      "marginRight": 4
+    }
+  },
+  "flex-layout.col#grid-banners-03": {
+    "children": [
+      "image#grid-tech-banners-image-3",
+      "rich-text#tech-subtitle-3"
+    ],
+    "props": {
+      "marginLeft": 4,
+      "marginRight": 4
+    }
+  },
+  "flex-layout.col#grid-banners-04": {
+    "children": [
+      "image#grid-tech-banners-image-4",
+      "rich-text#tech-subtitle-4"
+    ],
+    "props": {
+      "marginLeft": 4,
+      "marginRight": 4
+    }
+  },
+  "flex-layout.col#grid-banners-05": {
+    "children": [
+      "image#grid-tech-banners-image-5",
+      "rich-text#tech-subtitle-5"
+    ],
+    "props": {
+      "marginLeft": 4,
+      "marginRight": 4
+    }
+  },
+  "flex-layout.col#grid-banners-06": {
+    "children": [
+      "image#grid-tech-banners-image-6",
+      "rich-text#tech-subtitle-6"
+    ],
+    "props": {
+      "marginLeft": 4,
+      "marginRight": 4
+    }
+  },
+  "flex-layout.col#grid-banners-07": {
+    "children": [
+      "image#grid-tech-banners-image-7",
+      "rich-text#tech-subtitle-7"
+    ],
+    "props": {
+      "marginLeft": 4,
+      "marginRight": 4
+    }
+  },
+  "flex-layout.col#grid-banners-08": {
+    "children": [
+      "image#grid-tech-banners-image-8",
+      "rich-text#tech-subtitle-8"
+    ],
+    "props": {
+      "marginLeft": 4,
+      "marginRight": 4
+    }
+  },
+  "flex-layout.col#grid-banners-09": {
+    "children": [
+      "image#grid-tech-banners-image-9",
+      "rich-text#tech-subtitle-9"
+    ],
+    "props": {
+      "marginLeft": 4,
+      "marginRight": 4
+    }
+  },
+  "image#grid-tech-banners-image-1": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/tech-logo-1.png",
+      "alt": "td2154",
+      "link": "/teste"
+    }
+  },
+  "image#grid-tech-banners-image-2": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/tech-logo-2.png",
+      "alt": "td2154",
+      "link": "/teste"
+    }
+  },
+  "image#grid-tech-banners-image-3": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/tech-logo-3.png",
+      "alt": "td2154",
+      "link": "/teste"
+    }
+  },
+  "image#grid-tech-banners-image-4": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/tech-logo-4.png",
+      "alt": "td2154",
+      "link": "/teste"
+    }
+  },
+  "image#grid-tech-banners-image-5": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/tech-logo-5.png",
+      "alt": "td2154",
+      "link": "/teste"
+    }
+  },
+  "image#grid-tech-banners-image-6": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/tech-logo-6.png",
+      "alt": "td2154",
+      "link": "/teste"
+    }
+  },
+  "image#grid-tech-banners-image-7": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/tech-logo-7.png",
+      "alt": "td2154",
+      "link": "/teste"
+    }
+  },
+  "image#grid-tech-banners-image-8": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/tech-logo-8.png",
+      "alt": "td2154",
+      "link": "/teste"
+    }
+  },
+  "image#grid-tech-banners-image-9": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/tech-logo-9.png",
+      "alt": "td2154",
+      "link": "/teste"
+    }
+  },
+  "rich-text#tech-subtitle-1": {
+    "props": {
+      "text": "Tecnologia de amortecimento de impactos que proporciona muito mais conforto e bem-estar a cada passo.",
+      "blockClass": "shelfTitleCenter"
+    }
+  },
+  "rich-text#tech-subtitle-2": {
+    "props": {
+      "text": "Seja através de zíper, elástico lateral ou atacador em elástico, são elementos que facilitam o calce.",
+      "blockClass": "shelfTitleCenter"
+    }
+  },
+  "rich-text#tech-subtitle-3": {
+    "props": {
+      "text": "Nossa principal matéria prima oferece extremo conforto devido à sua maciez e capacidade de se adaptar ao formato dos pés.",
+      "blockClass": "shelfTitleCenter"
+    }
+  },
+  "rich-text#tech-subtitle-4": {
+    "props": {
+      "text": "Tecnologia que permite o escoamento da água, mantendo os pés secos.",
+      "blockClass": "shelfTitleCenter"
+    }
+  },
+  "rich-text#tech-subtitle-5": {
+    "props": {
+      "text": "Calçados feitos com materiais extremamente",
+      "blockClass": "shelfTitleCenter"
+    }
+  },
+  "rich-text#tech-subtitle-6": {
+    "props": {
+      "text": "Forro interno desenvolvido em lã sintética para aquecer nos dias mais frios.",
+      "blockClass": "shelfTitleCenter"
+    }
+  },
+  "rich-text#tech-subtitle-7": {
+    "props": {
+      "text": "Tecnologia que proporciona leveza, conforto e resistência através de um solado feito com material de baixa densidade.",
+      "blockClass": "shelfTitleCenter"
+    }
+  },
+  "rich-text#tech-subtitle-8": {
+    "props": {
+      "text": "Material tecnológico resistente, leve e maleável, que imita as fibras do couro garantindo qualidade e permitindo a transpiração dos pés.",
+      "blockClass": "shelfTitleCenter"
+    }
+  },
+  "rich-text#tech-subtitle-9": {
+    "props": {
+      "text": "Calçados em couro impermeável, e forro com tecnologia DRYSHIELD à prova d água e com bloqueio do vento.",
+      "blockClass": "shelfTitleCenter"
+    }
+  },
+  "slider-layout#grid-tech-banners": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "blockClass": "tech-carousel"
+    },
+    "children": [
+      "flex-layout.col#grid-banners-01",
+      "flex-layout.col#grid-banners-02",
+      "flex-layout.col#grid-banners-03",
+      // "flex-layout.col#grid-banners-04",
+      // "flex-layout.col#grid-banners-05",
+      "flex-layout.col#grid-banners-06",
+      "flex-layout.col#grid-banners-07",
+      "flex-layout.col#grid-banners-08"
+      // "flex-layout.col#grid-banners-09"
+    ]
+  },
+  "flex-layout.row#shelf-trust": {
+    "props": {
+      "blockClass": "shelf-trust"
+    },
+    "children": [
+      "flex-layout.col#shelf-trust"
+    ]
+  },
+  "flex-layout.col#shelf-trust": {
+    "children": [
+      "rich-text#trust-title",
+      "rate-iframe"
+    ],
+    "props": {
+      "marginLeft": 4,
+      "marginRight": 4
+    }
+  },
+  "rich-text#trust-title": {
+    "title": "Título Avaliações",
+    "props": {
+      "text": "## Clientes na td2154",
+      "blockClass": "shelfTitleCenter"
+    }
+  },
+  "flex-layout.row#seo-text": {
+    "title": "Bloco de SEO",
+    "props": {
+      "blockClass": "seo-text"
+    },
+    "children": [
+      "flex-layout.col#seo-text"
+    ]
+  },
+  "flex-layout.col#seo-text": {
+    "children": [
+      "rich-text#seo-title",
+      "rich-text#seo-text",
+      "custom-see-more"
+    ],
+    "props": {
+      "marginLeft": 4,
+      "marginRight": 4
+    }
+  },
+  "rich-text#seo-title": {
+    "title": "Título de SEO",
+    "props": {
+      "text": "# Qualidade em couro, conforto e estilo: Calçados td2154",
+      "blockClass": "seoTitle"
+    }
+  },
+  "rich-text#seo-text": {
+    "title": "Texto de SEO",
+    "props": {
+      "text": "Para vencer desafios e enfrentar as batalhas do dia a dia com estilo e leveza, é preciso ter td2154. Este é o espírito da marca: oferecer calçados que acompanhem seus desafios diários e suas conquistas. Sempre de olho nas tendências mundiais de moda masculina e feminina, os modelos td2154 oferecem conforto e estilo aos consumidores que gostam de sapatos de personalidade sem abrir mão do bem-estar. A td2154 utiliza em seus modelos matérias-primas de qualidade premium, como o couro. A marca também investe em tecnologias de conforto (conheça a Amortech e a Levitech), assim, ao calçar um td2154, você estará seguro e confiante, pois saberá que está usando um produto moderno, que proporciona ao mesmo tempo conforto, estilo e confiança. Conheça os lançamentos da coleção Inverno 2024: tem calçados estilosos e confortáveis para mulheres (tênis, botas, sandálias e chinelos) e homens (tênis casual, sapatênis, sandálias, chinelos e mocassins)!",
+      "blockClass": "seoText"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+	"flex-layout.col#menu-institucional": {
+		"children": [
+			"rich-text#inst-title",
+			"link#inst-about",
+			"link#inst-stores",
+      "link#inst-envio",
+			"link#inst-exchanges",
+			"link#inst-attendance",
+			"link#inst-privacy",
+      "link#inst-term",
+      "link#inst-use"
+		],
+		"props": {
+			"blockClass": "container-links-institucional",
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"width": "25%"
+		}
+	},
+	"link#inst-attendance": {
+		"props": {
+			"label": "Fale Conosco",
+			"href": "/central-de-ajuda/fale-conosco",
+			"blockClass": "institucional-links"
+		}
+	},
+	"link#inst-envio": {
+		"props": {
+			"label": "Política de envio",
+			"href": "/institucional/politica-de-envio",
+			"blockClass": "institucional-links"
+		}
+	},
+	"link#inst-exchanges": {
+		"props": {
+			"label": "Política de troca",
+			"href": "/institucional/politica-de-troca",
+			"blockClass": "institucional-links"
+		}
+	},
+	"link#inst-privacy": {
+		"props": {
+			"label": "Política de Privacidade",
+			"href": "/institucional/politica-de-privacidade",
+			"blockClass": "institucional-links"
+		}
+	},
+	"link#inst-about": {
+		"props": {
+			"label": "Sobre Nós",
+			"href": "/institucional/sobre",
+			"blockClass": "institucional-links"
+		}
+	},
+	"link#inst-stores": {
+		"props": {
+			"label": "Nossas Lojas",
+			"href": "/institucional/lojas",
+			"blockClass": "institucional-links"
+		}
+	},
+	"link#inst-term": {
+		"props": {
+			"label": "Política e termos",
+			"href": "/institucional/politicas-e-termos",
+			"blockClass": "institucional-links"
+		}
+	},
+	"link#inst-use": {
+		"props": {
+			"label": "Termos de Uso",
+			"href": "/institucional/termos-de-uso",
+			"blockClass": "institucional-links"
+		}
+	},
+
+	"rich-text#inst-title": {
+		"props": {
+			"text": "Institucional",
+			"blockClass": "inst-title"
+		}
+	},
+	"flex-layout.row#disc-institucional": {
+		"children": ["flex-layout.col#disc-institucional"]
+	},
+	"flex-layout.col#disc-institucional": {
+		"children": ["disclosure-layout#institucional"],
+		"props": {
+			"blockClass": "inst-disc-row"
+		}
+	},
+	"disclosure-layout#institucional": {
+		"children": [
+			"disclosure-trigger#institucional",
+			"disclosure-content#institucional"
+		]
+	},
+	"disclosure-trigger#institucional": {
+		"children": ["rich-text#inst-trigger"],
+		"props": {
+			"blockClass": "disclosure-button"
+		}
+	},
+	"disclosure-content#institucional": {
+		"children": [
+			"link#inst-about",
+			"link#inst-stores",
+			"link#inst-exchanges",
+			"link#inst-attendance",
+			"link#inst-privacy",
+      "link#inst-term",
+      "link#inst-use"
+		],
+		"props": {
+			"blockClass": "institucional-disclosure"
+		}
+	},
+	"rich-text#inst-trigger": {
+		"props": {
+			"text": "Institucional",
+			"blockClass": "inst-disc-button"
+		}
+	}
+}

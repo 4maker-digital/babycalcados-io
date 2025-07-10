@@ -1,0 +1,94 @@
+.ctaVimeo {
+    position: relative;
+}
+
+.ctaVimeo iframe {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* adjust video position top for all popular screens */
+@media screen and (max-width: 1500px) {
+    .ctaVimeo iframe {
+        position: relative;
+        top: -28px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .ctaVimeo iframe {
+        position: relative;
+        top: -18px;
+    }
+}
+
+
+@media screen and (max-width: 1350px) {
+    .ctaVimeo iframe {
+        position: relative;
+        top: -31px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .ctaVimeo iframe {
+        position: relative;
+        top: -52px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .ctaVimeo iframe {
+        position: relative;
+        top: -100px;
+        height: 640px;
+    }
+}
+
+
+/* mobile popular screens */
+@media screen and (max-width: 768px) {
+    .ctaVimeo iframe {
+        position: relative;
+        top: 0;
+        height: 500px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 667px) {
+    .ctaVimeo iframe {
+        top: 0px!important;
+        height: 400px;
+    }
+}
+
+/* 350 and 375px screens */
+@media screen and (min-width: 350px) and (max-width: 375px) {
+    .ctaVimeo iframe {
+        top: 0px!important;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .ctaVimeo iframe {
+        top: 0px!important;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .ctaVimeo iframe {
+        top: -22px!important;
+        height: 400px;
+    }
+}
+
+
+/* @media screen and (min-width: 1500px) {
+    .ctaVimeo iframe {
+            width: 100%;
+            height: 575px;
+            margin-top: -148px;
+            position: relative;
+    }
+} */

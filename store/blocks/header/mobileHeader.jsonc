@@ -1,0 +1,114 @@
+{
+"header-layout.mobile": {
+    "title": "Header - Mobile",
+    "children": [
+      "header-mobile-handler",
+      "custom-meta-tag",
+      "flex-layout.row#top-bar",
+      "sticky-layout#header-stick-mobile"
+    ]
+  },
+  "sticky-layout#header-stick-mobile": {
+    "title": "Header - Conteúdo",
+    "props": {
+      "position": "top",
+      "blockClass": "e-header"
+    },
+    "children": [
+      "flex-layout.row#header-main-mobile",
+      "search-bar"
+    ]
+  },
+  "flex-layout.row#header-main-mobile": {
+    "title": "Header",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "header-main-mobile",
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "flex-layout.row#header-main-mobile-left",
+      "flex-layout.row#header-main-mobile-center",
+      "flex-layout.row#header-main-mobile-right"
+    ]
+  },
+  "flex-layout.row#header-main-mobile-left": {
+    "title": "Conteúdo - Drawer",
+    "props": {
+      // "width": "20%",
+      "blockClass": "header-main-mobile-left",
+      "verticalAlign": "middle",
+      "horizontalAlign": "left"
+    },
+    "children": [
+      "drawer"
+    ]
+  },
+
+  // search icon
+  "image#search-icon": {
+    "title": "search icon",
+    "props": {
+      "src": "assets/icons8-search.svg",
+      "blockClass": "search-icon-mobile-new",
+      "href": "/",
+      "title": "Search icon by Icons8.com"
+    }
+  },
+
+  "flex-layout.row#header-main-mobile-center": {
+    "title": "Conteúdo - Logo",
+    "props": {
+      "width": "50%",
+      "blockClass": "header-main-mobile-center",
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "logo#header-logo-mobile"
+    ]
+  },
+  "flex-layout.row#header-main-mobile-right": {
+    "title": "Conteúdo - Minicart",
+    "props": {
+      // "width": "30%",
+      "blockClass": "header-main-mobile-right",
+      "verticalAlign": "middle",
+      "horizontalAlign": "right"
+    },
+    "children": [
+      "image#search-icon"
+      ,
+      "minicart.v2"
+    ]
+  },
+  "logo#header-logo-mobile": {
+    "title": "logo mobile",
+    "props": {
+      "url": "assets/td2154-logo.svg",
+      "href": "/",
+      "blockClass": "header-logo-mobile"
+    }
+  },
+  "drawer": {
+    "children": [
+      "menu#drawer"
+    ],
+    "props": {
+      "isFullWidth": true,
+      "blockClass": "menu-mobile"
+    }
+  },
+  "menu#drawer": {
+    "title": "Menu lateral mobile",
+    "children": [
+      "login",
+      "custom-menu-mobile"
+    ],
+    "props": {
+      "blockClass": "drawer",
+      "orientation": "vertical"
+    }
+  }
+
+}

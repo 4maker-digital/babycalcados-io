@@ -1,0 +1,21 @@
+.stackContainer--prodsum .stackItem--prodsum--buy-button-shelf {
+    display: none;
+}
+
+.stackContainer--prodsum {
+    position: relative;
+}
+
+.stackContainer--prodsum .stackItem--prodsum:last-child {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    top: inherit;
+}
+
+@media (max-width: 1024px) {
+    .stackContainer--prodsum .stackItem--prodsum:last-child {
+        display: none;
+    }
+}

@@ -1,0 +1,13 @@
+.flexRow--top-bar-container {
+    background-color: #86D4ED;
+}
+
+.flexRowContent--top-bar-container {
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 31px;
+}

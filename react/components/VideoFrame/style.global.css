@@ -1,0 +1,15 @@
+.vtex-flex-layout-0-x-flexRowContent--desc .vtex-disclosure-layout-1-x-content .vtex-flex-layout-0-x-flexRow--productSpecificationGroup ~ div {
+  display: none;
+}
+
+.vtex-flex-layout-0-x-flexRow--productSpecificationGroup {
+  display: block;
+}
+
+.vtex-flex-layout-0-x-flexRowContent--productSpecificationGroup > .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-flex-layout-0-x-flexCol > .vtex-flex-layout-0-x-flexColChild {
+  padding: 0;
+}
+
+.vtex-store-components-3-x-videoProduct iframe {
+  width: 100% !important;
+}

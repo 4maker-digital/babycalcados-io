@@ -1,0 +1,43 @@
+{
+    "flex-layout.row#category-footer-1": {
+        "title": "Imagem/Texto rodapé",
+        "children": [
+            "flex-layout.col#category-1-footer-2",
+            "flex-layout.col#category-1-footer-1"
+        ],
+        "props": {
+            "blockClass": "category-footer"
+        }
+    },
+    "flex-layout.col#category-1-footer-2": {
+        "children": [
+            "image#background-image-bottom-search"
+        ]
+    },
+    "image#background-image-bottom-search": {
+        "title": "Imagem rodapé",
+        "props": {
+            "blockClass": [
+                "background-image-bottom-search"
+            ],
+            "src": "https://acuoio.vteximg.com.br/arquivos/category-bottom.jpg"
+        }
+    },
+    "flex-layout.col#category-1-footer-1": {
+        "props": {
+            "width": "55%"
+        },
+        "children": [
+            "rich-text#category-1-footer"
+        ]
+    },
+    "rich-text#category-1-footer": {
+        "props": {
+            "text": "## Nano Cânula \n\n\n Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr. \n\n Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+            "blockClass": [
+                "category-footer-title",
+                "category-footer-title-grey"
+            ]
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "modal-trigger#medidas": {
+    "children": [
+      "rich-text#medidas",
+      "modal-layout#medidas"
+    ],
+    "props": {
+      "blockClass": "medidas"
+    }
+  },
+  "modal-layout#medidas": {
+    "title": "Tabela de medidas",
+    "children": [
+      "modal-actions.close",
+      "size-table"
+    ],
+    "props": {
+      "blockClass": "medidas"
+    }
+  },
+  "rich-text#medidas": {
+    "props": {
+      "text": "Tabela de medidas",
+      "blockClass": "text-medidas"
+    }
+  },
+  "modal-actions.close": {
+    "props": {
+      "blockClass": "close-medidas"
+    }
+  }
+}

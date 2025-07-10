@@ -1,0 +1,74 @@
+{
+	"store.custom#about": {
+		"blocks": [
+			"responsive-layout.desktop#about",
+			"responsive-layout.mobile#about"
+		]
+	},
+	"responsive-layout.desktop#about": {
+		"children": [
+			"flex-layout.row#breadcrumb-about",
+			"flex-layout.row#about-us-content"
+		]
+	},
+	"flex-layout.row#about-us-content": {
+		"children": [
+			"flex-layout.col#menu-institucional",
+			"flex-layout.col#about-us"
+		],
+		"props": {
+			"blockClass": "about",
+			"paddingBottom": 8
+		}
+	},
+
+	"flex-layout.col#about-us": {
+		"children": ["rich-text#about-content"]
+	},
+	"flex-layout.row#breadcrumb-about": {
+		"children": [
+			"link#breadcrumb-home",
+			"icon#breadcrumb",
+			"link#breadcrumb-about"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "breadcrumb",
+			"colGap": 3
+		}
+	},
+	"responsive-layout.mobile#about": {
+		"children": [
+			"flex-layout.row#breadcrumb-about",
+			"flex-layout.row#disc-institucional",
+			"rich-text#about-content"
+		]
+	},
+
+	"link#breadcrumb-home": {
+		"props": {
+			"label": "Home",
+			"href": "/",
+			"blockClass": "breadcrumb-home"
+		}
+	},
+	"icon#breadcrumb": {
+		"props": {
+			"size": 8,
+			"id": "icon-setadireita"
+		}
+	},
+	"link#breadcrumb-about": {
+		"props": {
+			"label": "Quem Somos",
+			"blockClass": "active-breadcrumb"
+		}
+	},
+	"rich-text#about-content": {
+		"props": {
+			"text": "# QUEM SOMOS\n Coloque aqui seu texto",
+			"blockClass": "institucional-content"
+		}
+	}
+}

@@ -1,0 +1,123 @@
+{
+  "header": {
+    "title": "Header",
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "title": "Header",
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "title": "Header Desktop",
+    "children": [
+      "flex-layout.row#top-bar"
+      //"sticky-layout#header-sticky-desktop"
+    ]
+  },
+  "flex-layout.row#top-bar": {
+    "title": "Top Bar",
+    "children": [
+      "custom-top-bar"
+    ],
+    "props": {
+      "blockClass": [
+        "top-bar-container"
+      ]
+    }
+  },
+  "sticky-layout#header-sticky-desktop": {
+    "title": "Header - Conteúdo",
+    "props": {
+      "position": "top",
+      "blockClass": "header--sticky"
+    },
+    "children": [
+      "flex-layout.row#header-main-desktop"
+    ]
+  },
+  "flex-layout.row#header-main-desktop": {
+    "children": [
+      "flex-layout.row#first-row"
+    ],
+    "props": {
+      "blockClass": [
+        "sticky-content"
+      ],
+      "colSizing": "auto",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#first-row": {
+    "title": "Linha 1 do header",
+    "children": [
+      "logo#logo-header",
+      "custom-menu",
+      "flex-layout.row#search-bar"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "e-header-row",
+      "colSizing": "auto"
+    }
+  },
+  "logo#logo-header": {
+    "title": "td2154 Logo",
+    "props": {
+      "blockClass": [
+        "e-header-logo"
+      ],
+      "href": "/",
+      "title": "td2154",
+      "showLabel": false,
+      "url": "assets/td2154-logo.svg"
+    }
+  },
+  "flex-layout.row#search-bar": {
+    "title": "Search bar",
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "right",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "e-right-menu"
+    },
+    "children": [
+      "search-bar",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "hideIconLabel": true
+    }
+  },
+  "search-bar": {
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
+    "props": {
+      "customSearchPageUrl": "/${term}?_q=${term}&map=ft",
+      "placeholder": "O que você está buscando?",
+      "displayMode": "search-and-clear-buttons"
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
+      "maxSuggestedTerms": 5,
+      "productLayout": "HORIZONTAL"
+    }
+  }
+  /* Header Mobile */
+
+}

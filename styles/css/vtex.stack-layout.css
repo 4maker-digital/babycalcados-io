@@ -1,0 +1,17 @@
+.stackItem--product-flags {
+  right: 0;
+  left: initial;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  display: flex !important;
+}
+
+
+.stackItem--custom-imagem-flag {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  justify-content: end;
+}

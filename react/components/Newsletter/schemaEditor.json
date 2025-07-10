@@ -1,0 +1,27 @@
+{
+  "title": "Newsletter",
+  "description": "Newsletter",
+  "type": "object",
+  "properties": {
+    "title": {
+      "title": "Título",
+      "description": "Titulo da seção",
+      "type": "string"
+    },
+    "placeholdername": {
+      "title": "Placeholder Nome",
+      "description": "Descrição do campo Nome",
+      "type": "string"
+    },
+    "placeholderemail": {
+      "title": "Placeholder E-mail",
+      "description": "Descrição do campo E-mail",
+      "type": "string"
+    },
+    "textbutton": {
+      "title": "Texto Botão",
+      "description": "Texto do botão de cadastrar",
+      "type": "string"
+    }
+  }
+}

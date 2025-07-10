@@ -1,0 +1,60 @@
+{
+    "flex-layout.row#search-page-title-banner": {
+        "title": "Imagem",
+        "children": [
+            "flex-layout.col#search-page-title-banner"
+        ],
+        "props": {
+            "blockClass": "search-page-title-banner",
+            "width": "100%"
+        }
+    },
+    "flex-layout.col#search-page-title-banner": {
+        "props": {
+            "blockClass": "search-page-title-banner",
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "responsive-layout.desktop#background-category"
+        ]
+    },
+    "responsive-layout.desktop#background-category": {
+        "children": [
+            "image#background-category-desktop-top"
+        ]
+    },
+    "responsive-layout.mobile#background-category": {
+        "children": [
+            "searchHead-mobile"
+        ],
+        "props": {
+            "blockClass": "search-page-title-banner--mobile"
+        }
+    },
+    "responsive-layout.tablet#background-category": {
+        "children": [
+            "searchHead-tablet"
+        ],
+        "props": {
+            "blockClass": "search-page-title-banner--tablet"
+        }
+    },
+    "image#background-category-desktop-top": {
+        "title": "Imagem categoria desktop",
+        "props": {
+            "blockClass": [
+                "background-category-top"
+            ],
+            "src": ""
+        }
+    },
+    "image#background-category-mobile-top": {
+        "title": "Imagem categoria mobile",
+        "props": {
+            "blockClass": [
+                "background-category-top"
+            ],
+            "src": ""
+        }
+    }
+}

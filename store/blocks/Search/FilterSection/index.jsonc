@@ -1,0 +1,273 @@
+{
+  "flex-layout.row#filter-section": {
+    "props": {
+      "blockClass": "filter-section"
+    },
+    "children": [
+      "breadcrumb.search",
+      "searchHead-desktop",
+      "experimental__visibility-layout#text-header-seo",
+      "flex-layout.col#filter-section"
+    ]
+  },
+  "experimental__visibility-layout#text-header-seo": {
+    "title": "Texto Header seo (On/Off)",
+    "props": {
+      "visible": false,
+      "blockClass": "bloco-header-seo"
+    },
+    "children": [
+      "flex-layout.col#bloco-header-seo"
+    ]
+  },
+  "flex-layout.col#bloco-header-seo": {
+    "children": [
+      "flex-layout.row#bloco-header-seo",
+      "flex-layout.row#bloco-header-seo-imagens"
+    ],
+    "props": {
+      "blockClass": "bloco-header-seo"
+    }
+  },
+  "flex-layout.row#bloco-header-seo": {
+    "children": [
+      "rich-text#title-header-seo",
+      "rich-text#description-header-seo"
+    ],
+    "props": {
+      "blockClass": "container-bloco-header-seo"
+    }
+  },
+  "flex-layout.row#bloco-header-seo-imagens": {
+    "children": [
+      "video#header-seo",
+      "image#header-seo-imagens"
+    ],
+    "props": {
+      "blockClass": "container-imagens-header-seo"
+    }
+  },
+  "video#header-seo": {
+    "props": {
+      "width": "100%",
+      "height": "400px",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=wygFqZXMIco",
+      "blockClass": "video-header-seo"
+    }
+  },
+  "image#header-seo-imagens": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/mastercard.svg",
+      "link": "/",
+      "blockClass": "imagens-header-seo",
+      "width": "100%",
+      "maxHeight": "400px"
+    }
+  },
+  "rich-text#title-header-seo": {
+    "props": {
+      "text": "## Lançamentos Baby",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#description-header-seo": {
+    "props": {
+      "text": "Os Tênis da linha Flight são super leves e muito estilosos, a maioria dos calçados são fabricados em couro, matéria prima de alta qualidade, resistência e durabilidade. Temos ainda opções feitas em tecido Knitech, um tecido estilo meia, que possui extrema elasticidade, se adaptando ao pé e proporcionando muito conforto e transpiração para os pés. Já a palmilha é feita de material macio. A linha Flight é leveza para ir mais longe, isso porque o solado conta com a nossa tecnologia LEVITECH, deixando o calçado superleve, pesando menos de 250 gramas por pé, que proporciona maior leveza e conforto ao caminhar. Além de tudo isso alguns modelos da linha contam com o sistema Calce Fácil, com cadarços de elástico, ou elásticos nas laterais, que dão muita praticidade na hora de calçar e não precisam ser amarrados.",
+      "blockClass": "description-header-seo"
+    }
+  },
+  "flex-layout.col#filter-section": {
+    "children": [
+      "flex-layout.row#filters-block",
+      "experimental__visibility-layout#search-seo",
+      "flex-layout.row#product"
+    ],
+    "props": {
+      "blockClass": "filter-section"
+    }
+  },
+  "flex-layout.row#filters-block": {
+    "props": {
+      "blockClass": "filters-block-left"
+    },
+    "children": [
+      "custom-filter",
+      "search-title.v2"
+    ]
+  },
+  "flex-layout.row#bloco-links-search": {
+    "children": [
+      "link.product#product-masculino",
+      "link.product#product-feminino",
+      "link.product#product-infantil"
+    ],
+    "props": {
+      "blockClass": "container-link-product"
+    }
+  },
+  "experimental__visibility-layout#search-seo": {
+    "title": "Menu link (On/Off)",
+    "props": {
+      "visible": false
+    },
+    "children": [
+      "flex-layout.row#bloco-links-search"
+    ]
+  },
+  "link.product#product-masculino": {
+    "props": {
+      "href": "/{slug}/p",
+      "label": "Masculino",
+      "blockClass": "link-submenu"
+    }
+  },
+  "link.product#product-feminino": {
+    "props": {
+      "href": "/{slug}/p",
+      "label": "Feminino",
+      "blockClass": "link-submenu"
+    }
+  },
+  "link.product#product-infantil": {
+    "props": {
+      "href": "/{slug}/p",
+      "label": "Infantil",
+      "blockClass": "link-submenu"
+    }
+  },
+  "flex-layout.row#product": {
+    "props": {
+      "blockClass": "container-product"
+    },
+    "children": [
+      "order-by.v2"
+    ]
+  },
+  "total-products.v2": {
+    "props": {
+      "blockClass": "total-products"
+    }
+  },
+  // "drawer#search-filter": {
+  //     "children": [
+  //         "filter-navigator.v3"
+  //     ],
+  //     "props": {
+  //         "orientation": "vertical",
+  //         "blockClass": "filter-section"
+  //     },
+  //     "blocks": [
+  //         "drawer-trigger#filter-section"
+  //     ]
+  // },
+  "drawer-trigger#filter-section": {
+    "props": {
+      "blockClass": "filter-section"
+    },
+    "children": [
+      "rich-text#filter-section"
+    ]
+  },
+  "rich-text#filter-section": {
+    "props": {
+      "text": "Filtrar por",
+      "blockClass": "filter-section"
+    }
+  },
+  // Mobile
+  "flex-layout.row#filter-mobile": {
+    "props": {
+      "blockClass": "filter"
+    },
+    "children": [
+      "flex-layout.row#filter-2",
+      "responsive-layout.mobile#background-category",
+      "responsive-layout.mobile#header-seo",
+      "experimental__visibility-layout#search-seo",
+      "search-title.v2",
+      "flex-layout.row#filter-1"
+    ]
+  },
+  "responsive-layout.mobile#header-seo": {
+     "title": "Mobile container header seo",
+    "children": [
+      "experimental__visibility-layout#text-header-seo"
+    ],
+    "props": {
+      "blockClass": "responsive-header-seo"
+    }
+  },
+  "flex-layout.row#filter-1": {
+    "props": {
+      "blockClass": "filter-1",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#filter-mobile",
+      "flex-layout.col#divisor",
+      "flex-layout.col#orderby"
+    ]
+  },
+  "flex-layout.row#filter-2": {
+    "props": {
+      "blockClass": "filter-1",
+      "colSizing": "auto"
+    },
+    "children": [
+      "breadcrumb.search",
+      "total-products.v2",
+      "search-layout-switcher"
+    ]
+  },
+  "breadcrumb.search": {
+    "props": {
+      "showOnMobile": true,
+      "blockClass": "breadcrumb"
+    }
+  },
+  "flex-layout.col#divisor": {
+    "props": {
+      "blockClass": "divisor"
+    }
+  },
+  "flex-layout.col#filter-mobile": {
+    "children": [
+      "filter-navigator.v3"
+    ],
+    "props": {
+      "blockClass": "filterCol"
+    }
+  },
+  "filter-navigator.v3": {
+    "blocks": [
+      "sidebar-close-button"
+    ],
+    "props": {
+      "blockClass": "horizontal",
+      "openFiltersMode": "one",
+      "scrollToTop": "none",
+      "initiallyCollapsed": false,
+      "closeOnOutsideClick": false,
+      "navigationTypeOnMobile": "collapsible",
+      "showClearAllFiltersOnDesktop": false,
+      "sidebar-close-button": true,
+      "layout": "phone"
+    }
+  },
+  "flex-layout.col#orderby": {
+    "children": [
+      "order-by.v2"
+    ],
+    "props": {
+      "blockClass": "orderByCol"
+    }
+  },
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
+    }
+  }
+}

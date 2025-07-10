@@ -1,0 +1,88 @@
+.formTitle {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24.46px;
+}
+
+.optionsListItem .button :global(.vtex-button) {
+    background: rgba(3, 78, 161, 1);
+    border-radius: 5px;
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.68px;
+    color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(3, 78, 161, 1);
+}
+
+.optionsListItem .emailPasswordOptionBtn :global(.vtex-button),
+.optionsListItem .googleOptionBtn :global(.vtex-button),
+.optionsListItem .facebookOptionBtn :global(.vtex-button) {
+    background: rgba(255, 255, 255, 0.9);
+    color: rgba(3, 78, 161, 1);
+    border: 1px solid rgba(3, 78, 161, 1);
+}
+
+.optionsListItem .oauthLabel {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.68px;
+}
+
+:global(.vtex-store-components-3-x-productDescriptionText) div {
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+
+.box:hover {
+    visibility: visible;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productSpecificationValue) [data-specification-value="Amortech"] {
+    font-size: 0;
+    margin-bottom: -20px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productSpecificationValue) [data-specification-value="Amortech"]::before {
+    width: 70px;
+    content: "";
+    background-image: url(/arquivos/tech-logo-1.png);
+    height: 55px;
+    display: flex;
+    background-repeat: no-repeat;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productSpecificationValue) [data-specification-value="Levitech"] {
+    font-size: 0;
+    margin-bottom: -20px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productSpecificationValue) [data-specification-value="Levitech"]::before {
+    width: 70px;
+    content: "";
+    background-image: url(/arquivos/tech-logo-7.png);
+    height: 55px;
+    display: flex;
+    background-repeat: no-repeat;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productSpecificationValue) [data-specification-value="Nitro P"]::before {
+    width: 160px;
+    content: "";
+    background-image: url(/arquivos/Linha-Nitro-P.png);
+    height: 100px;
+    display: flex;
+    background-repeat: no-repeat;
+    margin-top: -60px;
+    background-size: cover;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productSpecificationValue) [data-specification-value="Nitro P"] {
+    font-size: 0;
+    margin-bottom: -20px;
+}

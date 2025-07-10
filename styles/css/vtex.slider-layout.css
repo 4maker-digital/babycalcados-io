@@ -1,0 +1,91 @@
+.caretIcon--carousel,
+.sliderArrows--tech-carousel {
+  color: #034EA1;
+}
+
+.paginationDotsContainer--carousel {
+  bottom: 20px;
+}
+
+.paginationDot--carousel {
+  background: #E9ECEF;
+}
+
+.paginationDot--isActive {
+  background: #034EA1;
+}
+
+.sliderLayoutContainer--carousel-single-mobile {
+  margin: 40px 0;
+}
+
+.slideChildrenContainer--tech-carousel :global(.vtex-flex-layout-0-x-flexCol) {
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.slideChildrenContainer--tech-carousel :global(.vtex-flex-layout-0-x-flexColChild) {
+  height: auto !important;
+}
+
+.sliderLeftArrow--tech-carousel {
+  left: -5%;
+}
+
+.sliderRightArrow--tech-carousel {
+  right: -5%;
+}
+
+.sliderLayoutContainer--shelf .sliderLeftArrow--shelf {
+  background: transparent;
+  position: absolute;
+  top: -46px;
+  right: 35px;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-size: 100%;
+  left: inherit;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNi40NzA5IDQuMzU5MTRDMTYuNTMzIDQuNDIxMDYgMTYuNTgyMiA0LjQ5NDYxIDE2LjYxNTggNC41NzU2QzE2LjY0OTQgNC42NTY1OCAxNi42NjY3IDQuNzQzNCAxNi42NjY3IDQuODMxMDhDMTYuNjY2NyA0LjkxODc2IDE2LjY0OTQgNS4wMDU1OCAxNi42MTU4IDUuMDg2NTZDMTYuNTgyMiA1LjE2NzU1IDE2LjUzMyA1LjI0MTEgMTYuNDcwOSA1LjMwMzAyTDguOTQzNDkgMTIuODMwMUwxNi40NzA5IDIwLjM1NzNDMTYuNTk2IDIwLjQ4MjQgMTYuNjY2NCAyMC42NTIyIDE2LjY2NjQgMjAuODI5MkMxNi42NjY0IDIxLjAwNjIgMTYuNTk2IDIxLjE3NiAxNi40NzA5IDIxLjMwMTFDMTYuMzQ1NyAyMS40MjYzIDE2LjE3NiAyMS40OTY2IDE1Ljk5OSAyMS40OTY2QzE1LjgyMiAyMS40OTY2IDE1LjY1MjMgMjEuNDI2MyAxNS41MjcxIDIxLjMwMTFMNy41MjkxOCAxMy4zMDIxQzcuNDY3MTEgMTMuMjQwMiA3LjQxNzg3IDEzLjE2NjYgNy4zODQyNyAxMy4wODU2QzcuMzUwNjcgMTMuMDA0NiA3LjMzMzM3IDEyLjkxNzggNy4zMzMzNyAxMi44MzAxQzcuMzMzMzcgMTIuNzQyNSA3LjM1MDY3IDEyLjY1NTYgNy4zODQyNyAxMi41NzQ3QzcuNDE3ODcgMTIuNDkzNyA3LjQ2NzExIDEyLjQyMDEgNy41MjkxOCAxMi4zNTgyTDE1LjUyNzEgNC4zNTkxNEMxNS41ODkxIDQuMjk3MDYgMTUuNjYyNiA0LjI0NzgxIDE1Ljc0MzYgNC4yMTQyQzE1LjgyNDUgNC4xODA2IDE1LjkxMTQgNC4xNjMzIDE1Ljk5OSA0LjE2MzNDMTYuMDg2NyA0LjE2MzMgMTYuMTczNSA0LjE4MDYgMTYuMjU0NSA0LjIxNDJDMTYuMzM1NCA0LjI0NzgxIDE2LjQwOSA0LjI5NzA2IDE2LjQ3MDkgNC4zNTkxNFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==)  !important;
+  padding: 0;
+  margin: 0;
+}
+
+.sliderLayoutContainer--shelf .sliderLeftArrow--shelf .caretIcon {
+  display: none !important;
+}
+
+.sliderLayoutContainer--shelf .sliderRightArrow--shelf {
+  background: transparent;
+  position: absolute;
+  top: -46px;
+  right: 0;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjUyOTE4IDQuMzU5MTRDNy41OTEwOSA0LjI5NzA2IDcuNjY0NjQgNC4yNDc4MSA3Ljc0NTYyIDQuMjE0MkM3LjgyNjU5IDQuMTgwNiA3LjkxMzM5IDQuMTYzMyA4LjAwMTA2IDQuMTYzM0M4LjA4ODczIDQuMTYzMyA4LjE3NTU0IDQuMTgwNiA4LjI1NjUxIDQuMjE0MkM4LjMzNzQ4IDQuMjQ3ODEgOC40MTEwMyA0LjI5NzA2IDguNDcyOTQgNC4zNTkxNEwxNi40NzA5IDEyLjM1ODJDMTYuNTMzIDEyLjQyMDEgMTYuNTgyMiAxMi40OTM3IDE2LjYxNTggMTIuNTc0N0MxNi42NDk0IDEyLjY1NTYgMTYuNjY2NyAxMi43NDI1IDE2LjY2NjcgMTIuODMwMUMxNi42NjY3IDEyLjkxNzggMTYuNjQ5NCAxMy4wMDQ2IDE2LjYxNTggMTMuMDg1NkMxNi41ODIyIDEzLjE2NjYgMTYuNTMzIDEzLjI0MDIgMTYuNDcwOSAxMy4zMDIxTDguNDcyOTQgMjEuMzAxMUM4LjM0Nzc5IDIxLjQyNjMgOC4xNzgwNSAyMS40OTY2IDguMDAxMDYgMjEuNDk2NkM3LjgyNDA3IDIxLjQ5NjYgNy42NTQzMyAyMS40MjYzIDcuNTI5MTggMjEuMzAxMUM3LjQwNDAzIDIxLjE3NiA3LjMzMzcyIDIxLjAwNjIgNy4zMzM3MiAyMC44MjkyQzcuMzMzNzIgMjAuNjUyMiA3LjQwNDAzIDIwLjQ4MjQgNy41MjkxOCAyMC4zNTczTDE1LjA1NjYgMTIuODMwMUw3LjUyOTE4IDUuMzAzMDJDNy40NjcxMSA1LjI0MTEgNy40MTc4NyA1LjE2NzU1IDcuMzg0MjcgNS4wODY1NkM3LjM1MDY3IDUuMDA1NTggNy4zMzMzNyA0LjkxODc2IDcuMzMzMzcgNC44MzEwOEM3LjMzMzM3IDQuNzQzNCA3LjM1MDY3IDQuNjU2NTggNy4zODQyNyA0LjU3NTZDNy40MTc4NyA0LjQ5NDYxIDcuNDY3MTEgNC40MjEwNiA3LjUyOTE4IDQuMzU5MTRaIiBmaWxsPSIjMjEyNTI5Ii8+Cjwvc3ZnPgo=) !important;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.sliderLayoutContainer--shelf .sliderRightArrow--shelf .caretIcon {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .sliderLayoutContainer--shelf .sliderLeftArrow--shelf {
+    left: -10px;
+    top: 20%;
+  }
+
+  .sliderLayoutContainer--shelf .sliderRightArrow--shelf {
+    right: -10px;
+    top: 20%;
+  }
+}

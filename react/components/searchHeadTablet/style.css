@@ -1,0 +1,49 @@
+/*
+ User: DESKTOP-U09NUDL 
+ Date 02/05/2024 08:02:35 GMT-0300
+*/
+:global(.searchHead) img {
+    display: block;
+  }
+  :global(.searchHead) p {
+    font-family: Barlow, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    margin: 15px 0;
+  }
+  @media (max-width: 1024px) {
+    :global(.searchHead) p {
+      font-size: 14px;
+      line-height: 17px;
+      margin: 30px 0 0px;
+    }
+  }
+  :global(.searchHead) h2 {
+    font-family: Barlow, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: #888b8d;
+    margin: 0px 0px 16px;
+    text-align: center;
+    font-weight: 400;
+  }
+  :global(.searchHead) h2 b,
+  :global(.searchHead) h2 strong {
+    font-weight: 500;
+  }
+  @media (max-width: 1024px) {
+    :global(.searchHead) h2 {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0px 0px 30px;
+    }
+  }
+  @media (min-width: 1124px) {
+    :global(.searchHead):global(.removeTitle) + div {
+      display: none;
+    }
+    :global(.searchHead):global(.removeTitle) {
+      margin-bottom: 50px;
+    }
+  }

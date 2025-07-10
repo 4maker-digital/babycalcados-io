@@ -1,0 +1,867 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+.flexRowContent--mainInfos {
+  padding: 0;
+  margin: 0;
+}
+
+.flexRow--grid-banners1 {
+  margin: 50px 0;
+}
+
+.flexRow--grid-banners1 :global(.vtex-store-components-3-x-imageElement),
+.flexRow--grid-banners2 :global(.vtex-store-components-3-x-imageElement) {
+  border-radius: 5px;
+}
+
+.flexRowContent--grid-banners2 {
+  margin: 20px 0;
+}
+
+.flexRow--container-tech {
+  background: #F8F9FA;
+  padding: 30px 0;
+}
+
+.flexRowContent--container-bloco-header-seo {
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.flexRowContent--container-imagens-header-seo{
+  gap: 20px;
+  display: flex;
+}
+
+.flexColChild--container-tech {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.flexRow--grid-tech-banners .flexCol {
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.flexRow--grid-tech-banners .flexCol .flexColChild {
+  height: auto !important;
+}
+
+.flexRow--container-rate {
+  background: #DEE2E6;
+  padding: 40px 0;
+  margin: 30px 0;
+}
+
+.flexRow--seo-text {
+  padding: 50px 0;
+}
+
+.flexRow--footer__menu {
+  background: #F8F9FA;
+  padding: 40px .25rem;
+}
+
+.flexRow--credits {
+  background: #E9ECEF;
+  padding: 10px .25rem;
+}
+
+.flexRowContent--footer__credits .stretchChildrenWidth {
+  justify-content: flex-end;
+}
+
+.flexRow--footer-bottom {
+  background: #F8F9FA;
+  padding: 40px;
+}
+
+.description-item {
+  margin: 0 0 15px;
+  color: #212529;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.63px;
+}
+
+.description-strong {
+  margin: 0;
+  color: #034EA1;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.63px;
+}
+
+.flexRow--svg-seo-category {
+  margin-left: 10px;
+}
+
+.flexCol--social-logo .flexRowContent {
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.flexCol--social-logo .flexRowContent .stretchChildrenWidth {
+  width: auto !important;
+}
+
+.flexColChild--footer__left :global(.vtex-menu-2-x-styledLink--highlight) {
+  margin: 0;
+}
+
+.flexColChild--footer__left :global(.vtex-menu-2-x-styledLink),
+:global(.vtex-menu-2-x-styledLinkContent--menu-institucional) {
+  color: #034EA1;
+  font-size: 12px;
+}
+
+.flexCol--container-number-search {
+  gap: 30px;
+}
+
+.flexColChild--container-number-search :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel) :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel) {
+  margin-top: 5px;
+}
+
+.flexColChild--container-number-search :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel) :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel) :global(.vtex-slider-layout-0-x-sliderTrack--carousel) {
+  gap: 2px;
+}
+
+.flexColChild--footer__left :global(.vtex-menu-2-x-styledLink) :global(.vtex-menu-2-x-styledLinkContent),
+:global(.vtex-menu-2-x-styledLinkContent--menu-institucional) :global(.vtex-menu-2-x-styledLinkContent) {
+  white-space: normal;
+}
+
+.flexRowContent--footer__social {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.flexRowContent--footer__social .stretchChildrenWidth {
+  width: 100% !important;
+}
+
+.flexRowContent--footer__credits {
+  height: 100%;
+  align-items: center;
+}
+
+.flexRow--social-logo {
+  margin-right: 40px;
+}
+
+.flexRow--container-shelf :global(.vtex-store-components-3-x-container),
+.flexRow--container-shelf-landing-1 :global(.vtex-store-components-3-x-container) {
+  width: 100%;
+  max-width: 96rem;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.flexRow--container-shelf :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf),
+.flexRow--container-shelf-landing-1 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
+  padding: 0 !important;
+}
+
+.flexRow--breadcrumb {
+  padding: 12px 0;
+  width: 100%;
+}
+
+.flexRowContent--breadcrumb {
+  width: 100%;
+}
+
+.flexRow--about {
+  padding: 0 0.5rem;
+}
+
+.flexColChild--productDesk-content-col-buyBox :global(.vtex-button),
+.flexRow--addMobile :global(.vtex-button) {
+  background: #00D191;
+  color: #fff;
+  font-family: Commissioner;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.57px;
+  border: none;
+  padding: 15px 0;
+}
+
+
+
+.flexRow--shipping-simulator {
+  position: relative;
+  padding: 10px 20px;
+  border: 1px solid #DEE2E6;
+}
+
+.flexRowContent--shipping-simulator .stretchChildrenWidth:first-child {
+  flex-direction: column;
+}
+
+.flexRowContent--productSpecificationGroup {
+  background: #E9ECEF;
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.flexColChild--productSpecificationName {
+  align-items: center;
+  display: flex;
+}
+
+.flexColChild--productSpecificationValue {
+  display: flex;
+}
+
+.flexRowContent--productDesk-content-description {
+  gap: 10px;
+}
+
+.flexRowContent--productSpecificationGroupName :global(.vtex-product-specifications-1-x-groupName) {
+  display: none;
+}
+
+.flexRow--productSpecification .stretchChildrenWidth {
+  background: #fff;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  padding: 14px 10px;
+}
+
+:global(.vtex-product-specifications-1-x-specificationName),
+.flexColChild--productSpecificationValue {
+  color: #212529;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.63px;
+}
+
+.flexCol--product-main-info :global(.vtex-product-price-1-x-savings--horizontal) {
+  margin-top: 45px;
+  display: block;
+  position: relative;
+  margin-left: 0;
+}
+
+.flexCol--product-main-info :global(.vtex-product-price-1-x-savings--horizontal)::before {
+  content: "Referência:";
+  font-family: Commissioner;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12.23px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: #6C757D;
+}
+
+.flexRow--four-banners {
+  margin: 30px 0;
+}
+
+.flexRowContent--four-banners .stretchChildrenWidth {
+  gap: 25px;
+}
+
+.flexRow--container-shelf-landing-1 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf),
+.flexRow--container-shelf-landing-1 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf) {
+  top: -115px;
+}
+
+.flexRow--container-shelf-landing-1 .flexRowContent--ignore-arrow :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf),
+.flexRow--container-shelf-landing-1 .flexRowContent--ignore-arrow :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf) {
+  top: -46px;
+}
+
+.flexRow--help {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  position: fixed;
+  right: 0;
+  top: 15rem;
+  z-index: 998;
+  transition: .4s ease;
+  transform: translate(101%);
+}
+
+.flexRow--help-button {
+  position: absolute;
+  height: 5.625rem;
+  top: 0;
+  left: .0625rem;
+  border: none;
+  cursor: pointer;
+  background-color: #183249;
+  color: #fff;
+  padding: 0;
+  transition: .4s ease;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  display: none;
+}
+
+.flexRow--help-button-text {
+  transform: rotate(-90deg);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  text-align: center;
+}
+
+.flexCol--container-number-search {
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+
+
+.flexRow--help-button:hover .flexRow--help__cont {
+  display: block;
+}
+
+.flexRow--help__cont {
+  display: none;
+  position: relative;
+  transition: 1s ease-in-out;
+}
+
+.flexRow--help__content {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 250px;
+  position: absolute;
+  right: -20px;
+  top: -55px;
+}
+
+.flexRow--help__content .flexRow--info-header-itens-item {
+  margin: 0;
+  border-bottom: 1px solid #fff;
+}
+
+.flexRowContent--grid-tech-banners {
+  justify-content: space-between;
+}
+
+.flexRowContent--customDescription {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 50px 0;
+}
+
+.flexRowContent--desc {
+  align-items: flex-start;
+  gap: 20px;
+  margin: 50px 0;
+}
+
+.flexRowContent--desc .stretchChildrenWidth {
+  flex-direction: column;
+}
+
+.flexRowContent--desc :global(.vtex-disclosure-layout-1-x-trigger--hidden) {
+  background: #E9ECEF;
+  border: 0;
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.flexRowContent--desc :global(.vtex-disclosure-layout-1-x-trigger--visible) {
+  background: #E9ECEF;
+  border: 0;
+  border-radius: 5px 5px 0 0;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.flexRowContent--desc :global(.vtex-disclosure-layout-1-x-trigger) :global(.vtex-rich-text-0-x-paragraph) {
+  color: #212529;
+  font-family: Commissioner;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.46px;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexCol--container-number-search {
+  align-items: center;
+  background: #F8F9FA;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.flexRowContent--desc :global(.vtex-disclosure-layout-1-x-trigger--visible) :global(.vtex-rich-text-0-x-paragraph)::after {
+  content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.5267 7.2098C11.5887 7.1433 11.6622 7.09053 11.7432 7.05453C11.8242 7.01853 11.911 7 11.9987 7C12.0864 7 12.1732 7.01853 12.2542 7.05453C12.3352 7.09053 12.4087 7.1433 12.4707 7.2098L20.4699 15.7794C20.595 15.9135 20.6654 16.0953 20.6654 16.285C20.6654 16.4746 20.595 16.6565 20.4699 16.7906C20.3447 16.9247 20.1749 17 19.9979 17C19.8209 17 19.6511 16.9247 19.526 16.7906L11.9987 8.72519L4.47143 16.7906C4.34626 16.9247 4.17649 17 3.99948 17C3.82246 17 3.65269 16.9247 3.52752 16.7906C3.40235 16.6565 3.33203 16.4746 3.33203 16.285C3.33203 16.0953 3.40235 15.9135 3.52752 15.7794L11.5267 7.2098Z' fill='%23034EA1'/%3E%3C/svg%3E%0A");
+}
+
+.flexRowContent--desc :global(.vtex-disclosure-layout-1-x-trigger--hidden) :global(.vtex-rich-text-0-x-paragraph)::after {
+  content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' style=' transform: rotate(180deg);%0A'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.5267 7.2098C11.5887 7.1433 11.6622 7.09053 11.7432 7.05453C11.8242 7.01853 11.911 7 11.9987 7C12.0864 7 12.1732 7.01853 12.2542 7.05453C12.3352 7.09053 12.4087 7.1433 12.4707 7.2098L20.4699 15.7794C20.595 15.9135 20.6654 16.0953 20.6654 16.285C20.6654 16.4746 20.595 16.6565 20.4699 16.7906C20.3447 16.9247 20.1749 17 19.9979 17C19.8209 17 19.6511 16.9247 19.526 16.7906L11.9987 8.72519L4.47143 16.7906C4.34626 16.9247 4.17649 17 3.99948 17C3.82246 17 3.65269 16.9247 3.52752 16.7906C3.40235 16.6565 3.33203 16.4746 3.33203 16.285C3.33203 16.0953 3.40235 15.9135 3.52752 15.7794L11.5267 7.2098Z' fill='%23034EA1'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.flexRow--sports-landing {
+  background: #DADADA;
+  padding: 35px 0;
+  margin: 20px 0;
+}
+
+.flexRowContent--sports-shelfs-landing :global(.vtex-store-components-3-x-bannersCustom-item) {
+  width: 100%;
+}
+
+.flexRow--container-shelf-sports-1 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
+  padding: 0 !important;
+}
+
+.flexRowContent--sports-shelfs-landing :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf) {
+  left: 10px;
+  right: initial;
+  top: 50%;
+  background-repeat: no-repeat !important;
+  height: 28px;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='27' viewBox='0 0 14 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.7063 0.793753C13.7994 0.886634 13.8733 0.996972 13.9237 1.11845C13.9741 1.23992 14 1.37015 14 1.50167C14 1.63319 13.9741 1.76342 13.9237 1.88489C13.8733 2.00637 13.7994 2.11671 13.7063 2.20959L2.41517 13.5003L13.7063 24.7909C13.894 24.9787 13.9995 25.2333 13.9995 25.4989C13.9995 25.7644 13.894 26.019 13.7063 26.2068C13.5186 26.3945 13.264 26.5 12.9985 26.5C12.733 26.5 12.4784 26.3945 12.2906 26.2068L0.293712 14.2082C0.200609 14.1153 0.126742 14.005 0.0763422 13.8835C0.0259421 13.762 0 13.6318 0 13.5003C0 13.3687 0.0259421 13.2385 0.0763422 13.117C0.126742 12.9956 0.200609 12.8852 0.293712 12.7923L12.2906 0.793753C12.3835 0.700638 12.4938 0.626761 12.6153 0.576354C12.7368 0.525947 12.867 0.5 12.9985 0.5C13.13 0.5 13.2602 0.525947 13.3816 0.576354C13.5031 0.626761 13.6134 0.700638 13.7063 0.793753Z' fill='%23034EA1'/%3E%3C/svg%3E%0A") !important;
+}
+
+.flexRowContent--sports-shelfs-landing :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf) {
+  right: 10px;
+  top: 50%;
+  background-repeat: no-repeat !important;
+  height: 28px;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='27' viewBox='0 0 14 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.293712 0.793753C0.38658 0.700638 0.496903 0.626761 0.618362 0.576354C0.739821 0.525947 0.87003 0.5 1.00153 0.5C1.13303 0.5 1.26324 0.525947 1.3847 0.576354C1.50616 0.626761 1.61648 0.700638 1.70935 0.793753L13.7063 12.7923C13.7994 12.8852 13.8733 12.9956 13.9237 13.117C13.9741 13.2385 14 13.3687 14 13.5003C14 13.6318 13.9741 13.762 13.9237 13.8835C13.8733 14.005 13.7994 14.1153 13.7063 14.2082L1.70935 26.2068C1.52163 26.3945 1.26702 26.5 1.00153 26.5C0.736048 26.5 0.481437 26.3945 0.293712 26.2068C0.105987 26.019 0.000523434 25.7644 0.000523434 25.4989C0.000523434 25.2333 0.105987 24.9787 0.293712 24.7909L11.5848 13.5003L0.293712 2.20959C0.200609 2.11671 0.126742 2.00637 0.0763422 1.88489C0.0259421 1.76342 0 1.63319 0 1.50167C0 1.37015 0.0259421 1.23992 0.0763422 1.11845C0.126742 0.996972 0.200609 0.886634 0.293712 0.793753Z' fill='%23034EA1'/%3E%3C/svg%3E%0A") !important;
+}
+
+.flexRowContent--sports-shelfs-landing :global(.vtex-store-components-3-x-bannersCustom),
+.flexRowContent--sports-shelfs-landing :global(.vtex-store-components-3-x-bannersCustom) :global(.vtex-store-components-3-x-bannersCustom-list),
+.flexRowContent--sports-shelfs-landing :global(.vtex-store-components-3-x-bannersCustom) :global(.vtex-store-components-3-x-bannersCustom-list) :global(.vtex-store-components-3-x-bannersCustom-item),
+.flexRowContent--sports-shelfs-landing :global(.vtex-store-components-3-x-bannersCustom) :global(.vtex-store-components-3-x-bannersCustom-list) :global(.vtex-store-components-3-x-bannersCustom-item) :global(.vtex-store-components-3-x-bannersCustom-image) {
+  height: 100%;
+  width: 100%;
+}
+
+.flexRowContent--banners-grid :global(.vtex-store-components-3-x-bannersCustom-item) {
+  width: 100%;
+}
+
+.flexRowContent--banners-insta :global(.vtex-store-components-3-x-bannersCustom-item) {
+  width: 100%;
+  height: auto;
+  margin-right: 5px;
+}
+
+.flexRow--banners-desktop.flexRow--banners-grid :global(.vtex-store-components-3-x-container) {
+  max-width: 1920px !important;
+}
+
+.flexRowContent--logo-banners .stretchChildrenWidth:first-child {
+  width: initial !important;
+  margin-right: 8px;
+}
+
+.flexCol--logo-banners .flexColChild--logo-banners {
+  height: initial !important;
+}
+
+.flexCol--logo-banners {
+  margin: auto;
+  height: initial;
+}
+
+.flexRowContent--banners-insta :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf),
+.flexRowContent--banners-tech :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
+  padding: 0 !important;
+}
+
+.flexRowContent--banners-insta :global(.vtex-slider-layout-0-x-slide--shelf),
+.flexRowContent--banners-tech :global(.vtex-slider-layout-0-x-slide--shelf) {
+  margin: 0;
+  padding: 0;
+}
+
+.flexRowContent--sports-shelfs-landing :global(.vtex-slider-layout-0-x-slide--shelf) {
+  margin-bottom: 0;
+}
+
+.flexRowContent--banners-full-sports :global(.vtex-store-components-3-x-bannersCustom-item) {
+  height: auto;
+  width: 100%;
+}
+
+.flexRow--banners-tech {
+  margin-top: 40px;
+}
+
+.flexRow--sports-shelfs-landing {
+  margin-bottom: 50px;
+}
+
+.flexRowContent--tech-shelfs-landing,
+.flexRowContent--tech-landing {
+  align-items: center;
+  margin-top: 40px;
+  position: relative;
+}
+
+.flexRowContent--tech-landing {
+  gap: 20px;
+}
+
+.flexRowContent--right {
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+
+  .flexRow--container-shelf :global(.vtex-store-components-3-x-container),
+  .flexRow--container-shelf-landing-1 :global(.vtex-store-components-3-x-container) {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flexRow--banners-tech {
+    margin: 0;
+  }
+
+  .flexRowContent--container-imagens-header-seo{
+flex-direction: column;
+}
+
+  .flexColChild--container-tech {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .flexRow--footer__menu-mobile :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+  }
+
+  .flexRow--footer__menu {
+    padding: 0;
+  }
+
+  .flexRow--container-link-product {
+    margin-top: 30px;
+  }
+
+  .flexRow--credits {
+    padding: 10px;
+  }
+
+  .flexRowContent--footer__credits .stretchChildrenWidth {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .flexCol--social-logo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexCol--social-logo .flexRowContent {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .flexRowContent--footer__social {
+    display: flex;
+    gap: 0;
+  }
+
+  .flexRow--footer__social {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 0 30px;
+  }
+
+  .flexRowContent--footer__security {
+    display: flex;
+    margin: 0 0 40px;
+  }
+
+  .flexRowContent--footer__credits {
+    height: initial;
+  }
+
+  .flexCol--footer__left {
+    gap: 40px;
+  }
+
+  .flexRow--social-logo {
+    margin: 0;
+  }
+
+  .flexRow--container-shelf-landing-1 :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+  }
+
+  .flexRow--container-shelf :global(.vtex-store-components-3-x-container),
+  .flexRow--container-shelf-landing-1 {
+    padding: 0 15px;
+  }
+
+  .flexRow--shipping-simulator {
+    margin: 15px 0 20px;
+  }
+
+  .flexRowContent--footer__menu-mobile {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .flexRowContent--footer__menu-mobile .stretchChildrenWidth {
+    width: 100% !important;
+  }
+
+  .flexRow--product-box-mobile {
+    padding: 0 15px;
+  }
+
+  .flexColChild--product-box-mobile :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
+    padding: 0 !important;
+  }
+
+  .flexRow--help__content {
+    top: -85px;
+  }
+
+  .flexRowContent--four-banners .stretchChildrenWidth {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .flexRowContent--mobile-grid .stretchChildrenWidth {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flexRow--container-shelf-landing-1 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf),
+  .flexRow--container-shelf-landing-1 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf),
+  .flexRow--container-shelf-landing-1 .flexRowContent--ignore-arrow :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf),
+  .flexRow--container-shelf-landing-1 .flexRowContent--ignore-arrow :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf) {
+    top: 20%;
+  }
+
+  .flexRowContent--customDescription {
+    flex-direction: column;
+  }
+
+  .flexRow--productDesk-content-description {
+    margin: 20px 0;
+  }
+
+  .flexRowContent--productDesk-content-description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexRowContent--desc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .flexRowContent--banners-grid :global(.vtex-store-components-3-x-bannersCustom-list) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 15px;
+  }
+
+  .flexRowContent--landing :global(.vtex-store-components-3-x-bannersCustom-list) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15px;
+  }
+
+  .flexRow--stars :global(.vtex-store-components-3-x-container) {
+    margin: 0 0 30px !important;
+  }
+
+  .flexRow--benefits {
+    padding: 0 15px;
+  }
+
+  .flexRowContent--logo-banners {
+    display: flex;
+    padding: 0 15px;
+    justify-content: center;
+  }
+
+  .flexRowContent--logo-banners .stretchChildrenWidth {
+    width: initial !important;
+  }
+
+  .flexRow--shelf-full,
+  .flexRow--banners-tech,
+  .flexRow--banners-insta {
+    padding: 0 15px;
+  }
+
+  .flexRow--container-shelf-sports-1 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf),
+  .flexRowContent--sports-shelfs-landing :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-product-summary-2-x-container) {
+    padding: 0 !important;
+  }
+
+  .flexRowContent--sports-shelfs-landing :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
+    padding: 0 20px !important;
+  }
+
+  .flexRowContent--sports-shelfs-landing :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf) {
+    right: 0;
+  }
+
+  .flexRow--banners-insta :global(.vtex-slider-layout-0-x-sliderArrows) {
+    display: none !important;
+  }
+
+  .flexRow--banners-tech :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf) {
+    left: -5px;
+    background-repeat: no-repeat !important;
+    height: 28px;
+    top: 30%;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='27' viewBox='0 0 14 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.7063 0.793753C13.7994 0.886634 13.8733 0.996972 13.9237 1.11845C13.9741 1.23992 14 1.37015 14 1.50167C14 1.63319 13.9741 1.76342 13.9237 1.88489C13.8733 2.00637 13.7994 2.11671 13.7063 2.20959L2.41517 13.5003L13.7063 24.7909C13.894 24.9787 13.9995 25.2333 13.9995 25.4989C13.9995 25.7644 13.894 26.019 13.7063 26.2068C13.5186 26.3945 13.264 26.5 12.9985 26.5C12.733 26.5 12.4784 26.3945 12.2906 26.2068L0.293712 14.2082C0.200609 14.1153 0.126742 14.005 0.0763422 13.8835C0.0259421 13.762 0 13.6318 0 13.5003C0 13.3687 0.0259421 13.2385 0.0763422 13.117C0.126742 12.9956 0.200609 12.8852 0.293712 12.7923L12.2906 0.793753C12.3835 0.700638 12.4938 0.626761 12.6153 0.576354C12.7368 0.525947 12.867 0.5 12.9985 0.5C13.13 0.5 13.2602 0.525947 13.3816 0.576354C13.5031 0.626761 13.6134 0.700638 13.7063 0.793753Z' fill='%23034EA1'/%3E%3C/svg%3E%0A") !important;
+  }
+
+  .flexRow--banners-tech :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf) {
+    right: -5px;
+    background-repeat: no-repeat !important;
+    height: 28px;
+    top: 30%;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='27' viewBox='0 0 14 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.293712 0.793753C0.38658 0.700638 0.496903 0.626761 0.618362 0.576354C0.739821 0.525947 0.87003 0.5 1.00153 0.5C1.13303 0.5 1.26324 0.525947 1.3847 0.576354C1.50616 0.626761 1.61648 0.700638 1.70935 0.793753L13.7063 12.7923C13.7994 12.8852 13.8733 12.9956 13.9237 13.117C13.9741 13.2385 14 13.3687 14 13.5003C14 13.6318 13.9741 13.762 13.9237 13.8835C13.8733 14.005 13.7994 14.1153 13.7063 14.2082L1.70935 26.2068C1.52163 26.3945 1.26702 26.5 1.00153 26.5C0.736048 26.5 0.481437 26.3945 0.293712 26.2068C0.105987 26.019 0.000523434 25.7644 0.000523434 25.4989C0.000523434 25.2333 0.105987 24.9787 0.293712 24.7909L11.5848 13.5003L0.293712 2.20959C0.200609 2.11671 0.126742 2.00637 0.0763422 1.88489C0.0259421 1.76342 0 1.63319 0 1.50167C0 1.37015 0.0259421 1.23992 0.0763422 1.11845C0.126742 0.996972 0.200609 0.886634 0.293712 0.793753Z' fill='%23034EA1'/%3E%3C/svg%3E%0A") !important;
+  }
+
+  .flexRow--tech-landing,
+  .flexRow--tech-shelfs-landing {
+    margin: 0 15px;
+  }
+
+  .flexRowContent--tech-shelfs-landing {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  .flexRow--filter {
+    padding: 0 15px;
+  }
+
+  .flexRowContent--filter {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .flexRowContent--filter .stretchChildrenWidth {
+    width: 100% !important;
+  }
+
+  .flexRowContent--filter .searchHead-mobile {
+    display: none !important;
+  }
+
+  .flexRow--filter :global(.vtex-store-components-3-x-imageElement) {
+    width: 100% !important;
+  }
+
+  :global(.vtex-search-result-3-x-galleryItem) {
+    padding: 0 15px;
+    flex-basis: 33% !important;
+    max-width: 33% !important;
+  }
+
+  :global(.vtex-search-result-3-x-orderByButton) {
+    width: 100%;
+    margin-top: 0 !important;
+  }
+
+  .flexRow--product-box-mobile {
+    display: none;
+  }
+
+  .flexRow--contact-container {
+    padding: 0 10px;
+    margin-bottom: 80px;
+  }
+}
+
+.flexRowContent--menu-tech {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #F8F9FA;
+}
+
+.flexRowContent--menu-tech .stretchChildrenWidth {
+  width: auto !important;
+}
+
+.stretchChildrenWidth:last-child :global(.vtex-store-link-0-x-label--link)::after {
+  display: none;
+}
+
+.flexRow--tech-landing {
+  scroll-behavior: smooth;
+}
+
+.flexCol--container-number-search :global(.vtex-menu-2-x-search-shelf) {
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .flexRow--tech-container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .flexRowContent--menu-tech {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .flexRow--menu-tech {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 10px 5px;
+  }
+
+  :global(.vtex-render__container-id-menu-tech) {
+    margin: 0 15px;
+  }
+}

@@ -1,0 +1,530 @@
+{
+  "vtex.menu@2.x:menu#footer-help": {
+    "title": "Footer - Menu - Coluna 1",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__menu"
+    },
+    "children": [
+      "menu-item#footer-help-col",
+      "flex-layout.row#footer-help-row-1"
+    ]
+  },
+  "flex-layout.row#footer-help-row-1": {
+    "children": [
+      "flex-layout.col#footer-help-col-1"
+    ],
+    "props": {
+      "blockClass": "footer__double"
+    }
+  },
+  "menu-item#footer-help-col": {
+    "props": {
+      "id": "menu-item-help-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Contato",
+        "text": "Contato"
+      }
+    }
+  },
+  "flex-layout.col#footer-help-col-1": {
+    "children": [
+      "menu-item#footer-help-col-1",
+      "menu-item#footer-help-col-4",
+      "menu-item#footer-help-col-5",
+      "menu-item#footer-help-col-6",
+      "menu-item#footer-help-col-7",
+      "menu-item#footer-help-col-8"
+    ],
+    "props": {
+      "blockClass": "footer__left"
+    }
+  },
+  "menu-item#footer-help-col-1": {
+    "props": {
+      "id": "menu-item-help-col-1",
+      "type": "custom",
+      "iconId": "custom-whatsapp",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "(19) 3736-8530",
+        "text": "(19) 3736-8530"
+      }
+    }
+  },
+  "menu-item#footer-help-col-4": {
+    "props": {
+      "id": "menu-item-help-col-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "De 2ª à 5ª feira das 07h00",
+        "text": "De 2ª à 5ª feira das 07h00"
+      }
+    }
+  },
+  "menu-item#footer-help-col-5": {
+    "props": {
+      "id": "menu-item-help-col-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "às 11h20 e das 13h00 às 17h20.",
+        "text": "às 11h20 e das 13h00 às 17h20."
+      }
+    }
+  },
+  "menu-item#footer-help-col-6": {
+    "props": {
+      "id": "menu-item-help-col-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "As 6ª das 07h00 às 11h20",
+        "text": "As 6ª das 07h00 às 11h20"
+      }
+    }
+  },
+  "menu-item#footer-help-col-7": {
+    "props": {
+      "id": "menu-item-help-col-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "e das 13h00 às 16h20",
+        "text": "e das 13h00 às 16h20"
+      }
+    }
+  },
+  "menu-item#footer-help-col-8": {
+    "props": {
+      "id": "menu-item-help-chat",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Chat",
+        "text": "Chat"
+      }
+    }
+  },
+
+  //  COL 1
+  "vtex.menu@2.x:menu#footer-links": {
+    "title": "Footer - Menu - Coluna 1",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__menu",
+      "width": "15%"
+    },
+    "children": [
+      "menu-item#footer-links-col-1",
+      "flex-layout.row#footer-links-row-1"
+    ]
+  },
+  "flex-layout.row#footer-links-row-1": {
+    "children": [
+      "flex-layout.col#footer-links-col-1"
+    ],
+    "props": {
+      "blockClass": "footer__double"
+    }
+  },
+  "flex-layout.col#footer-links-col-1": {
+    "children": [
+      "menu-item#footer-categories-col-1",
+      "menu-item#footer-categories-col-2",
+      "menu-item#footer-categories-col-3",
+      "menu-item#footer-categories-col-4",
+      "menu-item#footer-categories-col-5"
+    ],
+    "props": {
+      "blockClass": "footer__left"
+    }
+  },
+  "menu-item#footer-links-col-1": {
+    "props": {
+      "id": "menu-item-links-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Institucional",
+        "text": "Institucional"
+      }
+    }
+  },
+  "menu-item#footer-categories-col-1": {
+    "props": {
+      "id": "menu-item-categories-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["menu-institucional", "menu-email"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/sobre",
+        "noFollow": false,
+        "tagTitle": "Sobre nós",
+        "text": "Sobre nós"
+      }
+    }
+  },
+  "menu-item#footer-categories-col-2": {
+    "props": {
+      "id": "menu-item-categories-col-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["menu-institucional", "menu-email"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/lojas",
+        "noFollow": false,
+        "tagTitle": "Nossas Lojas",
+        "text": "Nossas Lojas"
+      }
+    }
+  },
+  "menu-item#footer-categories-col-3": {
+    "props": {
+      "id": "menu-item-categories-col-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["menu-institucional", "menu-email"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/central-de-ajuda/fale-conosco",
+        "noFollow": false,
+        "tagTitle": "Fale conosco",
+        "text": "Fale conosco"
+      }
+    }
+  },
+
+  "menu-item#footer-categories-col-4": {
+    "props": {
+      "id": "menu-item-categories-col-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["menu-institucional", "menu-email"],
+      "itemProps": {
+        "type": "external",
+        "href": "https://franquias.td2154.com.br/",
+        "noFollow": false,
+        "tagTitle": "Seja um franqueado",
+        "text": "Seja um franqueado"
+      }
+    }
+  },
+  "menu-item#footer-categories-col-5": {
+    "props": {
+      "id": "menu-item-categories-col-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["menu-institucional", "menu-email"],
+      "itemProps": {
+        "type": "external",
+        "href": "https://lp.rlkpro.com/l/pCjN68ABF1183",
+        "noFollow": false,
+        "tagTitle": "Fashion Club",
+        "text": "Fashion Club"
+      }
+    }
+  },
+
+  //  COL 2
+  "vtex.menu@2.x:menu#footer-links-2": {
+    "title": "Footer - Menu - Coluna 2",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__menu",
+      "width": "15%"
+    },
+    "children": [
+      "menu-item#footer-links-2-col-1",
+      "menu-item#footer-categories-2-col-0",
+      "menu-item#footer-categories-2-col-1",
+      "menu-item#footer-categories-2-col-2",
+      "menu-item#footer-categories-2-col-4",
+      "menu-item#footer-categories-2-col-5"
+    ]
+  },
+  "menu-item#footer-links-2-col-1": {
+    "props": {
+      "id": "menu-item-links-2-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/politicas-e-termos",
+        "noFollow": false,
+        "tagTitle": "Políticas e termos",
+        "text": "Políticas e termos"
+      }
+    }
+  },
+  "menu-item#footer-categories-2-col-0": {
+    "props": {
+      "id": "menu-item-categories-2-col-0",
+      "blockClass": ["menu-institucional", "menu-email"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/politica-de-envio",
+        "noFollow": false,
+        "tagTitle": "Política de envio",
+        "text": "Política de envio"
+      }
+    }
+  },
+  "menu-item#footer-categories-2-col-1": {
+    "props": {
+      "id": "menu-item-categories-2-col-1",
+      "blockClass": ["menu-institucional", "menu-email"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/politica-de-troca",
+        "noFollow": false,
+        "tagTitle": "Política de troca",
+        "text": "Política de troca"
+      }
+    }
+  },
+  "menu-item#footer-categories-2-col-2": {
+    "props": {
+      "id": "menu-item-categories-2-col-2",
+      "blockClass": ["menu-institucional", "menu-sac"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/politica-de-privacidade",
+        "noFollow": false,
+        "tagTitle": "Política de privacidade",
+        "text": "Política de privacidade"
+      }
+    }
+  },
+  "menu-item#footer-categories-2-col-4": {
+    "props": {
+      "id": "menu-item-categories-2-col-4",
+      "blockClass": ["menu-institucional", "menu-sac"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/politica-de-pagamento",
+        "noFollow": false,
+        "tagTitle": "Política de pagamento",
+        "text": "Política de pagamento"
+      }
+    }
+  },
+  "menu-item#footer-categories-2-col-5": {
+    "props": {
+      "id": "menu-item-categories-2-col-5",
+      "blockClass": ["menu-institucional", "menu-whats"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/termos-de-uso",
+        "noFollow": false,
+        "tagTitle": "Termos de Uso",
+        "text": "Termos de Uso"
+      }
+    }
+  },
+
+  //  COL 3
+  "vtex.menu@2.x:menu#footer-links-3": {
+    "title": "Footer - Menu - Coluna 3",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__menu",
+      "width": "15%"
+    },
+    "children": [
+      "menu-item#footer-links-3-col-1",
+      "flex-layout.row#footer-links-3-col-1"
+    ]
+  },
+  "menu-item#footer-links-3-col-1": {
+    "props": {
+      "id": "menu-item-links-3-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "blockClass": "special-header",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Formas de Pagamento",
+        "text": "Formas de Pagamento"
+      }
+    }
+  },
+  "flex-layout.row#footer-links-3-col-1": {
+    "children": [
+      "image#footer-master",
+      "image#footer-visa",
+      "image#footer-elo",
+      "image#footer-hipercard",
+      "image#footer-amex",
+      "image#footer-pix"
+    ],
+    "props": {
+      "blockClass": "footer__social"
+    }
+  },
+  "image#footer-master": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/mastercard.svg",
+      "link": "/",
+      "blockClass": "footer__social-master",
+      "width": "100%"
+    }
+  },
+  "image#footer-visa": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/visa.svg",
+      "link": "/",
+      "blockClass": "footer__social-visa",
+      "width": "100%"
+    }
+  },
+  "image#footer-elo": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/elo.svg",
+      "link": "/",
+      "blockClass": "footer__social-elo",
+      "width": "100%"
+    }
+  },
+  "image#footer-hipercard": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/hipercard.svg",
+      "link": "/",
+      "blockClass": "footer__social-hipercard",
+      "width": "100%"
+    }
+  },
+  "image#footer-amex": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/amex.svg",
+      "link": "/",
+      "blockClass": "footer__social-amex",
+      "width": "100%"
+    }
+  },
+  "image#footer-pix": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/pix.svg",
+      "link": "/",
+      "blockClass": "footer__social-pix",
+      "width": "100%"
+    }
+  },
+
+  //  COL 4
+  "vtex.menu@2.x:menu#footer-links-4": {
+    "title": "Footer - Menu - Coluna 4",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__menu"
+    },
+    "children": [
+      "menu-item#footer-links-4-col-1",
+      "flex-layout.row#footer-links-4-col-1"
+    ]
+  },
+  "menu-item#footer-links-4-col-1": {
+    "props": {
+      "id": "menu-item-links-4-col-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "blockClass": ["special-header", "security"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Segurança",
+        "text": "Segurança"
+      }
+    }
+  },
+  "flex-layout.row#footer-links-4-col-1": {
+    "children": [
+      "image#footer-ebit",
+      "image#footer-lets",
+      "image#footer-pci"
+    ],
+    "props": {
+      "blockClass": "footer__security"
+    }
+  },
+  "image#footer-ebit": {
+    "props": {
+      "src": "https://td2154.vteximg.com.br/arquivos/bit.svg",
+      "blockClass": "footer__security"
+    }
+  },
+  "image#footer-lets": {
+    "props": {
+      "src": "assets/lets.svg",
+      "blockClass": "footer__security"
+    }
+  },
+  "image#footer-pci": {
+    "props": {
+      "src": "assets/pci.svg",
+      "blockClass": "footer__security"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+:global(.vtex-login-2-x-box) {
+    top: -35px!important;
+}
+
+:global(.vtex-login-2-x-arrowUp) {
+    visibility: hidden
+}

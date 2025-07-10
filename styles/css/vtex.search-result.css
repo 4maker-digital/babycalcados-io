@@ -1,0 +1,29 @@
+.notFound--layout {
+  padding: 0 30px;
+    :global(.vtex-flex-layout-0-x-flexRowContent) {
+        flex-direction: column;
+
+        :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+            width: 100% !important;
+
+            :global(.vtex-flex-layout-0-x-flexRowContent--grid-banners1) {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                max-width: 96rem;
+                margin: 0 auto;
+                padding: 0 30px;
+
+                :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+                    width: 50% !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+  .notFound--layout {
+    padding: 0 15px;
+  }
+}

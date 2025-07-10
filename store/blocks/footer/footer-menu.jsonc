@@ -1,0 +1,45 @@
+{
+  "flex-layout.row#footer-2-desktop": {
+    "title": "Footer - Menu - Desktop",
+    "children": [
+      "flex-layout.row#social-logo",
+      "vtex.menu@2.x:menu#footer-help",
+      "vtex.menu@2.x:menu#footer-links",
+      "vtex.menu@2.x:menu#footer-links-2",
+      "vtex.menu@2.x:menu#footer-links-3",
+      "vtex.menu@2.x:menu#footer-links-4"
+    ],
+    "props": {
+      "blockClass": "footer__menu",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+  "flex-layout.row#social-logo": {
+    "props": {
+      "blockClass": "social-logo",
+      "width": "15%"
+    },
+    "children": [
+      "flex-layout.col#social-logo"
+    ]
+  },
+  "flex-layout.col#social-logo": {
+    "props": {
+      "blockClass": "social-logo"
+    },
+    "children": [
+      "flex-layout.col#social-logo-01"
+    ]
+  },
+  "flex-layout.col#social-logo-01": {
+    "children": ["image#social-logo-image-1"]
+  },
+  "image#social-logo-image-1": {
+    "props": {
+      "src": "assets/baby-logo-footer.svg",
+      "alt": "Logo Baby",
+      "link": "/"
+    }
+  }
+}

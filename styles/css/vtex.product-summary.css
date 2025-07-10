@@ -1,0 +1,30 @@
+.similars-pdp-container {
+  margin: 15px 0;
+}
+
+.similars-pdp-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.similars-pdp-item-link {
+  height: 50px;
+  width: 50px;
+}
+
+.similars-pdp-title {
+  color: #034EA1;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.63px;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 1440px) {
+  :global(.vtex-product-summary-2-x-imageNormal), :global(.vtex-product-summary-2-x-imageNormal), 
+  :global(.vtex-product-summary-2-x-hoverImage) {
+    max-height: unset;
+  }
+}

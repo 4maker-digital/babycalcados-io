@@ -1,0 +1,68 @@
+{
+	"store.custom#contact": {
+		"blocks": [
+			"responsive-layout.desktop#contact",
+			"responsive-layout.mobile#contact"
+		]
+	},
+	"responsive-layout.desktop#contact": {
+		"children": [
+			"flex-layout.row#breadcrumb-contact",
+			"flex-layout.row#contact-us-content"
+		]
+	},
+	"flex-layout.row#contact-us-content": {
+		"children": [
+			"flex-layout.col#menu-institucional",
+			"flex-layout.col#contact-us"
+		],
+		"props": {
+			"blockClass": "contact",
+			"paddingBottom": 8
+		}
+	},
+
+	"flex-layout.col#contact-us": {
+		"children": ["form-contact"]
+	},
+	"flex-layout.row#breadcrumb-contact": {
+		"children": [
+			"link#breadcrumb-home",
+			"icon#breadcrumb",
+			"link#breadcrumb-contact"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "breadcrumb",
+			"colGap": 3
+		}
+	},
+	"responsive-layout.mobile#contact": {
+		"children": [
+			"flex-layout.row#breadcrumb-contact",
+			"flex-layout.row#disc-institucional",
+			"form-contact"
+		]
+	},
+
+	"link#breadcrumb-home": {
+		"props": {
+			"label": "Home",
+			"href": "/",
+			"blockClass": "breadcrumb-home"
+		}
+	},
+	"icon#breadcrumb": {
+		"props": {
+			"size": 8,
+			"id": "icon-setadireita"
+		}
+	},
+	"link#breadcrumb-contact": {
+		"props": {
+			"label": "Fale Conosco",
+			"blockClass": "active-breadcrumb"
+		}
+	}
+}

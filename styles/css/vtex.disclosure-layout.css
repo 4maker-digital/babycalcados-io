@@ -1,0 +1,11 @@
+.trigger--disclosure-button {
+  background-color: transparent;
+  padding: 0;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #034EA1;
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
