@@ -12,21 +12,28 @@
   "rich-text#footer-legal-information": {
     "title": "Footer - Créditos finais - Texto",
     "props": {
-      "text": "Copyright © 2024 - www.babycalcados.com.br. Todos os direitos reservados. <br/>Todo o conteúdo do site é de propriedade exclusiva da CALÇADOS BABYCALCADOS NORDESTE LTDA. Está vetada qualquer reprodução, total ou parcial, sem autorização, conforme nossa Política de Privacidade. Preços e condições de pagamentos válidos enquanto durar os estoques. CALÇADOS BABYCALCADOS NORDESTE LTDA, inscrito sob CNPJ: 06.269.953/0001-36, localizado na Rua Cruzeiro da Rocha, S/N - Bairro Cruzeiro - CEP: 46800-000 - Ruy Barbosa - BA.",
+      "text": "2025 - Lojas Reunidas de Calçados Ltda - Todos os direitos reservados CNPJ: 46.013.702/0001-00 | Rua 13 de maio, 295 Centro - Campinas/SP - CEP: 13010-070",
       "blockClass": "footer__legal-information",
-      "width": "80%"
+      "width": "85%"
     }
   },
   "flex-layout.row#footer-3-desktop-right": {
     "title": "Footer - Menu - Desktop",
-    "children": ["image#footer-vtex"],
+    "children": ["rich-text#footer-dev", "image#footer-vtex"],
     "props": {
       "blockClass": "footer__credits"
     }
   },
+  "rich-text#footer-dev": {
+    "title": "Footer - Créditos finais - Texto",
+    "props": {
+      "text": "Desenvolvido por:",
+      "blockClass": "footer__legal-information"
+    }
+  },
   "image#footer-vtex": {
     "props": {
-      "src": "https://td2154.vteximg.com.br/arquivos/vtex-logo.png",
+      "src": "assets/4maker-logo.svg",
       "link": "/",
       "blockClass": "footer__social-vtex"
     }

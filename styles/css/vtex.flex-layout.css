@@ -21,7 +21,7 @@
 }
 
 .flexRow--container-tech {
-  background: #F8F9FA;
+  background: #EEE;
   padding: 30px 0;
 }
 
@@ -67,13 +67,15 @@
 }
 
 .flexRow--footer__menu {
-  background: #F8F9FA;
+  background: #EEE;
   padding: 40px .25rem;
 }
 
 .flexRow--credits {
-  background: #E9ECEF;
-  padding: 10px .25rem;
+  background: #EEE;
+  padding: 20px 0;
+  margin: 0 .25rem;
+  border-top: 1px solid #d3d3d5;
 }
 
 .flexRowContent--footer__credits .stretchChildrenWidth {
@@ -81,7 +83,7 @@
 }
 
 .flexRow--footer-bottom {
-  background: #F8F9FA;
+  background: #EEE;
   padding: 40px;
 }
 
@@ -96,7 +98,7 @@
 
 .description-strong {
   margin: 0;
-  color: #034EA1;
+  color: #65656F;
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 12px;
@@ -122,7 +124,7 @@
 
 .flexColChild--footer__left :global(.vtex-menu-2-x-styledLink),
 :global(.vtex-menu-2-x-styledLinkContent--menu-institucional) {
-  color: #034EA1;
+  color: #65656F;
   font-size: 12px;
 }
 
@@ -145,7 +147,7 @@
 
 .flexRowContent--footer__social {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 8px;
 }
 
@@ -200,7 +202,9 @@
   padding: 15px 0;
 }
 
-
+.flexRowContent--credits {
+  align-items: center;
+}
 
 .flexRow--shipping-simulator {
   position: relative;
@@ -418,7 +422,7 @@
 
 .flexCol--container-number-search {
   align-items: center;
-  background: #F8F9FA;
+  background: #EEE;
   display: flex;
   justify-content: center;
   padding: 15px 0;
@@ -822,7 +826,7 @@ flex-direction: column;
   display: flex;
   justify-content: center;
   gap: 30px;
-  background: #F8F9FA;
+  background: #EEE;
 }
 
 .flexRowContent--menu-tech .stretchChildrenWidth {

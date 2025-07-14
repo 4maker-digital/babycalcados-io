@@ -8,6 +8,11 @@
       "description": "Titulo da seção",
       "type": "string"
     },
+    "subTitle": {
+      "title": "Sub Título",
+      "description": "Sub Titulo da seção",
+      "type": "string"
+    },
     "placeholdername": {
       "title": "Placeholder Nome",
       "description": "Descrição do campo Nome",

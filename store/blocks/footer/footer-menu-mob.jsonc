@@ -7,7 +7,6 @@
       "menu-item#footer-menu-2",
       "menu-item#footer-menu-3",
       "vtex.menu@2.x:menu#footer-links-3",
-      "vtex.menu@2.x:menu#footer-links-4",
       "flex-layout.row#footer-3-desktop"
     ],
     "props": {
@@ -38,9 +37,7 @@
   "vtex.menu@2.x:submenu.accordion#atendimento": {
     "children": [
       "menu-item#footer-categories-2-col-1",
-      "menu-item#footer-categories-2-col-2",
-      "menu-item#footer-categories-2-col-4",
-      "menu-item#footer-categories-2-col-5"
+      "menu-item#footer-categories-2-col-2"
     ]
   },
 

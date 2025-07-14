@@ -6,8 +6,7 @@
       "vtex.menu@2.x:menu#footer-help",
       "vtex.menu@2.x:menu#footer-links",
       "vtex.menu@2.x:menu#footer-links-2",
-      "vtex.menu@2.x:menu#footer-links-3",
-      "vtex.menu@2.x:menu#footer-links-4"
+      "vtex.menu@2.x:menu#footer-links-3"
     ],
     "props": {
       "blockClass": "footer__menu",
@@ -18,7 +17,7 @@
   "flex-layout.row#social-logo": {
     "props": {
       "blockClass": "social-logo",
-      "width": "15%"
+      "width": "13%"
     },
     "children": [
       "flex-layout.col#social-logo"

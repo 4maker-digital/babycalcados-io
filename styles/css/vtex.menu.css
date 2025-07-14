@@ -1,9 +1,9 @@
 .styledLink--highlight {
-  color: #034EA1;
+  color: #242424;
   font-size: 14px;
   font-weight: 700;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .menuItem--footer__menu--mob {
@@ -70,7 +70,7 @@
 }
 
 .search-shelf-button {
-  background: #034EA1;
+  background: #242424;
   color: #fff;
   text-decoration: none;
   font-size: 10px;
@@ -92,12 +92,12 @@
   height: 40px;
   width: 40px;
   display: block;
-  color: #034EA1;
+  color: #242424;
 }
 
 .search-shelf-container-link:hover {
-  background: #034EA1;
-  border: 1px solid #034EA1;
+  background: #242424;
+  border: 1px solid #242424;
   color: #fff;
 }
 

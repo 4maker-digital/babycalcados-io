@@ -2,14 +2,11 @@
   margin: 0 auto;
   padding: 0 .25rem;
   display: flex;
-  align-items: center;
-  background: #E9ECEF;
-
+  border-top: 1px solid #d3d3d5;
 }
 .vtex-hide-react .e-newsletter-top {
   display: flex;
-  align-items: center;
-  gap: 100px;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 1025px) {
@@ -23,9 +20,15 @@
   }
 }
 .vtex-hide-react h2 {
+  font-weight: 700;
+  font-size: 33px;
+  margin: 0;
+  color: #242424;
+}
+.vtex-hide-react h3 {
   font-weight: 400;
-  font-size: 12px;
-  color: #034EA1;
+  font-size: 14px;
+  color: #242424;
 }
 @media only screen and (max-width: 1025px) {
   .vtex-hide-react .e-newsletter-center h2 {
@@ -39,13 +42,15 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  width: 100%;
+  width: 55%;
 }
 .vtex-hide-react .e-newsletter-center {
   width: 100%;
-  max-width: 96rem;
+  display: flex;
+  align-items: center;
   margin: 0 auto;
-  padding: 0.75rem 30px;
+  padding: 30px;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 1025px) {
   .vtex-hide-react .e-form-newsletter {
@@ -55,17 +60,16 @@
     padding: 0.75rem 0;
   }
 }
-.vtex-hide-react .e-form-newsletter input,
-.vtex-hide-react .e-form-newsletter select {
+.vtex-hide-react .e-form-newsletter input {
   height: 40px;
   font-weight: 400;
   font-size: 12px;
-  color: #495057;
-  background: #fff;
-  border: 1px solid #fff;
+  color: #242424;
+  background: #F8F8F8;
+  border: 1px solid #F8F8F8;
   border-radius: 4px;
   padding: 10px 0 10px 10px;
-  width: 100%;
+  width: 40%;
 }
 .vtex-hide-react .e-form-newsletter option {
   font-weight: 400;
@@ -73,10 +77,8 @@
   color: #495057;
 }
 @media only screen and (max-width: 1025px) {
-  .vtex-hide-react .e-form-newsletter input,
-  .vtex-hide-react .e-form-newsletter select {
+  .vtex-hide-react .e-form-newsletter input {
       height: 50px;
-
   }
 
   .vtex-hide-react .e-form-newsletter input {
@@ -85,14 +87,15 @@
 }
 .vtex-hide-react .e-form-newsletter .e-btn {
   border: none;
-  width: 100px;
+  width: 150px;
   height: 40px;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: 600;
   color: #fff;
-  background: #034EA1;
+  background: #E01F26;
+  font-weight: 700;
+  font-size: 19px;
+  text-align: center;
 }
 @media only screen and (max-width: 1025px) {
   .vtex-hide-react .e-form-newsletter .e-btn {
