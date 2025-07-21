@@ -34,10 +34,16 @@
   width: 100%;
 }
 
-.flexRowContent--shelf-list-price :global(.vtex-product-price-1-x-listPrice--shelf) {
-  color: #ADB5BD;
+.flexRowContent--shelf-list-price :global(.vtex-product-price-1-x-currencyContainer--shelf) {
+  color: #777;
   font-size: 12px;
-  line-height: 14.63px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.flexRowContent--shelf-list-price :global(.vtex-product-price-1-x-listPriceValue--shelf) {
+  color: #777;
+  font-weight: 400;
 }
 
 .flexRowContent--product-info-buy-list {
@@ -84,14 +90,6 @@
   font-family: 'Montserrat';
 }
 
-.flexRowContent--shelf-price :global(.vtex-product-price-1-x-sellingPriceValue--shelf)::before {
-  content: 'Por ';
-}
-
-.flexRowContent--shelf-list-price :global(.vtex-product-price-1-x-listPriceValue--shelf)::before {
-  content: 'De: ';
-}
-
 .filters-open .flexRow--result {
   padding-left: 500px;
 }
@@ -121,10 +119,6 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 5px;
-  }
-
-  .flexRowContent--shelf-list-price :global(.vtex-product-price-1-x-listPrice--shelf) {
-    text-align: left;
   }
 
   .flexRowContent--container-link-product {

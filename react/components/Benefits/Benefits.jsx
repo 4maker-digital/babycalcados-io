@@ -10,10 +10,10 @@ export default function Benefits({ benefits }) {
       <ul className="vtex-store-components-3-x-benefits-list">
         {benefits?.map((benefit, i) => (
           <li className="vtex-store-components-3-x-benefits-item">
-            <img alt="Icone" className="vtex-store-components-3-x-benefits-image" src={benefit.icon} />
             <a href={benefit.link} className="vtex-store-components-3-x-benefits-item-text">
-              <p className="vtex-store-components-3-x-benefits-item-paragraph">{benefit.text1}</p>
+              <img alt="Icone" className="vtex-store-components-3-x-benefits-image" src={benefit.icon} />
               <p className="vtex-store-components-3-x-benefits-item-paragraph">{benefit.text2}</p>
+              <p className="vtex-store-components-3-x-benefits-item-paragraph">{benefit.text1}</p>
             </a>
           </li>
         ))}

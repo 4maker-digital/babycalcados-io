@@ -6,23 +6,8 @@
       "flex-layout.row#shelf1-landing",
       "flex-layout.row#shelf2-landing",
       "flex-layout.row#banners-new-landing-2",
-      "flex-layout.row#shelf3-landing",
-      "responsive-layout.desktop#tech-container",
-      "responsive-layout.mobile#tech-container",
-      "flex-layout.row#seo-text"
+      "flex-layout.row#shelf3-landing"
 		]
-	},
-	"responsive-layout.desktop#tech-container": {
-		"children": [
-      "flex-layout.row#tech-container"
-		],
-    "title": "Tecnologias Desktop"
-	},
-  "responsive-layout.mobile#tech-container": {
-		"children": [
-      "flex-layout.row#tech-container-mobile"
-		],
-    "title": "Tecnologias Mobile"
 	},
   "flex-layout.row#banner-principal-landing": {
     "title": "Banner Principal",
@@ -60,7 +45,7 @@
 
   "flex-layout.row#banners-new-landing": {
     "title": "Imagens Banners Novo",
-    "children": ["banner-custom"],
+    "children": ["custom-banners"],
     "props": {
       "blockClass": ["banners", "banners-grid", "landing"]
     }
@@ -165,18 +150,19 @@
 
   "flex-layout.row#banners-new-landing-2": {
     "title": "Imagens Banners 2 Novo",
-    "children": ["banner-custom"],
+    "children": ["custom-banners"],
     "props": {
       "blockClass": "banners"
     }
   },
 
   "flex-layout.row#shelf1-landing": {
-    "children": ["flex-layout.col#shelf1-landing"],
-    "title": "Vitrine de Produtos 1"
+    "children": ["flex-layout.col#shelf-landing"],
+    "props": { "blockClass": ["container-shelf-landing-1", "ignore-arrow"] },
+    "title": "Vitrine de Produtos"
   },
-  "flex-layout.col#shelf1-landing": {
-    "children": ["rich-text#shelf-landing-title", "flex-layout.row#shelf-landing"]
+  "flex-layout.col#shelf-landing": {
+    "children": ["rich-text#shelf-landing-title", "list-context.product-list#shelf-landing"]
   },
   "flex-layout.row#shelf2-landing": {
     "children": ["flex-layout.col#shelf2-landing"],
@@ -194,29 +180,25 @@
   "flex-layout.col#shelf3-landing": {
     "children": ["rich-text#shelf3-landing-title", "list-context.product-list#shelf-landing"]
   },
-  "rich-text#shelf-landing-title": {
-    "props": {
-      "text": "## Lançamentos td2154",
-      "blockClass": "shelfTitle"
-    }
-  },
   "flex-layout.row#shelf-landing": {
     "children": ["flex-layout.col#shelf-landing"],
     "props": { "blockClass": "container-shelf-landing-1" }
   },
-  "flex-layout.col#shelf-landing": {
-    "children": ["searchShelf", "list-context.product-list#shelf-landing"],
-    "props": { "blockClass": "container-search" }
+  "rich-text#shelf-landing-title": {
+    "props": {
+      "text": "## Lançamentos",
+      "blockClass": "shelfTitle"
+    }
   },
   "rich-text#shelf2-landing-title": {
     "props": {
-      "text": "## Lançamentos td2154 2",
+      "text": "## Mais vendidos",
       "blockClass": "shelfTitle"
     }
   },
   "rich-text#shelf3-landing-title": {
     "props": {
-      "text": "## Lançamentos td2154 3",
+      "text": "## Outlet",
       "blockClass": "shelfTitle"
     }
   },
@@ -231,7 +213,7 @@
   "slider-layout#shelf-landing-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
+        "desktop": 5,
         "tablet": 3,
         "phone": 2
       },

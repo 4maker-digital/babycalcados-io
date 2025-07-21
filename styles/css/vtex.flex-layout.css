@@ -172,9 +172,9 @@
   margin: 0 auto;
 }
 
-.flexRow--container-shelf :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf),
-.flexRow--container-shelf-landing-1 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
-  padding: 0 !important;
+.flexRow--container-shelf :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
+  padding: 0 30px !important;
+  margin-bottom: 50px;
 }
 
 .flexRow--breadcrumb {
@@ -282,16 +282,6 @@
 
 .flexRowContent--four-banners .stretchChildrenWidth {
   gap: 25px;
-}
-
-.flexRow--container-shelf-landing-1 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf),
-.flexRow--container-shelf-landing-1 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf) {
-  top: -115px;
-}
-
-.flexRow--container-shelf-landing-1 .flexRowContent--ignore-arrow :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf),
-.flexRow--container-shelf-landing-1 .flexRowContent--ignore-arrow :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf) {
-  top: -46px;
 }
 
 .flexRow--help {
@@ -442,10 +432,6 @@
   margin: 20px 0;
 }
 
-.flexRowContent--sports-shelfs-landing :global(.vtex-store-components-3-x-bannersCustom-item) {
-  width: 100%;
-}
-
 .flexRow--container-shelf-sports-1 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
   padding: 0 !important;
 }
@@ -465,24 +451,6 @@
   background-repeat: no-repeat !important;
   height: 28px;
   background-image: url("data:image/svg+xml,%3Csvg width='14' height='27' viewBox='0 0 14 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.293712 0.793753C0.38658 0.700638 0.496903 0.626761 0.618362 0.576354C0.739821 0.525947 0.87003 0.5 1.00153 0.5C1.13303 0.5 1.26324 0.525947 1.3847 0.576354C1.50616 0.626761 1.61648 0.700638 1.70935 0.793753L13.7063 12.7923C13.7994 12.8852 13.8733 12.9956 13.9237 13.117C13.9741 13.2385 14 13.3687 14 13.5003C14 13.6318 13.9741 13.762 13.9237 13.8835C13.8733 14.005 13.7994 14.1153 13.7063 14.2082L1.70935 26.2068C1.52163 26.3945 1.26702 26.5 1.00153 26.5C0.736048 26.5 0.481437 26.3945 0.293712 26.2068C0.105987 26.019 0.000523434 25.7644 0.000523434 25.4989C0.000523434 25.2333 0.105987 24.9787 0.293712 24.7909L11.5848 13.5003L0.293712 2.20959C0.200609 2.11671 0.126742 2.00637 0.0763422 1.88489C0.0259421 1.76342 0 1.63319 0 1.50167C0 1.37015 0.0259421 1.23992 0.0763422 1.11845C0.126742 0.996972 0.200609 0.886634 0.293712 0.793753Z' fill='%23034EA1'/%3E%3C/svg%3E%0A") !important;
-}
-
-.flexRowContent--sports-shelfs-landing :global(.vtex-store-components-3-x-bannersCustom),
-.flexRowContent--sports-shelfs-landing :global(.vtex-store-components-3-x-bannersCustom) :global(.vtex-store-components-3-x-bannersCustom-list),
-.flexRowContent--sports-shelfs-landing :global(.vtex-store-components-3-x-bannersCustom) :global(.vtex-store-components-3-x-bannersCustom-list) :global(.vtex-store-components-3-x-bannersCustom-item),
-.flexRowContent--sports-shelfs-landing :global(.vtex-store-components-3-x-bannersCustom) :global(.vtex-store-components-3-x-bannersCustom-list) :global(.vtex-store-components-3-x-bannersCustom-item) :global(.vtex-store-components-3-x-bannersCustom-image) {
-  height: 100%;
-  width: 100%;
-}
-
-.flexRowContent--banners-grid :global(.vtex-store-components-3-x-bannersCustom-item) {
-  width: 100%;
-}
-
-.flexRowContent--banners-insta :global(.vtex-store-components-3-x-bannersCustom-item) {
-  width: 100%;
-  height: auto;
-  margin-right: 5px;
 }
 
 .flexRow--banners-desktop.flexRow--banners-grid :global(.vtex-store-components-3-x-container) {
@@ -508,21 +476,6 @@
   padding: 0 !important;
 }
 
-.flexRowContent--banners-insta :global(.vtex-slider-layout-0-x-slide--shelf),
-.flexRowContent--banners-tech :global(.vtex-slider-layout-0-x-slide--shelf) {
-  margin: 0;
-  padding: 0;
-}
-
-.flexRowContent--sports-shelfs-landing :global(.vtex-slider-layout-0-x-slide--shelf) {
-  margin-bottom: 0;
-}
-
-.flexRowContent--banners-full-sports :global(.vtex-store-components-3-x-bannersCustom-item) {
-  height: auto;
-  width: 100%;
-}
-
 .flexRow--banners-tech {
   margin-top: 40px;
 }
@@ -544,6 +497,14 @@
 
 .flexRowContent--right {
   flex-direction: row-reverse;
+}
+
+.flexRow--shelf-list-price {
+  height: 20px;
+}
+
+.flexCol--brand-collection {
+  margin: 50px 0;
 }
 
 @media (min-width: 1024px) and (max-width: 1600px) {

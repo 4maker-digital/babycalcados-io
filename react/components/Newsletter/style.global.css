@@ -7,7 +7,6 @@
 .vtex-hide-react .e-newsletter-top {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
 }
 @media only screen and (max-width: 1025px) {
   .vtex-hide-react {
@@ -29,6 +28,7 @@
   font-weight: 400;
   font-size: 14px;
   color: #242424;
+  margin: 10px 0 0;
 }
 @media only screen and (max-width: 1025px) {
   .vtex-hide-react .e-newsletter-center h2 {

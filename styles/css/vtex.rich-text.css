@@ -3,16 +3,9 @@
 }
 
 .heading--shelfTitle {
-  color: #212529;
-  text-align: center;
+  color: #000;
   font-weight: 700;
-  font-family: 'Montserrat';
-  font-size: 32px;
-  line-height: 39.14px;
-  text-transform: uppercase;
-  margin: 20px 0 10px;
-  text-align: center;
-  font-family: "Commissioner";
+  font-size: 33px;
 }
 
 .paragraph--description-header-seo {
@@ -37,7 +30,6 @@
   text-transform: uppercase;
   margin: 0 0 20px;
   text-align: center;
-  font-family: "Commissioner";
 }
 
 .paragraph--shelfSubtitleCenter {
@@ -76,7 +68,6 @@
   font-size: 32px;
   text-transform: uppercase;
   margin: 0 0 30px;
-  font-family: "Commissioner";
 }
 
 .paragraph--seoText {
@@ -231,6 +222,18 @@
   line-height: 24px;
   color: #212529;
   margin: 0;
+}
+
+.heading--shelfTitleInsta {
+  align-items: center;
+  display: flex;
+  margin: 0 0 24px;
+}
+
+.heading--shelfTitleInsta::before {
+  content: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 14.75C1 8.26868 1 5.02658 3.01329 3.01329C5.02658 1 8.26724 1 14.75 1C21.2313 1 24.4734 1 26.4867 3.01329C28.5 5.02658 28.5 8.26724 28.5 14.75C28.5 21.2313 28.5 24.4734 26.4867 26.4867C24.4734 28.5 21.2328 28.5 14.75 28.5C8.26868 28.5 5.02658 28.5 3.01329 26.4867C1 24.4734 1 21.2328 1 14.75Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22.7221 6.78943H22.7076M21.2631 14.75C21.2631 16.4774 20.5769 18.134 19.3555 19.3555C18.134 20.5769 16.4774 21.2631 14.75 21.2631C13.0226 21.2631 11.3659 20.5769 10.1445 19.3555C8.92302 18.134 8.23682 16.4774 8.23682 14.75C8.23682 13.0226 8.92302 11.3659 10.1445 10.1445C11.3659 8.923 13.0226 8.2368 14.75 8.2368C16.4774 8.2368 18.134 8.923 19.3555 10.1445C20.5769 11.3659 21.2631 13.0226 21.2631 14.75Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  margin-right: 10px;
+  height: 30px;
 }
 
 @media (max-width: 767px) {

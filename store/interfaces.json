@@ -72,8 +72,8 @@
     "form-contact": {
         "component": "FormContact"
     },
-    "banner-custom": {
-        "component": "BannerCustom"
+    "custom-banners": {
+        "component": "CustomBanners"
     },
     "size-table": {
         "component": "SizeTable"
@@ -84,9 +84,6 @@
     "video-frame": {
         "component": "VideoFrame"
     },
-    "custom-flag": {
-        "component": "CustomFlag"
-    },
     "custom-stars": {
         "component": "CustomStars"
     },
@@ -95,9 +92,6 @@
     },
     "benefits": {
         "component": "Benefits"
-    },
-    "custom-imagem-flag": {
-        "component": "CustomImagemFlag"
     },
     "custom-categories" : {
         "component": "CustomCategories"

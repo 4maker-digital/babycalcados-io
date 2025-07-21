@@ -498,7 +498,7 @@
   "flex-layout.row#notfound": {
     "children": [
       "not-found",
-      "flex-layout.row#banners-new"
+      "flex-layout.row#banners"
     ],
     "props": {
       "fullWidth": true

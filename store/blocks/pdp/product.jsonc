@@ -169,7 +169,7 @@
   },
   "list-context.product-list#shelf-related": {
     "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#shelf-products"],
+    "children": ["slider-layout#shelf-landing-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "installmentCriteria": "MAX_WITHOUT_INTEREST",

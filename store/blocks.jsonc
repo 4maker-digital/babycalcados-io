@@ -40,14 +40,14 @@
   "store.not-found#product": {
     "blocks": [
       "rich-text#not-found",
-      "flex-layout.row#banners-new"
+      "flex-layout.row#banners"
     ]
   },
 
   "store.not-found#search": {
     "blocks": [
       "rich-text#not-found",
-      "flex-layout.row#banners-new"
+      "flex-layout.row#banners"
     ]
   },
 
