@@ -10,7 +10,7 @@
 .btnShowFilters {
   display: flex;
   align-items: center;
-  border: 1px solid #034EA1;
+  border: 1px solid #000;
   background: transparent;
   border-radius: 5px;
   font-family: "Commissioner", sans-serif;
@@ -19,7 +19,7 @@
   line-height: 12.23px;
   letter-spacing: -0.513736px;
   text-transform: uppercase;
-  color: #034EA1;
+  color: #000;
   cursor: pointer;
   width: 100px;
   height: 40px;

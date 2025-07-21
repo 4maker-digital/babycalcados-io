@@ -1,5 +1,5 @@
 .flexRowContent--sticky-content {
-    background-color: #034EA1;
+    background-color: #000;
     height: 86px;
     align-items: center;
     width: 100%;
@@ -39,7 +39,7 @@
 
 .flexRowContent--e-right-menu :global(.vtex-login-2-x-container) :global(.vtex-button):hover{
     display: block;
-} 
+}
 
 .flexRowContent--e-right-menu :global(.vtex-login-2-x-container) :global(.vtex-button) :global(.vtex-button__label) {
     padding: 0;

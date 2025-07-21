@@ -1,39 +1,73 @@
-.filters--layout {
-    display: none;
-}
-
-.totalProducts--layout {
-    display: none;
-}
-
 .buttonShowMore {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .buttonShowMore :global(.vtex-button) {
-  background: #034EA1;
-  padding: 10px;
+  background: #E8E8E8;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #E8E8E8;
 }
 
 .buttonShowMore :global(.vtex-button__label) {
   font-size: 0;
+  padding: 0;
 }
 
 .buttonShowMore :global(.vtex-button__label)::before {
   content: "Carregar mais produtos";
-  font-size: 16px;
-  text-transform: capitalize;
+  font-size: 19px;
+  font-weight: 700;
+  color: #242424;
+  text-transform: initial;
+  padding: 0;
+}
+
+.filterAvailable {
+  padding: 10px 0 0;
+}
+
+.filterContent {
+  padding: 10px 0 0;
+}
+
+:global(.vtex-slider-container) {
+  margin-top: 20px;
 }
 
 .galleryTitle--layout {
-    margin: 0;
-    color: #212529;
-    font-size: 20px;
-    font-weight: 400;
-    font-family: Commissioner;
-    margin-left: 16px;
-    line-height: inherit;
-    white-space: nowrap;
+  font-weight: 700;
+  font-size: 40px;
+  color: #242424;
+  margin: 0;
+  white-space: nowrap;
+  line-height: 36px;
+  margin-right: 10px;
+}
+
+.totalProducts--layout {
+  padding: 0;
+}
+
+.totalProducts--layout {
+  color: #777;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+.totalProducts--layout::before {
+  content: "Encontramos ";
+  color: #777;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.orderByDropdown {
+  display: flex;
 }
 
 .orderByText {
@@ -41,7 +75,7 @@
 }
 
 .orderByButton {
-    border: 1px solid #034EA1;
+    border: 1px solid #000;
     padding: 14px 10px;
     border-radius: 5px;
     width: 200px;
@@ -49,7 +83,7 @@
 }
 
 .filterPopupTitle {
-    color: #034EA1;
+    color: #000;
     font-family: 'Commissioner';
     text-transform: capitalize;
 }
@@ -63,7 +97,7 @@
 }
 
 .filterPopupArrowIcon .caretIcon {
-    color: #034EA1;
+    color: #000;
     padding: 0;
 }
 
@@ -73,15 +107,6 @@
     width: 100%;
     margin: 0;
     padding: 0;
-}
-
-.searchResultContainer .galleryTitle--layout {
-    display: none;
-}
-
-.searchResultContainer :global(.vtex-flex-layout-0-x-flexRow--filters-block-left) .galleryTitle--layout {
-    display: block;
-    font-weight: bold;
 }
 
 .orderByOptionsContainer {

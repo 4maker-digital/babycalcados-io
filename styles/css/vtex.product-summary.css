@@ -14,7 +14,7 @@
 }
 
 .similars-pdp-title {
-  color: #034EA1;
+  color: #000;
   display: block;
   font-size: 12px;
   font-weight: 400;
@@ -23,7 +23,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  :global(.vtex-product-summary-2-x-imageNormal), :global(.vtex-product-summary-2-x-imageNormal), 
+  :global(.vtex-product-summary-2-x-imageNormal), :global(.vtex-product-summary-2-x-imageNormal),
   :global(.vtex-product-summary-2-x-hoverImage) {
     max-height: unset;
   }

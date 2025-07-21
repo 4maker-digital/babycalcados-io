@@ -25,7 +25,7 @@
     },
     "responsive-layout.mobile#background-category": {
         "children": [
-            "searchHead-mobile"
+          "search-title.v2"
         ],
         "props": {
             "blockClass": "search-page-title-banner--mobile"
@@ -33,7 +33,7 @@
     },
     "responsive-layout.tablet#background-category": {
         "children": [
-            "searchHead-tablet"
+          "search-title.v2"
         ],
         "props": {
             "blockClass": "search-page-title-banner--tablet"

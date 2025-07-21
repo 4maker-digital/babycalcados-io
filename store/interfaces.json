@@ -17,9 +17,6 @@
     "custom-filter": {
         "component": "CustomFilter"
     },
-    "search-bar-control": {
-        "component": "SearchBarControl"
-    },
     "selected-filters-bar": {
         "component": "SelectedFiltersBar"
     },
@@ -39,15 +36,6 @@
     "custom-minicart": {
         "component": "CustomMinicart"
     },
-    "searchHead-desktop": {
-        "component": "searchHead"
-    },
-    "searchHead-mobile": {
-        "component": "searchHeadMobile"
-    },
-    "searchHead-tablet": {
-        "component": "searchHeadTablet"
-    },
     "rate-iframe": {
         "component": "RateIframe"
     },
@@ -59,12 +47,6 @@
     },
     "search-number-category": {
         "component": "SearchNumberCategory"
-    },
-    "text-seo-category": {
-        "component": "TextSEOCategory"
-    },
-    "text-seo-category-mobile": {
-        "component": "TextSEOCategoryMobile"
     },
     "custom-meta-tag": {
         "component": "MetaTag"

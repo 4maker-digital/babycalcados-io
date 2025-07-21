@@ -79,13 +79,9 @@
   },
   "search-result-layout.desktop": {
     "children": [
-      "search-bar-control",
-      "search-title.v2",
-      "filter-navigator.v3",
-      "flex-layout.row#filter-section",
-      "experimental__visibility-layout#number",
-      "flex-layout.row#result",
-      "text-seo-category"
+      "custom-banners",
+      "breadcrumb.search",
+      "flex-layout.row#container"
     ],
     "props": {
       "pagination": "show-more",
@@ -95,15 +91,6 @@
         "mode2": "normal"
       }
     }
-  },
-  "experimental__visibility-layout#number": {
-    "title": "Menu de numeracao (On/Off)",
-    "props": {
-      "visible": false
-    },
-    "children": [
-      "flex-layout.row#number"
-    ]
   },
   "store.custom#collection": {
     "blocks": [
@@ -128,359 +115,29 @@
       "search-not-found-layout"
     ]
   },
-  "search-result-layout.desktop#title": {
+  "flex-layout.row#container": {
+    "props": {
+      "blockClass": "filter-section"
+    },
     "children": [
-      "flex-layout.row#result-layout-1",
+      "filter-navigator.v3",
+      "flex-layout.col#right-result"
+    ]
+  },
+  "flex-layout.col#right-result": {
+    "props": {
+      "blockClass": "filter-section",
+      "width": "80%"
+    },
+    "children": [
+      "flex-layout.row#filter-section",
       "flex-layout.row#result"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "preventRouteChange": false,
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      }
-    }
-  },
-  "search-result-layout.desktop#title-2": {
-    "children": [
-      "flex-layout.row#result-layout-2",
-      "flex-layout.row#result"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "preventRouteChange": false,
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      }
-    }
-  },
-  "flex-layout.row#wallpaper-query": {
-    "props": {
-      "blockClass": "wallpaper-query"
-    },
-    "children": [
-      "rich-text#title-layout",
-      "image#img-layout-query"
-      //"flex-layout.row#filter-section"
     ]
-  },
-  "flex-layout.row#number": {
-    "props": {
-      "blockClass": ""
-    },
-    "children": [
-      "flex-layout.col#number"
-    ]
-  },
-  "flex-layout.col#number": {
-    "props": {
-      "blockClass": "container-number-search"
-    },
-    "children": [
-      "rich-text#number",
-      "slider-layout#text-test"
-    ]
-  },
-  "rich-text#number": {
-    "props": {
-      "text": "Melhor desconto por tamanho",
-      "blockClass": [
-        "title-layout"
-      ]
-    }
-  },
-  "slider-layout#text-test": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 24,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
-    },
-    "children": [
-      "search-number-category"
-    ]
-  },
-  /*"slider-layout#text-test": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 24,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
-    },
-    "children": [
-      "link#inst-34",
-      "link#inst-35",
-      "link#inst-36",
-      "link#inst-37",
-      "link#inst-38",
-      "link#inst-39",
-      "link#inst-40",
-      "link#inst-41",
-      "link#inst-42",
-      "link#inst-43",
-      "link#inst-44"
-    ]
-  },*/
-  "link#inst-34": {
-    "title": "número 34",
-    "props": {
-      "label": "34",
-      "href": "",
-      "blockClass": "number-product-size"
-    }
-  },
-  "link#inst-35": {
-    "title": "número 35",
-    "props": {
-      "label": "35",
-      "href": "",
-      "blockClass": "number-product-size"
-    }
-  },
-  "link#inst-36": {
-    "title": "número 36",
-    "props": {
-      "label": "36",
-      "href": "",
-      "blockClass": "number-product-size"
-    }
-  },
-  "link#inst-37": {
-    "title": "número 37",
-    "props": {
-      "label": "37",
-      "href": "",
-      "blockClass": "number-product-size"
-    }
-  },
-  "link#inst-38": {
-    "title": "número 38",
-    "props": {
-      "label": "38",
-      "href": "",
-      "blockClass": "number-product-size"
-    }
-  },
-  "link#inst-39": {
-    "title": "número 39",
-    "props": {
-      "label": "39",
-      "href": "",
-      "blockClass": "number-product-size"
-    }
-  },
-  "link#inst-40": {
-    "title": "número 40 ",
-    "props": {
-      "label": "40",
-      "href": "",
-      "blockClass": "number-product-size"
-    }
-  },
-  "link#inst-41": {
-    "title": "número 41",
-    "props": {
-      "label": "41",
-      "href": "",
-      "blockClass": "number-product-size"
-    }
-  },
-  "link#inst-42": {
-    "title": "número 42",
-    "props": {
-      "label": "42",
-      "href": "",
-      "blockClass": "number-product-size"
-    }
-  },
-  "link#inst-43": {
-    "title": "número 43",
-    "props": {
-      "label": "43",
-      "href": "",
-      "blockClass": "number-product-size"
-    }
-  },
-  "link#inst-44": {
-    "title": "número 44",
-    "props": {
-      "label": "44",
-      "href": "",
-      "blockClass": "number-product-size"
-    }
-  },
-  "rich-text#title-layout": {
-    "props": {
-      "text": "## Feminino",
-      "blockClass": [
-        "title-layout"
-      ]
-    }
-  },
-  "image#img-layout-query": {
-    "props": {
-      "src": "https://acuoio.vtexassets.com/assets/vtex/assets-builder/acuoio.acuoio-store/0.0.5/category/category-topo___16aeaa7470bac433fb4753426a4fed21.png",
-      "blockClass": "img-layout-query"
-    }
   },
   "search-result-layout.mobile": {
     "children": [
-      "search-bar-control",
       "flex-layout.row#filter-mobile",
-      "flex-layout.row#result-mobile",
-      "text-seo-category-mobile"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      }
-    }
-  },
-  "search-result-layout.mobile#title": {
-    "children": [
-      "flex-layout.row#result-layout-1",
       "flex-layout.row#result-mobile"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      }
-    }
-  },
-  "search-result-layout.mobile#title-2": {
-    "children": [
-      "flex-layout.row#result-layout-2",
-      "flex-layout.row#result-mobile"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      }
-    }
-  },
-  "flex-layout.row#result-layout-1": {
-    "children": [
-      "flex-layout.col#result-layout"
-    ],
-    "props": {
-      "blockClass": "search-page-title-banner",
-      "width": "100%"
-    }
-  },
-  "flex-layout.row#result-layout-2": {
-    "title": "Titulo, Imagem e Descrição Topo",
-    "children": [
-      "flex-layout.col#result-layout-2"
-    ],
-    "props": {
-      "blockClass": "search-page-title-banner",
-      "width": "100%"
-    }
-  },
-  "flex-layout.col#result-layout": {
-    "props": {
-      "blockClass": "search-page-title-banner",
-      "horizontalAlign": "center"
-    },
-    "children": [
-      "responsive-layout.desktop#background-layout-desktop",
-      "responsive-layout.mobile#background-layout-mobile",
-      "rich-text#title-laout-mobile"
-      // "rich-text#search-page-title",
-    ]
-  },
-  "flex-layout.col#result-layout-2": {
-    "props": {
-      "blockClass": "search-page-title-banner",
-      "horizontalAlign": "center"
-    },
-    "children": [
-      "rich-text#title-laout-mobile-2"
-    ]
-  },
-  "rich-text#title-laout-mobile": {
-    "props": {
-      "text": "## Feminino",
-      "blockClass": [
-        "title-layout"
-      ]
-    }
-  },
-  "rich-text#title-laout-mobile-2": {
-    "props": {
-      "text": "## Feminino",
-      "blockClass": [
-        "title-layout",
-        "title-layout-2"
-      ]
-    }
-  },
-  "responsive-layout.desktop#background-layout-desktop": {
-    "children": [
-      "image#background-layout-desktop-top"
-    ]
-  },
-  "image#background-layout-desktop-top": {
-    "title": "Imagem categoria desktop",
-    "props": {
-      "blockClass": [
-        "background-category-top"
-      ],
-      "src": "https://acuoio.vteximg.com.br/arquivos/category-topo.png"
-    }
-  },
-  "responsive-layout.mobile#background-layout-mobile": {
-    "children": [
-      "searchHead-mobile"
-    ]
-  },
-  "image#background-mobile-layout": {
-    "title": "Imagem categoria mobile",
-    "props": {
-      "blockClass": [
-        "background-category-top"
-      ],
-      "src": "https://acuoio.vteximg.com.br/arquivos/category-topo-mob.png"
-    }
-  },
-  "search-result-layout.desktop#category": {
-    "children": [
-      "search-bar-control",
-      // "__fold__.experimentalLazyAssets",
-      "flex-layout.row#result" /* ,
-      "flex-layout.row#category-footer-1" */
-    ],
-    "props": {
-      "pagination": "show-more",
-      "preventRouteChange": false,
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      }
-    }
-  },
-  "search-result-layout.mobile#category": {
-    "children": [
-      "search-bar-control",
-      // "__fold__.experimentalLazyAssets",
-      "flex-layout.row#result-mobile" /* ,
-      "flex-layout.row#category-footer-1" */
     ],
     "props": {
       "pagination": "show-more",

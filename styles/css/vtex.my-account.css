@@ -87,7 +87,7 @@
 } */
 
 :global(.vtex-minicart-2-x-container--content-itens)::-webkit-scrollbar-thumb {
-    background-color: #034ea1;
+    background-color: #000;
 }
 
 :global(.vtex-my-orders-app-3-x-cancelBtn) {

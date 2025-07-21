@@ -55,7 +55,7 @@
 
 .skuSelectorName::before {
   content: "Selecione um tamanho:";
-  color: #034EA1;
+  color: #000;
   font-size: 12px;
   font-weight: 400;
   line-height: 14.63px;
@@ -72,15 +72,15 @@
 .skuSelectorItemTextValue {
   line-height: initial;
   padding: 0;
-  color: #034EA1;
+  color: #000;
   font-size: 12px;
   font-weight: 400;
 }
 
 .skuSelectorInternalBox:hover {
   color: #fff;
-  background: #034EA1;
-  border-color: #034EA1;
+  background: #000;
+  border-color: #000;
 }
 
 .skuSelectorInternalBox:hover .skuSelectorItemTextValue {
@@ -88,7 +88,7 @@
 }
 
 .skuSelectorItem--selected .skuSelectorInternalBox {
-  border-color: #034EA1;
+  border-color: #000;
 }
 
 .skuSelectorItem--selected .frameAround {
@@ -108,7 +108,7 @@
 
 .shippingContainer :global(.vtex-input__label)::after {
   content: "Entrega";
-  color: #034EA1;
+  color: #000;
   font-family: Commissioner;
   font-size: 16px;
   font-weight: 700;
@@ -142,7 +142,7 @@
 
 .shippingContainer :global(.vtex-button__label) {
   font-size: 0;
-  background: #034EA1;
+  background: #000;
   border-radius: 0 4px 4px 0;
 }
 

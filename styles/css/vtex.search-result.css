@@ -1,29 +1,70 @@
-.notFound--layout {
-  padding: 0 30px;
-    :global(.vtex-flex-layout-0-x-flexRowContent) {
-        flex-direction: column;
-
-        :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-            width: 100% !important;
-
-            :global(.vtex-flex-layout-0-x-flexRowContent--grid-banners1) {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                max-width: 96rem;
-                margin: 0 auto;
-                padding: 0 30px;
-
-                :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-                    width: 50% !important;
-                }
-            }
-        }
-    }
+.filterMessage--horizontal {
+  color: #242424;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: Inter;
 }
 
-@media (max-width: 767px) {
-  .notFound--layout {
-    padding: 0 15px;
-  }
+.filterTitleSpan--horizontal {
+  color: #242424;
+  font-weight: 700;
+  font-size: 19px;
+  text-transform: initial;
+  font-family: Inter;
+}
+
+:global(.vtex-slider__base-internal),
+:global(.vtex-slider__selector) {
+  background-color: #E01F26;
+}
+
+.filterIcon--horizontal .caretIcon,
+.filterSelected {
+  display: none
+}
+
+.filterIcon--horizontal::before {
+  content: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.897 6.522V11.158H5.453V6.522H0.817V5.078H5.453V0.442H6.897V5.078H11.533V6.522H6.897Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+
+.filterIsOpen .filterIcon--horizontal::before {
+  content: url("data:image/svg+xml,%3Csvg width='7' height='7' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.984375 2.45703V0.675781H6.73828V2.45703H0.984375Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+
+.filterItem--horizontal :global(.vtex-checkbox__label) {
+  color: #152536;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.filterItem--horizontal :global(.vtex-checkbox__line-container) {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filterItem--horizontal :global(.vtex-checkbox__container),
+.filterItem--horizontal :global(.vtex-checkbox__input) {
+  height: 16px;
+}
+
+.filterItem--horizontal--selected :global(.vtex-checkbox__inner-container) {
+  background: #000;
+  border-color: #000;
+}
+
+.filterTemplateOverflow {
+  padding: 0 0 10px;
+}
+
+.filter__container--selectedFilters .filterTemplateOverflow {
+  padding: 20px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.selectedFilterItem--horizontal {
+  width: auto;
 }
