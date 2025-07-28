@@ -18,19 +18,6 @@
       "flex-layout.row#banner-principal"
     ]
   },
-  "info-card#home": {
-    "props": {
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-      "headline": "Vintage Pink",
-      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
-      "callToActionMode": "button",
-      "callToActionText": "Explore",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
-    }
-  },
   "flex-layout.row#banner-principal": {
     "title": "Banner Principal",
     "children": [
@@ -212,6 +199,74 @@
     ],
     "props": {
       "blockClass": "container-shelf"
+    }
+  },
+
+  "flex-layout.row#shelf1-landing": {
+    "children": ["flex-layout.col#shelf-landing"],
+    "props": { "blockClass": ["container-shelf-landing-1", "ignore-arrow"] },
+    "title": "Vitrine de Produtos"
+  },
+  "flex-layout.col#shelf-landing": {
+    "children": ["rich-text#shelf-landing-title", "list-context.product-list#shelf-landing"]
+  },
+  "flex-layout.row#shelf2-landing": {
+    "children": ["flex-layout.col#shelf2-landing"],
+    "props": { "blockClass": ["container-shelf-landing-1", "ignore-arrow"] },
+    "title": "Vitrine de Produtos 2"
+  },
+  "flex-layout.col#shelf2-landing": {
+    "children": ["rich-text#shelf2-landing-title", "list-context.product-list#shelf-landing"]
+  },
+  "flex-layout.row#shelf3-landing": {
+    "children": ["flex-layout.col#shelf3-landing"],
+    "props": { "blockClass": ["container-shelf-landing-1", "ignore-arrow"] },
+    "title": "Vitrine de Produtos 3"
+  },
+  "flex-layout.col#shelf3-landing": {
+    "children": ["rich-text#shelf3-landing-title", "list-context.product-list#shelf-landing"]
+  },
+  "flex-layout.row#shelf-landing": {
+    "children": ["flex-layout.col#shelf-landing"],
+    "props": { "blockClass": "container-shelf-landing-1" }
+  },
+  "rich-text#shelf-landing-title": {
+    "props": {
+      "text": "## Lançamentos",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelf2-landing-title": {
+    "props": {
+      "text": "## Mais vendidos",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelf3-landing-title": {
+    "props": {
+      "text": "## Outlet",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "list-context.product-list#shelf-landing": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf-landing-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "installmentCriteria": "MAX_WITHOUT_INTEREST"
+    }
+  },
+  "slider-layout#shelf-landing-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": false
     }
   }
 }

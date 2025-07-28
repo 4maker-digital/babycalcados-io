@@ -1,226 +1,138 @@
 {
 	"store.custom#landing": {
 		"blocks": [
-			"flex-layout.row#banner-principal-landing",
-      "flex-layout.row#banners-new-landing",
-      "flex-layout.row#shelf1-landing",
-      "flex-layout.row#shelf2-landing",
-      "flex-layout.row#banners-new-landing-2",
-      "flex-layout.row#shelf3-landing"
+      "experimental__visibility-layout#banner-principal-landingNew",
+			"flex-layout.row#banners-line",
+      "flex-layout.row#shelf-landingPage",
+      "flex-layout.row#banners-line-2",
+      "flex-layout.row#shelf-landingPage-2",
+      "flex-layout.row#banners-line-3"
 		]
 	},
-  "flex-layout.row#banner-principal-landing": {
+  "experimental__visibility-layout#banner-principal-landingNew": {
+    "children": [
+      "flex-layout.row#banner-principal-landingNew"
+    ]
+  },
+  "flex-layout.row#banner-principal-landingNew": {
     "title": "Banner Principal",
-    "children": ["list-context.image-list#banner-principal-landing"],
+    "children": [
+      "custom-banners"
+    ],
     "props": {
       "fullWidth": true,
       "blockClass": "carousel"
     }
   },
-
   "list-context.image-list#banner-principal-landing": {
     "title": "Imagens Banner Principal",
-    "children": ["slider-layout#banners"],
+    "children": [
+      "slider-layout#banners"
+    ],
     "props": {
       "images": [
         {
-          "image": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154.png",
-          "mobileImage": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154-mobile.png"
+          "image": "assets/bannerPrincipalLanding.png",
+          "mobileImage": "assets/bannerPrincipalLanding.png"
         },
         {
-          "image": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154.png",
-          "mobileImage": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154-mobile.png"
+          "image": "assets/bannerPrincipalLanding.png",
+          "mobileImage": "assets/bannerPrincipalLanding.png"
         },
         {
-          "image": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154.png",
-          "mobileImage": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154-mobile.png"
+          "image": "assets/bannerPrincipalLanding.png",
+          "mobileImage": "assets/bannerPrincipalLanding.png"
         },
         {
-          "image": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154.png",
-          "mobileImage": "https://td2154.vteximg.com.br/arquivos/fullbanner-td2154-mobile.png"
+          "image": "assets/bannerPrincipalLanding.png",
+          "mobileImage": "assets/bannerPrincipalLanding.png"
         }
       ]
     }
   },
-
-  "flex-layout.row#banners-new-landing": {
-    "title": "Imagens Banners Novo",
-    "children": ["custom-banners"],
-    "props": {
-      "blockClass": ["banners", "banners-grid", "landing"]
-    }
-  },
-
-  "flex-layout.row#slider-content-1": {
-    "children": ["flex-layout.col#slider-content-1"],
-    "props": {
-      "blockClass": "four-banners"
-    }
-  },
-
-  "flex-layout.col#slider-content-1": {
+  "flex-layout.row#banners-line": {
+    "title": "Imagens Banners Coleção",
     "children": [
-      "list-context.image-list#slide-1"
+      "flex-layout.col#banners-line"
     ]
   },
-
-  "list-context.image-list#slide-1": {
-    "title": "Sliders Mobile 1",
-    "children": ["slider-layout#grid-banners-mobile"],
+  "flex-layout.col#banners-line": {
+    "children": [
+      "custom-banners"
+    ],
     "props": {
-      "blockClass": ["double-slide-list"],
-      "images": [
-        {
-          "image": "/arquivos/banner-4.png",
-          "mobileImage": "/arquivos/banner-4.png"
-        },
-        {
-          "image": "/arquivos/banner-4.png",
-          "mobileImage": "/arquivos/banner-4.png"
-        },
-        {
-          "image": "/arquivos/banner-4.png",
-          "mobileImage": "/arquivos/banner-4.png"
-        },
-        {
-          "image": "/arquivos/banner-4.png",
-          "mobileImage": "/arquivos/banner-4.png"
-        }
+      "blockClass": [
+        "banners",
+        "banners-desktop"
       ]
     }
   },
-
-  "flex-layout.row#slider-content-2": {
-    "children": ["flex-layout.col#slider-content-2"],
+  "flex-layout.row#shelf-landingPage": {
+    "children": [
+      "flex-layout.col#shelf-landingPage"
+    ],
     "props": {
-      "blockClass": "four-banners"
+      "blockClass": "container-shelf"
     }
   },
-
-  "flex-layout.col#slider-content-2": {
+  "flex-layout.col#shelf-landingPage": {
+    "children": ["rich-text#shelf-landingPage-title", "list-context.product-list#shelf-landing"]
+  },
+  "rich-text#shelf-landingPage-title": {
+    "props": {
+      "text": "## Calçados",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#banners-line-2": {
+    "title": "Imagens Banner Full",
     "children": [
-      "list-context.image-list#slide-2"
+      "flex-layout.col#banners-line-2"
     ]
   },
-
-  "list-context.image-list#slide-2": {
-    "title": "Sliders Mobile 2",
-    "children": ["slider-layout#grid-banners-mobile"],
+  "flex-layout.col#banners-line-2": {
+    "children": [
+      "custom-banners"
+    ],
     "props": {
-      "blockClass": ["double-slide-list"],
-      "images": [
-        {
-          "image": "/arquivos/banner-4.png",
-          "mobileImage": "/arquivos/banner-4.png"
-        },
-        {
-          "image": "/arquivos/banner-4.png",
-          "mobileImage": "/arquivos/banner-4.png"
-        },
-        {
-          "image": "/arquivos/banner-4.png",
-          "mobileImage": "/arquivos/banner-4.png"
-        },
-        {
-          "image": "/arquivos/banner-4.png",
-          "mobileImage": "/arquivos/banner-4.png"
-        }
+      "blockClass": [
+        "banners",
+        "banners-desktop"
       ]
     }
   },
-
-  "slider-layout#grid-banners-mobile": {
-    "title": "4 Banners Mobile",
+  "flex-layout.row#shelf-landingPage-2": {
+    "children": [
+      "flex-layout.col#shelf-landingPage-2"
+    ],
     "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "autoplay": {
-        "timeout": 3000,
-        "stopOnHover": true
-      },
-      "infinite": true,
-      "showNavigationArrows": "never",
-      "showPaginationDots": "never",
-      "blockClass": "carousel-mobile"
+      "blockClass": "container-shelf"
     }
   },
-
-  "flex-layout.row#banners-new-landing-2": {
-    "title": "Imagens Banners 2 Novo",
-    "children": ["custom-banners"],
+  "flex-layout.col#shelf-landingPage-2": {
+    "children": ["rich-text#shelf-landingPage-2-title", "list-context.product-list#shelf-landing"]
+  },
+  "rich-text#shelf-landingPage-2-title": {
     "props": {
-      "blockClass": "banners"
-    }
-  },
-
-  "flex-layout.row#shelf1-landing": {
-    "children": ["flex-layout.col#shelf-landing"],
-    "props": { "blockClass": ["container-shelf-landing-1", "ignore-arrow"] },
-    "title": "Vitrine de Produtos"
-  },
-  "flex-layout.col#shelf-landing": {
-    "children": ["rich-text#shelf-landing-title", "list-context.product-list#shelf-landing"]
-  },
-  "flex-layout.row#shelf2-landing": {
-    "children": ["flex-layout.col#shelf2-landing"],
-    "props": { "blockClass": ["container-shelf-landing-1", "ignore-arrow"] },
-    "title": "Vitrine de Produtos 2"
-  },
-  "flex-layout.col#shelf2-landing": {
-    "children": ["rich-text#shelf2-landing-title", "list-context.product-list#shelf-landing"]
-  },
-  "flex-layout.row#shelf3-landing": {
-    "children": ["flex-layout.col#shelf3-landing"],
-    "props": { "blockClass": ["container-shelf-landing-1", "ignore-arrow"] },
-    "title": "Vitrine de Produtos 3"
-  },
-  "flex-layout.col#shelf3-landing": {
-    "children": ["rich-text#shelf3-landing-title", "list-context.product-list#shelf-landing"]
-  },
-  "flex-layout.row#shelf-landing": {
-    "children": ["flex-layout.col#shelf-landing"],
-    "props": { "blockClass": "container-shelf-landing-1" }
-  },
-  "rich-text#shelf-landing-title": {
-    "props": {
-      "text": "## Lançamentos",
+      "text": "## Acessórios",
       "blockClass": "shelfTitle"
     }
   },
-  "rich-text#shelf2-landing-title": {
-    "props": {
-      "text": "## Mais vendidos",
-      "blockClass": "shelfTitle"
-    }
+  "flex-layout.row#banners-line-3": {
+    "title": "Imagens Banner Full 2",
+    "children": [
+      "flex-layout.col#banners-line-3"
+    ]
   },
-  "rich-text#shelf3-landing-title": {
+  "flex-layout.col#banners-line-3": {
+    "children": [
+      "custom-banners"
+    ],
     "props": {
-      "text": "## Outlet",
-      "blockClass": "shelfTitle"
-    }
-  },
-  "list-context.product-list#shelf-landing": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#shelf-landing-products"],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "installmentCriteria": "MAX_WITHOUT_INTEREST"
-    }
-  },
-  "slider-layout#shelf-landing-products": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
-        "phone": 2
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf",
-      "showPaginationDots": false
+      "blockClass": [
+        "banners",
+        "banners-desktop"
+      ]
     }
   }
 }

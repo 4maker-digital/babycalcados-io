@@ -12,6 +12,13 @@
   color: #242424;
 }
 
+.listPriceValue--shelf,
+.listPriceValue--shelf .currencyContainer--shelf {
+  color: #777;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 .installments--value {
   color: #242424;
   font-weight: 400;
