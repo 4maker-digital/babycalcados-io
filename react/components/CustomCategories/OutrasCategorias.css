@@ -3,14 +3,13 @@
     text-align: center;
     margin: 2rem 0;
   }
-  
+
   .title {
     font-size: 2rem;
     margin-bottom: 2.5rem;
-    font-family: "Commissioner", sans-serif;
     text-transform: uppercase;
   }
-  
+
   .grid {
     max-width: 90%;
     margin: 0 auto;
@@ -22,7 +21,7 @@
   .flex {
     display: flex;
   }
-  
+
   .card {
     text-decoration: none;
     color: inherit;
@@ -43,19 +42,19 @@
     .card {
       margin: 0;
     }
-    
+
   }
-  
+
   .image {
     width: 90%!important;
     height: auto;
   }
-  
+
   .caption {
     margin-top: 0.5rem;
     font-size: 1rem;
   }
-  
+
   .prevArrow, .nextArrow {
     position: absolute;
     top: 50%;
@@ -73,10 +72,10 @@
     .prevArrow {
       left: -10px;
     }
-    
-    
+
+
     .nextArrow {
       right: -10px;
     }
-    
+
   }

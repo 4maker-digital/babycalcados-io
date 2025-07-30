@@ -90,7 +90,6 @@
 .description-item {
   margin: 0 0 15px;
   color: #212529;
-  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 12px;
   line-height: 14.63px;
@@ -99,7 +98,6 @@
 .description-strong {
   margin: 0;
   color: #65656F;
-  font-family: 'Montserrat';
   font-weight: 700;
   font-size: 12px;
   line-height: 14.63px;
@@ -194,7 +192,6 @@
 .flexRow--addMobile :global(.vtex-button) {
   background: #00D191;
   color: #fff;
-  font-family: Commissioner;
   font-size: 16px;
   font-weight: 700;
   line-height: 19.57px;
@@ -266,7 +263,6 @@
 
 .flexCol--product-main-info :global(.vtex-product-price-1-x-savings--horizontal)::before {
   content: "Referência:";
-  font-family: Commissioner;
   font-size: 10px;
   font-weight: 400;
   line-height: 12.23px;
@@ -399,7 +395,6 @@
 
 .flexRowContent--desc :global(.vtex-disclosure-layout-1-x-trigger) :global(.vtex-rich-text-0-x-paragraph) {
   color: #212529;
-  font-family: Commissioner;
   font-size: 20px;
   font-weight: 700;
   line-height: 24.46px;
@@ -505,6 +500,7 @@
 
 .flexCol--brand-collection {
   margin: 50px 0;
+  position: relative;
 }
 
 @media (min-width: 1024px) and (max-width: 1600px) {

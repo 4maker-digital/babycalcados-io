@@ -109,7 +109,6 @@
 .shippingContainer :global(.vtex-input__label)::after {
   content: "Entrega";
   color: #000;
-  font-family: Commissioner;
   font-size: 16px;
   font-weight: 700;
   line-height: 19.57px;
@@ -123,7 +122,6 @@
 :global(.vtex-address-form__postalCode) :global(.vtex-input)::before {
   content: "Vejas as opções de entregas para seus itens, com todos os prazos e valores";
   color: #ADB5BD;
-  font-family: Commissioner;
   font-size: 10px;
   font-weight: 400;
   line-height: 12.23px;
@@ -197,7 +195,6 @@
 }
 
 .productBrand {
-  font-family: Commissioner;
   font-size: 24px;
   font-weight: 700;
   line-height: 29.35px;

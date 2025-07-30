@@ -47,6 +47,9 @@ export default function CustomBanners({ config }) {
     prevArrow: <PrevArrow />,
   };
 
+  console.log("settings", settings)
+  console.log("(config?.[0]?.sliderDesk || config?.[0]?.sliderMob)", (config?.[0]?.sliderDesk || config?.[0]?.sliderMob))
+
   return (
     <div className={`vtex-store-components-3-x-bannersCustom ${(config?.[0]?.sliderDesk || config?.[0]?.sliderMob) && "vtex-store-components-3-x-bannersCustom-slider"}`}>
       {(config?.[0]?.sliderDesk || config?.[0]?.sliderMob) ? (

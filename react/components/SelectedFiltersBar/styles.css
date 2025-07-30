@@ -12,7 +12,6 @@
   align-items: center;
   padding: 4px 0 4px 9px;
   border: 1px solid #757575;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -32,7 +31,6 @@
 }
 
 .flagsContainer .btnClear {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;

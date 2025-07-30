@@ -53,7 +53,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(3, 78, 161, 1);
+    color: #E01F26;
     margin: 0;
 }
 
@@ -72,7 +72,7 @@
 }
 
 :global(.td2154-store-theme-0-x-filterColumn.Tamanho) :global(.td2154-store-theme-0-x-filterList) :global(label) :global(input):checked {
-    border: 1px solid rgba(3, 78, 161, 1);
+    border: 1px solid #E01F26;
     border-radius: 50%;
     background: transparent;
 }
@@ -96,7 +96,7 @@
 
 @media (max-width: 1024px) {
     :global(.vtex-search-result-3-x-accordionFilterOpen--horizontal--tamanho) :global(.vtex-search-result-3-x-filterAccordionItemBox) :global(.vtex-checkbox__container) :global(.vtex-checkbox__inner-container.b--action-primary) {
-        border: 1px solid rgba(3, 78, 161, 1);
+        border: 1px solid #E01F26;
         border-radius: 50%;
         background: transparent;
     }

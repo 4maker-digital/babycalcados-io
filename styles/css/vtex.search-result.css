@@ -2,7 +2,6 @@
   color: #242424;
   font-weight: 700;
   font-size: 28px;
-  font-family: Inter;
 }
 
 .filterTitleSpan--horizontal {
@@ -10,7 +9,6 @@
   font-weight: 700;
   font-size: 19px;
   text-transform: initial;
-  font-family: Inter;
 }
 
 :global(.vtex-slider__base-internal),
@@ -33,7 +31,6 @@
 
 .filterItem--horizontal :global(.vtex-checkbox__label) {
   color: #152536;
-  font-family: Inter;
   font-weight: 400;
   font-size: 14px;
 }

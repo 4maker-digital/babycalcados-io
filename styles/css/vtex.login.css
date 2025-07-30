@@ -1,52 +1,69 @@
+.box {
+  right: -250px !important;
+  min-width: 22rem;
+}
 
+.arrowUp {
+  right: 42%;
+}
 
 
 :global(.vtex-menu-2-x-menuContainerHeader-content-nav) li:nth-child(1) :global(.vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category) ul:nth-child(2) {
-    margin-right: 60px !important;
-    margin-left: -45px;
+  margin-right: 60px !important;
+  margin-left: -45px;
 }
 
 :global(.vtex-menu-2-x-menuContainerHeader-content-nav) li:nth-child(1) :global(.vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category) ul:nth-child(2) {
-    margin-right: 60px !important;
-    margin-left: -45px;
+  margin-right: 60px !important;
+  margin-left: -45px;
 }
 
 
 :global(.vtex-menu-2-x-menuContainerHeader-content-nav) li:nth-child(2) :global(.vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category) ul:nth-child(2) {
-    margin-right: 60px !important;
-    margin-left: -45px;
+  margin-right: 60px !important;
+  margin-left: -45px;
 }
 
 :global(.vtex-menu-2-x-menuContainerHeader-content-nav) li:nth-child(3) :global(.vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category) ul:nth-child(2) {
-    margin-right: 60px !important;
-    margin-left: -65px !important;
+  margin-right: 60px !important;
+  margin-left: -65px !important;
 }
 
 
 :global(.vtex-menu-2-x-menuContainerHeader-content-nav) li:nth-child(4) :global(.vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category) ul {
 
-    margin-right: 60px !important;
-    margin-left: 60px !important;
+  margin-right: 60px !important;
+  margin-left: 60px !important;
 }
 
 :global(.vtex-menu-2-x-menuContainerHeader-content-nav) li:nth-child(5) :global(.vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category) ul:nth-child(2) {
-    margin-right: 60px !important;
-    margin-left: 30px !important;
+  margin-right: 60px !important;
+  margin-left: 30px !important;
 }
 
 :global(.vtex-menu-2-x-menuContainerHeader-content-nav) li:nth-child(6) :global(.vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category) ul {
 
-    margin-right: 60px !important;
+  margin-right: 60px !important;
 }
 
 
 
 :global(.vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category) ul:nth-child(3) li:nth-child(1)>a {
     font-weight: bold;
+    color: #242424;
+    font-size: 16px;
+}
+
+:global(.vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category) ul:nth-child(2) li:nth-child(1)>a {
+    font-weight: bold;
+    color: #242424;
+    font-size: 16px;
 }
 
 :global(.vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category) ul:nth-child(1) li:nth-child(1)>a {
     font-weight: bold;
+    color: #242424;
+    font-size: 16px;
 }
 
 

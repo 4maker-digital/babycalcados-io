@@ -51,7 +51,6 @@
 
 .totalProducts--layout {
   color: #777;
-  font-family: Helvetica;
   font-weight: 400;
   font-size: 12px;
   text-transform: lowercase;
@@ -60,7 +59,6 @@
 .totalProducts--layout::before {
   content: "Encontramos ";
   color: #777;
-  font-family: Helvetica;
   font-weight: 400;
   font-size: 12px;
   text-transform: capitalize;
@@ -84,7 +82,6 @@
 
 .filterPopupTitle {
     color: #000;
-    font-family: 'Commissioner';
     text-transform: capitalize;
 }
 
@@ -148,7 +145,7 @@
   }
 
   .filtersWrapperMobile--horizontal .filterPopupButton {
-    border: 1px solid rgba(3, 78, 161, 1);
+    border: 1px solid #E01F26;
     width: 100%;
     border-radius: 5px;
     height: 50px;
@@ -159,7 +156,7 @@
 
   .filtersWrapperMobile--horizontal .filterPopupTitle {
     margin: 0;
-    color: rgba(3, 78, 161, 1);
+    color: #E01F26;
     font-weight: 700;
     font-size: 16px;
     margin-left: 20px;
@@ -221,7 +218,6 @@
 
   .filterBreadcrumbsContent--horizontal .filterBreadcrumbsText::after {
     content: "Filtrar por";
-    font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 400;
     color: rgba(52, 58, 64, 1);
@@ -264,8 +260,7 @@
   }
 
   .accordionFilterItemTitle {
-    color: rgba(3, 78, 161, 1);
-    font-family: 'Montserrat';
+    color: #E01F26;
     font-size: 14px;
     font-weight: 500;
     line-height: 17.07px;
@@ -295,7 +290,6 @@
   }
 
   .filterAccordionItemBox :global(.vtex-checkbox__label) {
-    font-family: 'Montserrat';
     font-size: 14px;
     color: rgba(33, 37, 41, 1);
     text-transform: uppercase;
@@ -312,24 +306,22 @@
   }
 
   .filterButtonsBox .filterClearButtonWrapper :global(.vtex-button) {
-    border: 1px solid rgba(3, 78, 161, 1);
+    border: 1px solid #E01F26;
   }
 
   .filterButtonsBox .filterClearButtonWrapper :global(.vtex-button) :global(.vtex-button__label) {
-    color: rgba(3, 78, 161, 1);
+    color: #E01F26;
     padding: 0 !important;
-    font-family: 'Montserrat';
   }
 
   .filterButtonsBox .filterApplyButtonWrapper :global(.vtex-button) {
-    background: rgba(3, 78, 161, 1);
+    background: #E01F26;
     border: none;
   }
 
   .filterButtonsBox .filterApplyButtonWrapper :global(.vtex-button) :global(.vtex-button__label) {
     color: white;
     padding: 0 !important;
-    font-family: 'Montserrat';
   }
 
   .accordionFilterOpen--horizontal--tamanho {
@@ -347,7 +339,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(3, 78, 161, 1);
+    color: #E01F26;
     margin: 0;
     position: relative;
   }
@@ -384,7 +376,7 @@
 
   .accordionFilterOpen--horizontal--tamanho :global(.vtex-checkbox__label) {
     margin: 0;
-    color: rgba(3, 78, 161, 1);
+    color: #E01F26;
     font-size: 12px;
   }
 }

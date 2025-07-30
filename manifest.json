@@ -53,6 +53,7 @@
     "vtex.order-placed": "2.x",
     "vtex.order-manager": "0.x",
     "vtex.order-items": "0.x",
+    "vtex.overlay-layout": "0.x",
     "vtex.checkout-summary": "0.x",
     "vtex.product-list": "0.x",
     "vtex.add-to-cart-button": "0.x",

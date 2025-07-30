@@ -16,20 +16,8 @@
   "header-layout.desktop": {
     "title": "Header Desktop",
     "children": [
-      "flex-layout.row#top-bar"
-      //"sticky-layout#header-sticky-desktop"
+      "sticky-layout#header-sticky-desktop"
     ]
-  },
-  "flex-layout.row#top-bar": {
-    "title": "Top Bar",
-    "children": [
-      "custom-top-bar"
-    ],
-    "props": {
-      "blockClass": [
-        "top-bar-container"
-      ]
-    }
   },
   "sticky-layout#header-sticky-desktop": {
     "title": "Header - Conteúdo",
@@ -38,10 +26,16 @@
       "blockClass": "header--sticky"
     },
     "children": [
-      "flex-layout.row#header-main-desktop"
+      "flex-layout.row#header-main-desktop",
+      "flex-layout.row#second-row"
     ]
   },
   "flex-layout.row#header-main-desktop": {
+    "children": [
+      "flex-layout.col#header-main-desktop"
+    ]
+  },
+  "flex-layout.col#header-main-desktop": {
     "children": [
       "flex-layout.row#first-row"
     ],
@@ -57,8 +51,8 @@
     "title": "Linha 1 do header",
     "children": [
       "logo#logo-header",
-      "custom-menu",
-      "flex-layout.row#search-bar"
+      "flex-layout.row#search-bar",
+      "flex-layout.row#icons"
     ],
     "props": {
       "fullWidth": true,
@@ -81,23 +75,12 @@
   "flex-layout.row#search-bar": {
     "title": "Search bar",
     "props": {
-      "verticalAlign": "middle",
-      "horizontalAlign": "right",
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": true,
-      "blockClass": "e-right-menu"
+      "blockClass": "e-middle-menu",
+      "fullWidth": true
     },
     "children": [
-      "search-bar",
-      "login",
-      "minicart.v2"
+      "search-bar"
     ]
-  },
-  "login": {
-    "props": {
-      "showIconProfile": true,
-      "hideIconLabel": true
-    }
   },
   "search-bar": {
     "blocks": [
@@ -105,8 +88,9 @@
     ],
     "props": {
       "customSearchPageUrl": "/${term}?_q=${term}&map=ft",
-      "placeholder": "O que você está buscando?",
-      "displayMode": "search-and-clear-buttons"
+      "placeholder": "Digite aqui a sua busca",
+      "displayMode": "search-and-clear-buttons",
+      "openAutocompleteOnFocus": true
     }
   },
   "autocomplete-result-list.v2": {
@@ -116,6 +100,56 @@
     "props": {
       "maxSuggestedTerms": 5,
       "productLayout": "HORIZONTAL"
+    }
+  },
+  "flex-layout.row#icons": {
+    "title": "Ícones",
+    "props": {
+      "blockClass": "e-right-menu"
+    },
+    "children": [
+      "flex-layout.row#wishlist",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "iconLabel": "Entre ou cadastre-se"
+    }
+  },
+  "flex-layout.row#wishlist": {
+    "title": "Wishlist Header",
+    "children": [
+      "image#wishlist",
+      "link#wishlist"
+    ],
+    "props": {
+      "blockClass": "e-header-wishlist"
+    }
+  },
+  "image#wishlist": {
+    "props": {
+      "src": "assets/wishlist.svg",
+      "link": "/wishlist"
+    }
+  },
+  "link#wishlist": {
+    "props": {
+      "label": "Lista de desejos",
+      "href": "/wishlist"
+    }
+  },
+  "flex-layout.row#second-row": {
+    "title": "Linha 2 do header",
+    "children": [
+      "custom-menu"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "e-second-header-row",
+      "colSizing": "auto"
     }
   }
   /* Header Mobile */

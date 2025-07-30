@@ -30,7 +30,6 @@
   display: block;
   padding: 0;
   color: #6C757D;
-  font-family: 'Inter';
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -40,7 +39,6 @@
 .term {
   padding: 0;
   color: #000;
-  font-family: 'Inter';
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;

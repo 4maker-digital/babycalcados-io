@@ -1,36 +1,41 @@
 .formTitle {
-    color: rgba(0, 0, 0, 0.8);
-    font-family: 'Montserrat';
+    color: #000;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 24.46px;
+    margin: 12px 0;
 }
 
 .optionsListItem .button :global(.vtex-button) {
-    background: rgba(3, 78, 161, 1);
+    background: #E01F26;
     border-radius: 5px;
     border: none;
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 12px;
     line-height: 14.68px;
     color: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(3, 78, 161, 1);
+    border: 1px solid #E01F26;
 }
 
 .optionsListItem .emailPasswordOptionBtn :global(.vtex-button),
 .optionsListItem .googleOptionBtn :global(.vtex-button),
 .optionsListItem .facebookOptionBtn :global(.vtex-button) {
-    background: rgba(255, 255, 255, 0.9);
-    color: rgba(3, 78, 161, 1);
-    border: 1px solid rgba(3, 78, 161, 1);
+  background: #E8E8E8;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14.68px;
+  color: #000;
+  border: 1px solid #E8E8E8;
+  text-transform: initial;
 }
 
 .optionsListItem .oauthLabel {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14.68px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14.68px;
+  text-transform: initial;
 }
 
 :global(.vtex-store-components-3-x-productDescriptionText) div {

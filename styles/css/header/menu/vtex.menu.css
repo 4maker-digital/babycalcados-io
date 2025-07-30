@@ -1,6 +1,7 @@
 .menuContainerHeader {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .menuContainerHeader-content-nav {
@@ -8,24 +9,21 @@
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
 .menuContainerHeader-content-nav-item {
-    height: 86px;
     display: flex;
     align-items: center;
 }
 
-.menuContainerHeader-content-nav-item:not(:last-child) {
-    padding-right: 39px;
-}
-
 .menuContainerHeader-content-nav-item--title {
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Montserrat';
+    color: #242424;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 14px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -37,18 +35,19 @@
     width: 100%;
     left: 0;
     right: 0;
-    top: 86px;
-    box-shadow: 0 2px 20px #00000029;
+    top: 131px;
 }
 
 .menuContainerHeader-content-nav-item--dropdown-items {
     display: flex;
     justify-content: center;
-    padding: 10px 0 20px;
+    padding: 20px 0;
+    background: #F8F8F8;
 }
 
 .menuContainerHeader-content-nav-item--dropdown-items-category {
     display: flex;
+    gap: 40px;
 }
 
 .menuContainerHeader-content-nav-item--dropdown-items-category-items {
@@ -56,40 +55,34 @@
     padding: 0;
 }
 
-
-
-
 .menuContainerHeader-content-nav-item--dropdown-items-category-items-item {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .menuContainerHeader-content-nav-item--dropdown-items-category-items-item--title {
-    font-family: 'Montserrat';
-    color: rgba(3, 78, 161, 1);
+    color: #65656F;
     text-decoration: none;
     font-size: 14px;
     line-height: 18px;
 }
 
 .menuContainerHeader-content-nav-item--dropdown-items-category--see-all {
-    background-color: rgba(24, 50, 73, 1);
-    padding: 10px;
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14.63px;
-    color: rgba(255, 255, 255, 1);
+    padding-top: 15px;
+    border-top: 1px solid #E6E6E6;
+    font-weight: 700;
+    font-size: 14px;
+    color: #65656F;
     text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
 }
 
 .menuContainerHeader-content-nav-item--dropdown-items-number {
-    margin: 0 41px 0 22px;
+    margin: 0 20px;
 }
 
 .menuContainerHeader-content-nav-item--dropdown-items-number__title {
-    color: rgba(3, 78, 161, 1);
-    font-family: 'Montserrat';
+    color: #000;
     font-size: 14px;
     line-height: 14.68px;
     margin: 0 0 16px;
@@ -101,30 +94,27 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 13px;
-    max-width: 200px;
+    gap: 5px;
+    max-width: 242px;
 }
 
 .menuContainerHeader-content-nav-item--dropdown-items-number-items-item {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .menuContainerHeader-content-nav-item--dropdown-items-number-items-item--title {
-    color: rgba(3, 78, 161, 1);
+    color: #65656F;
     font-size: 12px;
     line-height: 14.63px;
     font-weight: 400;
     text-decoration: none;
-    font-family: 'Montserrat';
-    border: 1px solid rgba(222, 226, 230, 1);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    border: 1px solid #DFE2E4;
+    width: 36px;
+    height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,12 +125,6 @@
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 21px;
-    margin-left: 41px;
-}
-
-.menuContainerHeader-content-nav-item--dropdown-items-banners-item {
-    max-width: 191px;
 }
 
 .menuContainerHeader-content-nav-item--dropdown {
@@ -151,15 +135,8 @@
     display: block !important;
 }
 
-.menuContainerHeader-content-nav-item--dropdown-items-category-items-item--title:hover {
-    text-decoration: underline;
-    font-weight: 700;
-}
-
-.menuContainerHeader-content-nav-item--dropdown-items-number-items-item--title:hover {
-    background: rgba(3, 78, 161, 1);
-    color: white;
-    border: 1px solid rgba(3, 78, 161, 1);
+.menuContainerHeader-content-nav-item:hover .menuContainerHeader-content-nav-item--title {
+  color: #E01F26;
 }
 
 @media (max-width: 1024px) {
@@ -206,8 +183,7 @@
 
     .menuContainer :global(.vtex-login-2-x-container) :global(.vtex-button) :global(.vtex-button__label)::after {
         content: "Entrar";
-        font-family: 'Montserrat';
-        color: rgba(3, 78, 161, 1);
+        color: #E01F26;
         font-weight: 400;
         font-size: 12px;
         line-height: 14.63px;
@@ -225,7 +201,7 @@
 
     .menuContainerHeader-content-nav-item--title {
         font-size: 12px;
-        color: rgba(3, 78, 161, 1);
+        color: #E01F26;
         font-weight: 400;
         line-height: 14.63px;
         position: relative;
@@ -288,11 +264,10 @@
     }
 
     .menuContainerHeader-content-nav-item--dropdown-mobile-items-category-items-item--title {
-        color: rgba(3, 78, 161, 1);
+        color: #E01F26;
         font-size: 12px;
         text-decoration: none;
         line-height: 14.63px;
-        font-family: 'Montserrat';
     }
 
     .menuContainerHeader-content-nav-item--active .menuContainerHeader-content-nav-item--title {

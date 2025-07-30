@@ -8,7 +8,7 @@
       "flex-layout.row#shelf2-home",
       "flex-layout.row#banners-2",
       "flex-layout.row#shelf3-home",
-      "flex-layout.row#banners-collection",
+      // "flex-layout.row#banners-collection",
       "flex-layout.row#brand-collection",
       "flex-layout.row#banners-3"
     ]

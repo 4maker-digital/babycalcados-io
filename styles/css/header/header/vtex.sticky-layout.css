@@ -1,10 +1,11 @@
-.wrapper--header--sticky {
-    height: 86px !important;
+.container--header--sticky :global(.vtex-store-components-3-x-container) {
+  background: #E01F26;
+  padding: 12px 0;
 }
 
 @media (max-width: 1024px) {
     .wrapper--e-header {
-        background: rgba(3, 78, 161, 1);
+        background: #E01F26;
         height: 80px!important;
         padding: 26px 15px 20px;
         text-align: center;
@@ -18,7 +19,7 @@
     }
 
     .wrapper--stuck.wrapper--e-header--stuck .container--e-header {
-        background: rgba(3, 78, 161, 1);
+        background: #E01F26;
         /* height: 155px !important; */
         padding: 26px 15px 20px;
     }

@@ -6,8 +6,8 @@
 .logoContainer--e-header-logo {
     padding: 0;
     margin: 0;
-    max-width: 191px;
-    max-height: 34px;
+    max-width: 110px;
+    max-height: 66px;
 }
 @media screen and (max-width: 900) {
     .searchBarContainer {
@@ -15,46 +15,43 @@
     }
 }
 
-
-
-/* .searchBarInnerContainer {
-    display: none
-} */
+.searchBarContainer {
+  padding: 0;
+}
 
 .searchBarContainer .searchBarInnerContainer :global(.vtex-input-prefix__group) {
-    height: 30px;
+    height: 45px;
     border: none;
-    border-bottom: 1px solid white;
-    border-radius: 0;
-    width: 191px;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .searchBarContainer .searchBarInnerContainer :global(.vtex-styleguide-9-x-input) {
-    padding: 0 0 0 10px;
-    background: transparent;
+    padding: 12px 15px;
+    background: #fff;
     border: none;
-    color: rgba(233, 236, 239, 1);
-    font-family: 'Montserrat';
-    font-size: 10px;
+    color: #242424;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .searchBarContainer .searchBarInnerContainer :global(.vtex-styleguide-9-x-input)::placeholder {
-    color: rgba(233, 236, 239, 1);
+    color: #242424;
 }
 
 .searchBarContainer .searchBarInnerContainer :global(.vtex-input__suffix) {
     padding: 0;
     background: transparent;
     position: absolute;
-    right: 0;
-    width: 30px;
+    right: 12px;
+    top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .searchBarContainer .searchBarInnerContainer .searchBarIcon--clear {
-    display: none;
+  display: none;
 }
 
 .searchBarContainer .searchBarInnerContainer .externalSearchButtonWrapper {
@@ -67,9 +64,9 @@
 .searchBarContainer .searchBarInnerContainer .searchBarIcon--external-search {
     padding: 0;
     background: transparent;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44MTIyIDE3LjgxMzNDMTcuOTExNSAxNy43MTQgMTguMDI5MyAxNy42MzUyIDE4LjE1OSAxNy41ODE0QzE4LjI4ODcgMTcuNTI3NyAxOC40Mjc3IDE3LjUgMTguNTY4MSAxNy41QzE4LjcwODQgMTcuNSAxOC44NDc1IDE3LjUyNzcgMTguOTc3MSAxNy41ODE0QzE5LjEwNjggMTcuNjM1MiAxOS4yMjQ3IDE3LjcxNCAxOS4zMjM5IDE3LjgxMzNMMjMuNDM2OCAyMS45MjU4QzIzLjYzNzIgMjIuMTI2MSAyMy43NDk5IDIyLjM5NzkgMjMuNzUgMjIuNjgxMkMyMy43NTAxIDIyLjk2NDYgMjMuNjM3NiAyMy4yMzY0IDIzLjQzNzMgMjMuNDM2OEMyMy4yMzcgMjMuNjM3MiAyMi45NjUzIDIzLjc0OTkgMjIuNjgxOSAyMy43NUMyMi4zOTg1IDIzLjc1MDEgMjIuMTI2NyAyMy42Mzc2IDIxLjkyNjIgMjMuNDM3M0wxNy44MTMzIDE5LjMyNDhDMTcuNzE0IDE5LjIyNTYgMTcuNjM1MiAxOS4xMDc4IDE3LjU4MTQgMTguOTc4MUMxNy41Mjc3IDE4Ljg0ODQgMTcuNSAxOC43MDk0IDE3LjUgMTguNTY5QzE3LjUgMTguNDI4NyAxNy41Mjc3IDE4LjI4OTcgMTcuNTgxNCAxOC4xNkMxNy42MzUyIDE4LjAzMDMgMTcuNzE0IDE3LjkxMjUgMTcuODEzMyAxNy44MTMzSDE3LjgxMjJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEzLjEyNSAxOC45NDIzQzEzLjg4ODkgMTguOTQyMyAxNC42NDU0IDE4Ljc5MTggMTUuMzUxMiAxOC40OTk1QzE2LjA1NyAxOC4yMDcxIDE2LjY5ODMgMTcuNzc4NiAxNy4yMzg1IDE3LjIzODVDMTcuNzc4NiAxNi42OTgzIDE4LjIwNzEgMTYuMDU3IDE4LjQ5OTUgMTUuMzUxMkMxOC43OTE4IDE0LjY0NTQgMTguOTQyMyAxMy44ODg5IDE4Ljk0MjMgMTMuMTI1QzE4Ljk0MjMgMTIuMzYxMSAxOC43OTE4IDExLjYwNDYgMTguNDk5NSAxMC44OTg4QzE4LjIwNzEgMTAuMTkzIDE3Ljc3ODYgOS41NTE3MyAxNy4yMzg1IDkuMDExNTRDMTYuNjk4MyA4LjQ3MTM2IDE2LjA1NyA4LjA0Mjg2IDE1LjM1MTIgNy43NTA1MUMxNC42NDU0IDcuNDU4MTYgMTMuODg4OSA3LjMwNzY5IDEzLjEyNSA3LjMwNzY5QzExLjU4MjIgNy4zMDc2OSAxMC4xMDI1IDcuOTIwNTkgOS4wMTE1NCA5LjAxMTU0QzcuOTIwNTkgMTAuMTAyNSA3LjMwNzY5IDExLjU4MjIgNy4zMDc2OSAxMy4xMjVDNy4zMDc2OSAxNC42Njc4IDcuOTIwNTkgMTYuMTQ3NSA5LjAxMTU0IDE3LjIzODVDMTAuMTAyNSAxOC4zMjk0IDExLjU4MjIgMTguOTQyMyAxMy4xMjUgMTguOTQyM1pNMjAgMTMuMTI1QzIwIDE0Ljk0ODQgMTkuMjc1NyAxNi42OTcgMTcuOTg2NCAxNy45ODY0QzE2LjY5NyAxOS4yNzU3IDE0Ljk0ODQgMjAgMTMuMTI1IDIwQzExLjMwMTYgMjAgOS41NTI5NSAxOS4yNzU3IDguMjYzNjQgMTcuOTg2NEM2Ljk3NDMzIDE2LjY5NyA2LjI1IDE0Ljk0ODQgNi4yNSAxMy4xMjVDNi4yNSAxMS4zMDE2IDYuOTc0MzMgOS41NTI5NSA4LjI2MzY0IDguMjYzNjRDOS41NTI5NSA2Ljk3NDMzIDExLjMwMTYgNi4yNSAxMy4xMjUgNi4yNUMxNC45NDg0IDYuMjUgMTYuNjk3IDYuOTc0MzMgMTcuOTg2NCA4LjI2MzY0QzE5LjI3NTcgOS41NTI5NSAyMCAxMS4zMDE2IDIwIDEzLjEyNVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=");
-    width: 30px;
-    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9.94444' cy='9.94444' r='8.94444' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.333 16.3333L23.9997 23.9999' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    width: 24px;
+    height: 24px;
     background-size: 100% 100%;
     margin: 0;
     border: 0;

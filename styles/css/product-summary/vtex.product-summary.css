@@ -98,8 +98,7 @@
 
 .buy--item-content--title {
     margin: 0;
-    font-family: 'Montserrat';
-    color: rgba(3, 78, 161, 1);
+    color: #E01F26;
     font-weight: 700;
     font-size: 14px;
     line-height: 17.07px;
@@ -118,14 +117,13 @@
 }
 
 .buy--item-sku-list-button {
-    border: 1px solid rgba(3, 78, 161, 1);
+    border: 1px solid #E01F26;
     width: 35px !important;
     height: 35px !important;
     display: block;
     background: transparent;
     border-radius: 20px;
-    font-family: 'Montserrat';
-    color: rgba(3, 78, 161, 1);
+    color: #E01F26;
     font-weight: 400;
     font-size: 12px;
     line-height: 14.63px;
@@ -139,8 +137,8 @@
 }
 
 .buy--item-sku-list-button:hover {
-    border: 2px solid rgba(3, 78, 161, 1);
-    background: rgba(3, 78, 161, 1);
+    border: 2px solid #E01F26;
+    background: #E01F26;
     color: #fff;
 }
 

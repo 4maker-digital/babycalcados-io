@@ -13,7 +13,6 @@
   border: 1px solid #000;
   background: transparent;
   border-radius: 5px;
-  font-family: "Commissioner", sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 12.23px;
@@ -88,8 +87,7 @@
   text-align: left;
   font-style: normal;
   text-transform: uppercase;
-  color: rgba(3, 78, 161, 1);
-  font-family: 'Montserrat';
+  color: #E01F26;
   font-size: 14px;
   font-weight: 500;
   line-height: 17.07px;
@@ -119,7 +117,6 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  font-family: 'Montserrat';
   font-weight: 300;
   font-size: 14px;
   line-height: 17.07px;
@@ -176,8 +173,7 @@
   text-align: left;
   font-style: normal;
   text-transform: uppercase;
-  color: rgba(3, 78, 161, 1);
-  font-family: 'Montserrat';
+  color: #E01F26;
   font-size: 14px;
   font-weight: 500;
   line-height: 17.07px;
@@ -222,7 +218,6 @@
   .priceRangeContainer
   :global(.vtex-slider__right-value) {
   width: 100%;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -246,7 +241,6 @@
 }
 
 .customFilters .btnClear {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -269,7 +263,6 @@
 }
 
 .customFilters .buttonsContainer .btnApply {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -304,7 +297,6 @@
 
 .containerCloseContentTitle {
   margin: 0;
-  font-family: 'Montserrat';
   color: rgba(52, 58, 64, 1);
   font-weight: 400;
   font-size: 16px;
@@ -325,7 +317,7 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .filterContainer .filterColumn {
     height: 100%;
     width: 100%;

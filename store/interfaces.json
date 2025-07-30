@@ -1,7 +1,4 @@
 {
-    "custom-top-bar": {
-        "component": "TopBarComponent"
-    },
     "custom-menu": {
         "component": "MenuCustom"
     },

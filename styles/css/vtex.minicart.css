@@ -1,3 +1,11 @@
+.minicartQuantityBadgeDefault {
+  background: #BACE32;
+  top: 8px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .drawerContent .closeIconContainer {
     position: inherit;
 }
@@ -23,7 +31,7 @@
 }
 
 .drawerContent .minicartTitle {
-    background: rgba(3, 78, 161, 1);
+    background: #E01F26;
     margin: 0;
     height: 40px;
     padding: 0 15px;
@@ -37,7 +45,6 @@
 .drawerContent .minicartTitle::after {
     content: 'Minha sacola';
     color: rgba(248, 249, 250, 1);
-    font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 700;
     line-height: 19.57px;
@@ -80,8 +87,7 @@
 }
 
 .container--content-itens-item__name {
-    font-family: 'Montserrat';
-    color: rgba(3, 78, 161, 1);
+    color: #E01F26;
     font-size: 10px;
     font-weight: 700;
     margin: 0 0 21px;
@@ -90,8 +96,7 @@
 
 .container--content-itens-item__gender {
     display: block;
-    font-family: 'Montserrat';
-    color: rgba(3, 78, 161, 1);
+    color: #E01F26;
     font-size: 10px;
     font-weight: 400;
     margin: 0 0 6px;
@@ -100,8 +105,7 @@
 
 .container--content-itens-item__color {
     display: block;
-    font-family: 'Montserrat';
-    color: rgba(3, 78, 161, 1);
+    color: #E01F26;
     font-size: 10px;
     font-weight: 400;
     margin: 0 0 6px;
@@ -110,8 +114,7 @@
 
 .container--content-itens-item__size {
     display: block;
-    font-family: 'Montserrat';
-    color: rgba(3, 78, 161, 1);
+    color: #E01F26;
     font-size: 10px;
     font-weight: 400;
     margin: 0 0 6px;
@@ -154,7 +157,6 @@
     border: none;
     text-align: center;
     width: 28px;
-    font-family: 'Montserrat';
     color: rgba(0, 0, 0, 1);
     font-size: 12px;
     font-weight: 300;
@@ -194,10 +196,9 @@
 
 .container--content-itens-item--prices--total {
     font-size: 10px;
-    font-family: 'Montserrat';
     margin: 0;
     font-weight: 700;
-    color: rgba(3, 78, 161, 1);
+    color: #E01F26;
     line-height: 12.23px;
 }
 
@@ -227,7 +228,6 @@
 
 .container--footer-itens-item--title {
     margin: 0;
-    font-family: 'Montserrat';
     font-size: 12px;
     color: rgba(33, 37, 41, 1);
     line-height: 14.63px;
@@ -236,7 +236,6 @@
 
 .container--footer-itens-item--text {
     margin: 0;
-    font-family: 'Montserrat';
     font-size: 12px;
     color: rgba(33, 37, 41, 1);
     line-height: 14.63px;
@@ -252,7 +251,6 @@
     height: 45px;
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 12px;
     line-height: 14.68px;
@@ -297,7 +295,6 @@
     width: 120px;
     color: rgba(33, 37, 41, 1);
     padding: 0 5px;
-    font-family: 'Montserrat';
     font-weight: 400;
     font-size: 10px;
     line-height: 12.23px;
@@ -306,7 +303,6 @@
 .container--footer-itens-item--code-button {
     height: 22px;
     width: 60px;
-    font-family: 'Montserrat';
     color: rgba(24, 50, 73, 1);
     font-weight: 700;
     font-size: 10px;
@@ -341,7 +337,6 @@
 
 .container--footer-itens-item--code--error {
     margin: 0;
-    font-family: 'Montserrat';
     font-size: 12px;
     color: red;
     line-height: 14.63px;

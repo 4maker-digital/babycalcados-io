@@ -4,7 +4,6 @@
     "children": [
       "header-mobile-handler",
       "custom-meta-tag",
-      "flex-layout.row#top-bar",
       "sticky-layout#header-stick-mobile"
     ]
   },
