@@ -107,13 +107,17 @@
 }
 
 .wrapper--institucional-content .headingLevel3--institucional-content {
-  color: #212529;
-  font-size: 19px;
+  color: #242424;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 5px;
 }
 
 .wrapper--institucional-content .paragraph--institucional-content {
-  font-size: 14px;
+  font-size: 16px;
   text-align: justify;
+  color: #242424;
+  margin: 0;
 }
 
 .paragraph--inst-title {
@@ -244,6 +248,13 @@
   text-align: right;
 }
 
+.headingLevel1--institucional-title {
+  color: #242424;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+}
+
 @media (max-width: 767px) {
   .heading--shelfTitle {
     font-size: 24px;
@@ -256,8 +267,8 @@
     font-size: 28px;
   }
 
-  .wrapper--institucional-content {
-    padding: 0 0.5rem;
+  .headingLevel1--institucional-title {
+    margin: 20px 0;
   }
 
   .container--text-medidas .paragraph {

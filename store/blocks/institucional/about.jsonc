@@ -1,29 +1,30 @@
 {
 	"store.custom#about": {
 		"blocks": [
-			"responsive-layout.desktop#about",
-			"responsive-layout.mobile#about"
-		]
-	},
-	"responsive-layout.desktop#about": {
-		"children": [
 			"flex-layout.row#breadcrumb-about",
 			"flex-layout.row#about-us-content"
 		]
 	},
 	"flex-layout.row#about-us-content": {
 		"children": [
-			"flex-layout.col#menu-institucional",
+      "rich-text#about-title",
 			"flex-layout.col#about-us"
 		],
 		"props": {
-			"blockClass": "about",
-			"paddingBottom": 8
+			"blockClass": "about"
 		}
 	},
-
+	"rich-text#about-title": {
+		"props": {
+			"text": "# Título da página",
+			"blockClass": "institucional-title"
+		}
+	},
 	"flex-layout.col#about-us": {
-		"children": ["rich-text#about-content"]
+		"children": ["custom-banners", "rich-text#about-content"],
+    "props": {
+      "width": "70%"
+    }
 	},
 	"flex-layout.row#breadcrumb-about": {
 		"children": [
@@ -38,14 +39,6 @@
 			"colGap": 3
 		}
 	},
-	"responsive-layout.mobile#about": {
-		"children": [
-			"flex-layout.row#breadcrumb-about",
-			"flex-layout.row#disc-institucional",
-			"rich-text#about-content"
-		]
-	},
-
 	"link#breadcrumb-home": {
 		"props": {
 			"label": "Home",
@@ -61,13 +54,13 @@
 	},
 	"link#breadcrumb-about": {
 		"props": {
-			"label": "Quem Somos",
+			"label": "Sobre nós",
 			"blockClass": "active-breadcrumb"
 		}
 	},
 	"rich-text#about-content": {
 		"props": {
-			"text": "# QUEM SOMOS\n Coloque aqui seu texto",
+			"text": "Coloque aqui seu texto",
 			"blockClass": "institucional-content"
 		}
 	}

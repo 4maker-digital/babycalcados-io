@@ -34,9 +34,10 @@ function PrevArrow(props) {
 export default function CustomBanners({ config }) {
   const { isMobile } = useDevice();
 
-  console.log("config", config)
+  console.log("config", !config)
+  console.log('config?.length < 1', config?.length < 1)
 
-  if (config?.length < 1 && config?.[0]?.banners < 1) {
+  if (!config || config?.length < 1 || config?.[0]?.banners < 1) {
     return null
   }
 
