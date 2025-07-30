@@ -1,6 +1,6 @@
 .container--header--sticky :global(.vtex-store-components-3-x-container) {
   background: #E01F26;
-  padding: 12px 0;
+  padding: 12px 30px;
 }
 
 @media (max-width: 1024px) {
