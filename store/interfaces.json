@@ -87,5 +87,8 @@
     },
     "custom-video": {
         "component": "CustomVideo"
+    },
+    "text-stores": {
+        "component": "TextStores"
     }
 }

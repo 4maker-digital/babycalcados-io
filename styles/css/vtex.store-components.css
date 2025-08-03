@@ -405,3 +405,9 @@
   display: block;
   margin: auto;
 }
+
+.textStores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}

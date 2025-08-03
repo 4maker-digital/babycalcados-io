@@ -503,6 +503,12 @@
   position: relative;
 }
 
+.flexRowContent--textStores {
+  background: #FAFAFA;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 @media (min-width: 1024px) and (max-width: 1600px) {
 
   .flexRow--container-shelf :global(.vtex-store-components-3-x-container),

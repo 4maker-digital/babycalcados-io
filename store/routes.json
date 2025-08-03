@@ -4,8 +4,5 @@
 	},
 	"store.custom#landing": {
 		"path": "/landing"
-	},
-	"store.custom#contact": {
-		"path": "/central-de-ajuda/fale-conosco"
 	}
 }
