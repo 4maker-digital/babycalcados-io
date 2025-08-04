@@ -29,57 +29,18 @@ function ButtonRemove() {
   );
 }
 
-function ButtonScroll() {
-  return (
-    <svg className={`vtex-minicart-2-x-container--footer__button-scroll`} xmlns="http://www.w3.org/2000/svg" width="44" height="25" viewBox="0 0 44 25" fill="none">
-      <rect width="44" height="25" fill="#F8F9FA"/>
-      <path fillRule="evenodd" clipRule="evenodd" d="M12.3289 10.6641C12.418 10.4866 12.5738 10.3518 12.7622 10.2891C12.9506 10.2264 13.1562 10.2409 13.3339 10.3296L21.9994 14.6601L30.6634 10.3281C30.7515 10.283 30.8477 10.2559 30.9464 10.2482C31.0451 10.2406 31.1443 10.2525 31.2383 10.2833C31.3324 10.3142 31.4194 10.3634 31.4944 10.428C31.5693 10.4926 31.6307 10.5715 31.6751 10.66C31.7194 10.7485 31.7458 10.8448 31.7527 10.9436C31.7596 11.0423 31.7469 11.1415 31.7154 11.2353C31.6838 11.3291 31.634 11.4157 31.5687 11.4902C31.5035 11.5646 31.4242 11.6254 31.3354 11.6691L22.3354 16.1691C22.2311 16.2213 22.116 16.2485 21.9994 16.2485C21.8827 16.2485 21.7677 16.2213 21.6634 16.1691L12.6634 11.6691C12.4859 11.58 12.3511 11.4241 12.2884 11.2357C12.2257 11.0473 12.2402 10.8418 12.3289 10.6641Z" fill="#000"/>
-    </svg>
-  );
-}
-
 export default function CustomMinicart() {
   const { orderForm } = useOrderForm()
   const { addItems, updateQuantity } = useOrderItems()
 
   const [orderInfo, setOrderInfo] = useState()
-  const [discountCoupon, setDiscountCoupon] = useState("")
   const [cep, setCep] = useState("")
   const [orderItemsWithProductInfo, setOrderItemsWithProductInfo] = useState([])
 
   const [activeScroll, setActiveScroll] = useState(false)
 
-  const [message, setMessage] = useState(null)
-  const [coupon, setCoupon] = useState(null)
-
   const [freight, setFreight] = useState(null)
   const [freightSelected, setFreightSelected] = useState([])
-
-  const verifyCoupon = (e) => {
-    const options = {
-      method: 'POST',
-      headers: {Accept: 'application/json', 'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        coupon: discountCoupon
-      })
-    };
-
-    fetch('/api/checkout/pub/orderForm/' + orderForm.id + '/attachments/marketingData', options)
-    .then(response => response.json())
-    .then(response => {
-        if(response?.marketingData?.coupon == null) {
-            setMessage("Cupom não é válido!")
-            setTimeout(() => {
-                setMessage(null)
-            }, 3000)
-        } else {
-            setCoupon(response?.marketingData?.coupon)
-            updateOrderForm()
-        }
-    })
-    .catch(err => console.error(err));
-
-  }
 
   const updateOrderForm = () => {
     if (orderForm?.items && orderForm?.items?.length) {
@@ -87,30 +48,6 @@ export default function CustomMinicart() {
         const item = orderForm?.items[0]
         updateQuantity({ uniqueId: item?.uniqueId, quantity: item?.quantity })
     }
-  }
-
-  useEffect(() => {
-    if(orderForm?.marketingData?.coupon != null)
-      setCoupon(orderForm?.marketingData?.coupon)
-  })
-
-  const removeCoupon = () => {
-    const options = {
-      method: 'POST',
-      headers: {Accept: 'application/json', 'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        coupon: "null"
-      })
-    };
-
-    fetch('/api/checkout/pub/orderForm/' + orderForm.id + '/attachments/marketingData', options)
-      .then(response => response?.json())
-      .then(response => {
-          setCoupon("")
-          setDiscountCoupon("")
-          updateOrderForm()
-      } )
-      .catch(err => console.error(err));
   }
 
   useEffect(() => {
@@ -237,16 +174,12 @@ export default function CustomMinicart() {
                   <img src={item?.imageUrls?.at1x} />
                 </a>
                 <div className="vtex-minicart-2-x-container--content-itens-item--info">
-                  <h2 className="vtex-minicart-2-x-container--content-itens-item__name">{item?.name}</h2>
-
-                  {item?.productInfoItem?.[0]?.["Gênero"]?.[0] ? (
-                    <span className="vtex-minicart-2-x-container--content-itens-item__gender">{item?.productInfoItem[0]["Gênero"][0]}</span>
-                    ) : null
-                  }
-                  {item?.productInfoItem?.[0]?.["Cor / Tonalidade"]?.[0] ? (
-                      <span className="vtex-minicart-2-x-container--content-itens-item__color">Cor: {item?.productInfoItem[0]["Cor / Tonalidade"][0]}</span>
-                    ) : null
-                  }
+                  <div className="vtex-minicart-2-x-container--content-itens-item--top--remove">
+                    <h2 className="vtex-minicart-2-x-container--content-itens-item__name">{item?.name}</h2>
+                    <button className="vtex-minicart-2-x-container--content-itens-item--top--remove-button" title="Remover" onClick={() => removeItem(index)}>
+                      <ButtonRemove />
+                    </button>
+                  </div>
 
                   <div className="vtex-minicart-2-x-container--content-itens-item--prices">
                     {item?.skuSpecifications?.[0]?.["fieldValues"]?.[0] ? (
@@ -255,8 +188,6 @@ export default function CustomMinicart() {
                         <span className="vtex-minicart-2-x-container--content-itens-item__size">Tamanho: Único</span>
                       )
                     }
-
-                    <h3 className="vtex-minicart-2-x-container--content-itens-item--prices--total">{formatPrice(item?.price)}</h3>
                   </div>
 
                   <div className="vtex-minicart-2-x-container--content-itens-item--bottom">
@@ -269,11 +200,7 @@ export default function CustomMinicart() {
                         <ButtonPlus />
                       </button>
                     </div>
-                    <div className="vtex-minicart-2-x-container--content-itens-item--bottom--remove">
-                      <button className="vtex-minicart-2-x-container--content-itens-item--bottom--remove-button" title="Remover" onClick={() => removeItem(index)}>
-                        <ButtonRemove />
-                      </button>
-                    </div>
+                    <h3 className="vtex-minicart-2-x-container--content-itens-item--prices--total">{formatPrice(item?.price)}</h3>
                   </div>
                 </div>
               </li>
@@ -282,10 +209,33 @@ export default function CustomMinicart() {
       </div>
       {orderInfo &&
         <div className={`vtex-minicart-2-x-container--footer ${!!activeScroll ? "vtex-minicart-2-x-container--footer--active" : ""}`}>
-          <button className="vtex-minicart-2-x-container--footer--scroll" onClick={onClickScroll} >
-            <ButtonScroll />
-          </button>
           <ul className="vtex-minicart-2-x-container--footer-itens">
+            <li className="vtex-minicart-2-x-container--footer-itens-item">
+              <p className="vtex-minicart-2-x-container--footer-itens-item--title">Calcule o frete</p>
+              <div className="vtex-minicart-2-x-container--footer-itens-item--code">
+                {freight ? (
+                    <>
+                      <p className="vtex-minicart-2-x-container--footer-itens-item--text">{freight}</p>
+
+                      <button className="vtex-minicart-2-x-container--footer-itens-item--code--remove" onClick={removeFreight}>
+                        <ButtonRemove />
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <input
+                        type="text"
+                        onChange={(e) => setCep(e.target.value)}
+                        className="vtex-minicart-2-x-container--footer-itens-item--code-input"
+                        value={cep}
+                        placeholder="Informe o CEP"
+                        name="cep"
+                      ></input>
+                      <button className="vtex-minicart-2-x-container--footer-itens-item--code-button" onClick={handleSubmitCep}>Calcular</button>
+                    </>
+                )}
+              </div>
+            </li>
             <li className="vtex-minicart-2-x-container--footer-itens-item">
               <p className="vtex-minicart-2-x-container--footer-itens-item--title">Subtotal</p>
               {orderInfo?.totalizers?.filter(item => item.id === "Items").map(filteredTotalizers => {
@@ -294,87 +244,14 @@ export default function CustomMinicart() {
                 )
               })}
             </li>
-            {!activeScroll &&
-              <>
-                <li className="vtex-minicart-2-x-container--footer-itens-item">
-                  <p className="vtex-minicart-2-x-container--footer-itens-item--title">Cupom de desconto</p>
-                  <div className="vtex-minicart-2-x-container--footer-itens-item--code">
-                    {coupon ? (
-                        <>
-                          <p className="vtex-minicart-2-x-container--footer-itens-item--text">{coupon}</p>
-
-                          <button className="vtex-minicart-2-x-container--footer-itens-item--code--remove" onClick={removeCoupon}>
-                            <ButtonRemove />
-                          </button>
-                        </>
-                    ) : (
-                      <>
-                        {message != null ?
-                        <small className="vtex-minicart-2-x-container--footer-itens-item--code--error">{ message }</small>
-                    :
-                        <>
-                          <input
-                            type="text"
-                            onChange={(e) => setDiscountCoupon(e.target.value)}
-                            className="vtex-minicart-2-x-container--footer-itens-item--code-input"
-                            value={discountCoupon}
-                            placeholder="Insira aqui"
-                            name="discountCoupon"
-                          ></input>
-                          <button className="vtex-minicart-2-x-container--footer-itens-item--code-button" onClick={verifyCoupon}>Aplicar</button>
-                        </>
-                        }
-                      </>
-                    )}
-                  </div>
-                </li>
-                <li className="vtex-minicart-2-x-container--footer-itens-item">
-                  <p className="vtex-minicart-2-x-container--footer-itens-item--title">Calcule o frete</p>
-                  <div className="vtex-minicart-2-x-container--footer-itens-item--code">
-                    {freight ? (
-                        <>
-                          <p className="vtex-minicart-2-x-container--footer-itens-item--text">{freight}</p>
-
-                          <button className="vtex-minicart-2-x-container--footer-itens-item--code--remove" onClick={removeFreight}>
-                            <ButtonRemove />
-                          </button>
-                        </>
-                      ) : (
-                        <>
-                          <input
-                            type="text"
-                            onChange={(e) => setCep(e.target.value)}
-                            className="vtex-minicart-2-x-container--footer-itens-item--code-input"
-                            value={cep}
-                            placeholder="Informe o CEP"
-                            name="cep"
-                          ></input>
-                          <button className="vtex-minicart-2-x-container--footer-itens-item--code-button" onClick={handleSubmitCep}>Calcular</button>
-                        </>
-                    )}
-                  </div>
-                </li>
-              </>
-            }
-            <li className="vtex-minicart-2-x-container--footer-itens-item">
-              <p className="vtex-minicart-2-x-container--footer-itens-item--title">Descontos</p>
-              {coupon ? (
-                <>
-                  {orderInfo?.totalizers?.filter(item => item.id === "Discounts").map(filteredTotalizers => {
-                    return (
-                      <p className="vtex-minicart-2-x-container--footer-itens-item--text">{formatPrice(filteredTotalizers?.value)}</p>
-                    )
-                  })}
-                </>
-              ) : (
-                <p className="vtex-minicart-2-x-container--footer-itens-item--text">-</p>
-              )}
-            </li>
             <li className="vtex-minicart-2-x-container--footer-itens-item">
               <p className="vtex-minicart-2-x-container--footer-itens-item--title">Frete</p>
+              {console.log('orderInfo?.totalizers', orderInfo?.totalizers)}
               {freight ? (
                 <>
                   {orderInfo?.totalizers?.filter(item => item.id === "Shipping").map(filteredTotalizers => {
+                    console.log('filteredTotalizers', filteredTotalizers)
+
                     return (
                       <>
                         {filteredTotalizers?.value <= 0 ? (
