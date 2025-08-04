@@ -42,3 +42,10 @@
   text-transform: uppercase;
   border: 1px solid #E01F26;
 }
+
+.savings--pdp-horizontal {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  width: auto !important;
+}

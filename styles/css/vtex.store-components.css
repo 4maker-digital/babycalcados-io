@@ -4,24 +4,25 @@
 
 .priceContainer {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 10px;
-  margin: 40px 0 15px;
   position: relative;
-}
-
-.benefits-image {
-  width: 30px;
-  height: 30px;
+  margin-top: 20px;
 }
 
 .listPrice {
-  position: absolute;
-  top: -20px;
+  margin: 0;
 }
 
 .listPriceLabel {
+  display: none;
+}
+
+.listPriceValue {
   padding: 0;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .savingPrice {
@@ -30,23 +31,28 @@
 
 .sellingPrice {
   font-size: 24px;
-  font-weight: 600;
-  color: #212529;
+  font-weight: 700;
+  color: #242424;
   padding: 0;
+}
+
+.price_sellingPrice--productDesk-price::after {
+  content: "no Pix";
+  margin-left: 8px;
+  font-size: 14px;
+  color: #242424;
+  font-weight: 400;
 }
 
 .installmentsPrice {
   font-size: 14px;
   font-weight: 400;
   line-height: 17.07px;
-  color: #6C757D;
+  color: #242424;
 }
 
 .installmentsPrice .price_installment--productDesk-price {
-  font-size: 14px;
   font-weight: 600;
-  line-height: 17.07px;
-  color: #6C757D;
 }
 
 .skuSelectorName {
@@ -54,41 +60,66 @@
 }
 
 .skuSelectorName::before {
-  content: "Selecione um tamanho:";
+  content: "Tamanho:";
   color: #000;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 14.63px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .skuSelectorInternalBox,
 .diagonalCross {
-  border-radius: 100%;
-  width: 40px;
-  height: 40px;
+  border-radius: 5px;
+  width: 36px;
+  height: 36px;
   padding: 0;
+  color: #DFE2E4;
+}
+
+.diagonalCross {
+  background-image: linear-gradient(
+    to top right,
+    transparent 44%,
+    #DFE2E4 48%,
+    currentColor 48%,
+    currentColor 52%,
+    transparent 52%
+  )
 }
 
 .skuSelectorItemTextValue {
   line-height: initial;
   padding: 0;
-  color: #000;
+  color: #565A60;
   font-size: 12px;
   font-weight: 400;
 }
 
+.skuSelectorTextContainer {
+  margin-bottom: 10px;
+}
+
+.skuSelectorOptionsList {
+  margin: 0;
+  gap: 5px;
+}
+
+.skuSelectorItem {
+  margin: 0;
+}
+
 .skuSelectorInternalBox:hover {
-  color: #fff;
-  background: #000;
-  border-color: #000;
+  border-color: #E01F26;
+  color: #E01F26;
 }
 
 .skuSelectorInternalBox:hover .skuSelectorItemTextValue {
-  color: #fff;
+  color: #E01F26;
 }
 
-.skuSelectorItem--selected .skuSelectorInternalBox {
-  border-color: #000;
+.skuSelectorItem--selected .skuSelectorInternalBox,
+.skuSelectorItem--selected .skuSelectorItemTextValue {
+  border-color: #E01F26;
+  color: #E01F26;
 }
 
 .skuSelectorItem--selected .frameAround {
@@ -100,14 +131,11 @@
   display: flex;
   align-items: center;
   gap: 5px;
-}
-
-.shippingContainer :global(.vtex-input__label)::before {
-  content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.3335 7.24944C3.3335 6.82966 3.5047 6.42708 3.80945 6.13025C4.11419 5.83343 4.52752 5.66667 4.9585 5.66667H14.7085C15.1395 5.66667 15.5528 5.83343 15.8575 6.13025C16.1623 6.42708 16.3335 6.82966 16.3335 7.24944V8.8322H17.4385C17.682 8.83241 17.9223 8.88591 18.1417 8.98873C18.361 9.09156 18.5539 9.24108 18.706 9.42626L20.3104 11.3783C20.5413 11.6592 20.667 12.0083 20.6668 12.3681V14.6357C20.6668 15.0554 20.4956 15.458 20.1909 15.7549C19.8861 16.0517 19.4728 16.2184 19.0418 16.2184H18.5002C18.5002 16.7781 18.2719 17.3149 17.8656 17.7107C17.4592 18.1064 16.9081 18.3288 16.3335 18.3288C15.7589 18.3288 15.2078 18.1064 14.8014 17.7107C14.3951 17.3149 14.1668 16.7781 14.1668 16.2184H8.75016C8.75079 16.4997 8.69367 16.7783 8.58216 17.0378C8.47066 17.2973 8.30702 17.5324 8.10086 17.7294C7.89471 17.9264 7.6502 18.0813 7.38172 18.1849C7.11323 18.2885 6.82618 18.3388 6.53745 18.3329C6.24871 18.3269 5.96412 18.2647 5.7004 18.1501C5.43667 18.0354 5.19914 17.8706 5.00177 17.6652C4.8044 17.4599 4.65117 17.2182 4.55109 16.9543C4.45101 16.6904 4.4061 16.4098 4.419 16.1287C4.10163 16.0199 3.82676 15.8179 3.63233 15.5504C3.43789 15.283 3.33348 14.9634 3.3335 14.6357V7.24944ZM4.73533 15.1168C4.9312 14.8045 5.20713 14.5472 5.53602 14.3701C5.86491 14.1931 6.23542 14.1025 6.61115 14.1072C6.98688 14.1119 7.35489 14.2117 7.67902 14.3969C8.00315 14.582 8.27223 14.8461 8.45983 15.1633H14.4572C14.6477 14.8428 14.9211 14.5765 15.2502 14.3909V7.24944C15.2502 7.10951 15.1931 6.97532 15.0915 6.87637C14.9899 6.77743 14.8522 6.72185 14.7085 6.72185H4.9585C4.81484 6.72185 4.67706 6.77743 4.57548 6.87637C4.4739 6.97532 4.41683 7.10951 4.41683 7.24944V14.6357C4.41674 14.7372 4.44675 14.8366 4.50325 14.922C4.55974 15.0073 4.64033 15.075 4.73533 15.1168ZM16.3335 14.1081C16.7138 14.1081 17.0874 14.2056 17.4168 14.3908C17.7462 14.576 18.0197 14.8425 18.2098 15.1633H19.0418C19.1855 15.1633 19.3233 15.1077 19.4248 15.0087C19.5264 14.9098 19.5835 14.7756 19.5835 14.6357V12.367C19.5833 12.2473 19.5413 12.1312 19.4643 12.0378L17.861 10.0857C17.8103 10.024 17.7461 9.97405 17.6729 9.93971C17.5998 9.90538 17.5197 9.88749 17.4385 9.88738H16.3335V14.1081ZM6.5835 15.1633C6.29618 15.1633 6.02063 15.2744 5.81746 15.4723C5.6143 15.6702 5.50016 15.9386 5.50016 16.2184C5.50016 16.4983 5.6143 16.7667 5.81746 16.9646C6.02063 17.1624 6.29618 17.2736 6.5835 17.2736C6.87081 17.2736 7.14636 17.1624 7.34953 16.9646C7.55269 16.7667 7.66683 16.4983 7.66683 16.2184C7.66683 15.9386 7.55269 15.6702 7.34953 15.4723C7.14636 15.2744 6.87081 15.1633 6.5835 15.1633ZM16.3335 15.1633C16.0462 15.1633 15.7706 15.2744 15.5675 15.4723C15.3643 15.6702 15.2502 15.9386 15.2502 16.2184C15.2502 16.4983 15.3643 16.7667 15.5675 16.9646C15.7706 17.1624 16.0462 17.2736 16.3335 17.2736C16.6208 17.2736 16.8964 17.1624 17.0995 16.9646C17.3027 16.7667 17.4168 16.4983 17.4168 16.2184C17.4168 15.9386 17.3027 15.6702 17.0995 15.4723C16.8964 15.2744 16.6208 15.1633 16.3335 15.1633Z' fill='%2386D4ED'/%3E%3C/svg%3E%0A");
+  margin-bottom: 10px;
 }
 
 .shippingContainer :global(.vtex-input__label)::after {
-  content: "Entrega";
+  content: "Calcule seu frete:";
   color: #000;
   font-size: 16px;
   font-weight: 700;
@@ -116,39 +144,29 @@
 
 .shippingContainer :global(.vtex-input-prefix__group) {
   border: 1px solid #CED4DA;
-  margin-top: 38px;
-}
-
-:global(.vtex-address-form__postalCode) :global(.vtex-input)::before {
-  content: "Vejas as opções de entregas para seus itens, com todos os prazos e valores";
-  color: #ADB5BD;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 12.23px;
-  top: 45px;
-  position: absolute;
+  width: 78%;
 }
 
 .shippingContainer :global(.vtex-button) {
   position: absolute;
-  top: 73px;
+  top: 30px;
   height: 38px;
-  width: 85px;
-  right: 20px;
+  width: 120px;
+  right: 22%;
   border: 0;
+  padding: 0;
 }
 
 .shippingContainer :global(.vtex-button__label) {
   font-size: 0;
-  background: #000;
+  background: #E01F26;
   border-radius: 0 4px 4px 0;
 }
 
 .shippingContainer :global(.vtex-button__label)::before {
   content: "Calcular";
-  font-size: 12px;
-  font-style: italic;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 14.68px;
   color: #fff;
   text-transform: capitalize;
@@ -163,6 +181,10 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 14.63px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  text-decoration: underline;
 }
 
 :global(.vtex__icon-external-link) {
@@ -170,9 +192,7 @@
 }
 
 .productDescriptionContainer {
-  background: #E9ECEF;
-  border-radius: 0 0 5px 5px;
-  padding: 20px;
+  background: #fff;
 }
 
 .productDescriptionTitle {
@@ -180,18 +200,16 @@
 }
 
 .productDescriptionText {
-  color: #212529;
-  font-size: 12px;
+  color: #242424;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 18px;
+  margin-bottom: 20px;
 }
 
 .price_sellingPriceLabel--productDesk-price,
 .sellingPriceLabel {
-  font-size: 24px;
-  font-weight: 600;
-  color: #212529;
-  margin-right: 5px;
+  display: none
 }
 
 .productBrand {
@@ -301,6 +319,24 @@
 
 .bannersCustom-item-slider {
   padding: 0 10px;
+}
+
+.productImagesContainer--list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skuSelectorSubcontainer {
+  margin: 20px 0;
+}
+
+.seeMoreButton :global(.vtex-button__label) {
+  color: #242424;
+  text-transform: initial;
+}
+
+.seeMoreButton :global(.vtex-button):hover {
+  background: #fff;
 }
 
 @media (min-width: 1600px) and  (max-width: 2100px) {

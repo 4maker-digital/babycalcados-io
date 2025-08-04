@@ -1,0 +1,25 @@
+.quantitySelectorContainer {
+  margin: 0;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__input) {
+  height: 60px;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button-container) :global(.vtex-numeric-stepper__plus-button) {
+  height: 60px;
+  background: #fff;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button-container) :global(.vtex-numeric-stepper__minus-button) {
+  height: 60px;
+  background: #fff;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__input),
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button-container) :global(.vtex-numeric-stepper__plus-button__text),
+.quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button-container) :global(.vtex-numeric-stepper__minus-button__text) {
+  font-size: 19px;
+  color: #212529;
+  font-weight: 700;
+}

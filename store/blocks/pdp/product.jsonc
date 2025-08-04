@@ -13,47 +13,33 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "video-frame",
-      "flex-layout.row#product-desc",
-      "custom-stars"
-     // "rich-text#shelf-related-title",
-     // "flex-layout.row#shelf-related",
-      //"rich-text#shelf-related-title2",
-      //"flex-layout.row#shelf-related2"
+      "flex-layout.row#benefits",
+      "product-reviews",
+      "rich-text#shelf-related-title",
+      "flex-layout.row#shelf-related"
     ]
   },
   "responsive-layout.desktop#product": {
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "flex-layout.row#product-desc",
-      "video-frame",
-      "custom-stars"
-     // "rich-text#shelf-related-title",
-     // "flex-layout.row#shelf-related",
-      //"rich-text#shelf-related-title2",
-    //  "flex-layout.row#shelf-related2"
+      "flex-layout.row#benefits",
+      "product-reviews",
+      "rich-text#shelf-related-title",
+      "flex-layout.row#shelf-related"
     ]
   },
 
   "flex-layout.row#product-main": {
     "props": {
-      "colGap": 7,
-      "rowGap": 7,
-      "marginTop": 4,
-      "marginBottom": 7,
-      "paddingTop": 7,
-      "paddingBottom": 7,
-      "paddingLeft": 10,
-      "paddingRight": 10,
       "blockClass": "mainInfos"
     },
-    "children": ["hide-size-table", "flex-layout.col#stack", "flex-layout.col#right-col"]
+    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
   },
   "flex-layout.col#stack": {
     "children": ["stack-layout"],
     "props": {
-      "width": "65%",
+      "width": "60%",
       "rowGap": 0,
       "blockClass": "imageFlex"
     }
@@ -62,7 +48,20 @@
     "children": ["flex-layout.row#product-image#desktop"]
   },
   "flex-layout.row#product-image#desktop": {
-    "children": ["product-images"]
+    "children": ["product-images", "product-price-savings#pdp"],
+    "props": {
+      "blockClass": "images"
+    }
+  },
+  "product-price-savings#pdp": {
+    "props": {
+      "markers": [
+        "discount"
+      ],
+      "message": "-{savingsPercentage}",
+      "blockClass": "pdp-horizontal",
+      "width": "1%"
+    }
   },
 
   // Direita
@@ -70,12 +69,15 @@
     "props": {
       "preventVerticalStretch": true,
       "rowGap": 0,
-      "width": "35%",
+      "width": "40%",
       "blockClass": "productInfo"
     },
     "children": [
       "vtex.store-components:product-name#productDesk-name",
-      "flex-layout.row#productDesk-boxPrice"
+      "vtex.product-highlights@2.x:product-highlights",
+      "flex-layout.row#productDesk-boxPrice",
+      "disclosure-layout#description",
+      "disclosure-layout#specification"
     ]
   },
   "vtex.store-components:product-name#productDesk-name": {
@@ -91,15 +93,13 @@
   },
   "flex-layout.col#price-box": {
     "children": [
-      "product-price-savings#summary",
       "product-price#productDesk-price",
       "custom-pdp-similars",
       "sku-selector",
       "product-assembly-options",
       "modal-trigger#medidas",
       "condition-layout.product#availability-pdp",
-      "flex-layout.row#shipping-simulator",
-      "share#pdp"
+      "flex-layout.row#shipping-simulator"
     ],
     "props": {
       "blockClass": "product-main-info"
@@ -126,11 +126,10 @@
   },
   "flex-layout.row#productDesk-buyButton": {
     "props": {
-      "marginTop": 4,
-      "marginBottom": 7,
       "blockClass": "row-buyButton"
     },
     "children": [
+      "product-quantity",
       "flex-layout.col#productDesk-content-buyButton"
     ]
   },
@@ -144,8 +143,7 @@
       "add-to-cart-button"
     ],
     "props": {
-      "blockClass": "productDesk-content-col-buyBox",
-      "width": "100%"
+      "blockClass": "productDesk-content-col-buyBox"
     }
   },
   "flex-layout.row#shipping-simulator": {
@@ -159,31 +157,12 @@
   // Vitrine relacionados
   "rich-text#shelf-related-title": {
     "props": {
-      "text": "## É do seu gosto? Então veja estes produtos similares.",
-      "blockClass": "shelfTitle"
+      "text": "## Quem viu este produto, também viu...",
+      "blockClass": ["shelfTitle", "shelfContainer"]
     }
   },
   "flex-layout.row#shelf-related": {
-    "children": ["list-context.product-list#shelf-related"],
-    "props": { "blockClass": "container-shelf" }
-  },
-  "list-context.product-list#shelf-related": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#shelf-landing-products"],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "installmentCriteria": "MAX_WITHOUT_INTEREST",
-      "titleText": "Produtos Similares"
-    }
-  },
-  "rich-text#shelf-related-title2": {
-    "props": {
-      "text": "## Produtos que você visualizou recentemente.",
-      "blockClass": "shelfTitle"
-    }
-  },
-  "flex-layout.row#shelf-related2": {
-    "children": ["list-context.product-list#shelf-related"],
+    "children": ["list-context.product-list#shelf-landing"],
     "props": { "blockClass": "container-shelf" }
   },
 
@@ -198,12 +177,6 @@
       "caretIconSize": 0,
       "blockClass": "breadcrumb-link"
     }
-  },
-  "flex-layout.row#product-desc": {
-    "props": {
-      "blockClass": "desc"
-    },
-    "children": ["disclosure-layout#description", "disclosure-layout#specification"]
   },
   "disclosure-layout#description": {
 		"children": [
@@ -231,17 +204,14 @@
 		"children": [
 			"disclosure-trigger#specification",
 			"disclosure-content#specification"
-		],
-    "props": {
-      "initialVisibility": "visible"
-    }
+		]
 	},
 	"disclosure-trigger#specification": {
 		"children": ["rich-text#specification"]
 	},
 	"rich-text#specification": {
 		"props": {
-			"text": "Especificação"
+			"text": "Especificações"
 		}
 	},
 	"disclosure-content#specification": {
@@ -249,13 +219,11 @@
 			"product-specification-group#table"
 		]
 	},
-
   "product-description#productDesk-description": {
     "props": {
       "collapseContent": false
     }
   },
-
   "product-specification-group#table": {
     "children": ["flex-layout.row#spec-group"]
   },
@@ -285,11 +253,7 @@
   },
   "flex-layout.col#spec-name": {
     "props": {
-      "blockClass": "productSpecificationName",
-      "width": {
-        "mobile": "50%",
-        "desktop": "50%"
-      }
+      "blockClass": "productSpecificationName"
     },
     "children": ["product-specification-text#specification"]
   },
@@ -337,13 +301,8 @@
       "flex-layout.row#product-image",
       "flex-layout.row#price-box-mobile",
       "condition-layout.product#availability-pdp-mobile",
-      "video-frame",
-      "flex-layout.row#product-desc",
-      "custom-stars",
       "rich-text#shelf-related-title",
-      "flex-layout.row#shelf-related",
-      "rich-text#shelf-related-title2",
-      "flex-layout.row#shelf-related2"
+      "flex-layout.row#shelf-related"
     ],
     "props": {
       "blockClass": "product-box-mobile"
@@ -402,8 +361,7 @@
   },
   "product-images": {
     "props": {
-      "displayMode": "carousel",
-      "maxHeight": "100%",
+      "displayMode": "list",
       "aspectRatio": {
         "desktop": "1:1",
         "phone": "16:9"
@@ -413,16 +371,11 @@
   "flex-layout.row#sku-selector": {
     "children": ["sku-selector"]
   },
-  "flex-layout.row#qtd": {
-    "children": ["product-quantity"],
-    "props": {
-      "blockClass": "row-qtd"
-    }
-  },
   "product-quantity": {
     "props": {
       "blockClass": "content-qtd",
-      "showLabel": true
+      "showLabel": false,
+      "width": "35%"
     }
   },
   "condition-layout.product#availability-pdp-mobile": {
@@ -444,8 +397,7 @@
       "product-assembly-options",
       "modal-trigger#medidas",
       "flex-layout.row#add-to-cart-mobile",
-      "flex-layout.row#shipping-simulator",
-      "share#pdp"
+      "flex-layout.row#shipping-simulator"
     ],
     "props": {
       "blockClass": "productMobile"
@@ -456,17 +408,5 @@
     "props": {
       "blockClass": "addMobile"
     }
-  },
-
-    "share#pdp": {
-      "props": {
-        "social": {
-          "Facebook": true,
-          "WhatsApp": true,
-          "Twitter": false,
-          "Pinterest": true
-        }
-      }
-    }
-
+  }
 }
