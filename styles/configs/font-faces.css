@@ -1,15 +1,32 @@
+
 @font-face {
   font-display: swap;
-  font-family: 'Montserrat';
+  font-family: 'Graphie';
   font-style: normal;
-  font-weight: 400;
-  src: url('assets/fonts/montserrat-v29-latin-regular.woff2') format('woff2');
+  font-weight: 300;
+  src: url('assets/fonts/Graphie_Light.otf') format('opentype');
 }
 
 @font-face {
-  font-display: swap; 
-  font-family: 'Montserrat';
+  font-display: swap;
+  font-family: 'Graphie';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/Graphie.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Graphie';
   font-style: normal;
   font-weight: 700;
-  src: url(assets/fonts/montserrat-v29-latin-700.woff2) format('woff2');
+  src: url('assets/fonts/Graphie_Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Graphie';
+  font-style: normal;
+  font-weight: 800;
+  src: url('assets/fonts/Graphie_ExtraBold.otf') format('opentype');
 }

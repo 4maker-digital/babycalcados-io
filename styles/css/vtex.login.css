@@ -7,6 +7,55 @@
   right: 42%;
 }
 
+.sendButton :global(.vtex-button) {
+  background: #E01F26;
+  border-color: #E01F26;
+}
+
+.sendButton :global(.vtex-button__label) {
+  padding: 0.25rem 1rem !important;
+}
+
+.forgotPasswordLink,
+.backButton :global(.vtex-button),
+.dontHaveAccount,
+.inputContainerPassword {
+  color: #242424;
+}
+
+.profile {
+  color: #fff;
+  font-weight: 700;
+  padding: 0;
+  font-size: 14px;
+}
+
+.contentForm {
+  width: 100%;
+  padding: 0;
+}
+
+.button,
+.accountOptions :global(.vtex-button),
+.accountOptions :global(.vtex-button):hover {
+  color: #242424;
+  background: #fff;
+}
+
+:global(.vtex-modal__overlay) :global(.vtex-styleguide-9-x-scrollBar) {
+  padding: 3rem;
+}
+
+:global(.vtex-modal__overlay) :global(.vtex-styleguide-9-x-scrollBar) :global(.vtex-button) {
+  background: #E01F26;
+  border-color: #E01F26;
+  color: #fff;
+}
+
+:global(.vtex-modal__overlay) :global(.vtex-styleguide-9-x-scrollBar) :global(.vtex-button__label) {
+  padding: 0.25rem 1rem !important;
+}
+
 :global(.vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category) ul:nth-child(3) li:nth-child(1)>a {
     font-weight: bold;
     color: #242424;
