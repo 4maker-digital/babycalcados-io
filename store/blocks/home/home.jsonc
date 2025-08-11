@@ -266,7 +266,8 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf",
-      "showPaginationDots": false
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly"
     }
   }
 }

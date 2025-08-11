@@ -127,4 +127,8 @@
     gap: 5px;
     justify-content: center;
   }
+
+  .menuContainerNav--footer__menu {
+    margin-bottom: 35px;
+  }
 }

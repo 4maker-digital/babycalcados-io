@@ -42,7 +42,8 @@ export default function CustomBanners({ config }) {
   }
 
   const settings = {
-    dots: false,
+    dots: isMobile ? true : false,
+    arrows: !isMobile ? true : false,
     infinite: false,
     slidesToShow: isMobile ? config?.[0]?.qtdItemsMob : config?.[0]?.qtdItemsDesk,
     slidesToScroll: 1,

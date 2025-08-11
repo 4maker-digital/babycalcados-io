@@ -3,9 +3,12 @@
     "title": "Footer - Menu - Desktop",
     "children": [
       "flex-layout.row#social-logo",
-      "menu-item#footer-menu-1",
-      "menu-item#footer-menu-2",
-      "menu-item#footer-menu-3",
+      "vtex.menu@2.x:menu#footer-help",
+      "vtex.menu@2.x:menu#footer-links",
+      "vtex.menu@2.x:menu#footer-links-2",
+      // "menu-item#footer-menu-1",
+      // "menu-item#footer-menu-2",
+      // "menu-item#footer-menu-3",
       "vtex.menu@2.x:menu#footer-links-3",
       "flex-layout.row#footer-3-desktop"
     ],
@@ -14,115 +17,5 @@
       "paddingTop": 6,
       "paddingBottom": 3
     }
-  },
-
-  "menu-item#footer-menu-1": {
-    "title": "Footer - Menu - Linha 1",
-    "props": {
-      "blockClass": "footer__menu--mob",
-      "id": "menu-item-links",
-      "type": "custom",
-      "iconId": null,
-      "highlight": true,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Atendimento",
-        "text": "Atendimento"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#atendimento"]
-  },
-  "vtex.menu@2.x:submenu.accordion#atendimento": {
-    "children": [
-      "menu-item#footer-categories-2-col-1",
-      "menu-item#footer-categories-2-col-2"
-    ]
-  },
-
-  "menu-item#footer-menu-2": {
-    "title": "Footer - Menu - Linha 2",
-    "props": {
-      "blockClass": "footer__menu--mob",
-      "id": "menu-item-links",
-      "type": "custom",
-      "iconId": null,
-      "highlight": true,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Institucional",
-        "text": "Institucional"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#institucional"]
-  },
-  "vtex.menu@2.x:submenu.accordion#institucional": {
-    "children": ["flex-layout.row#footer-links-row-1"]
-  },
-
-  "menu-item#footer-menu-3": {
-    "title": "Footer - Menu - Linha 3",
-    "props": {
-      "blockClass": "footer__menu--mob",
-      "id": "menu-item-links",
-      "type": "custom",
-      "iconId": null,
-      "highlight": true,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Políticas e Termos",
-        "text": "Políticas e Termos"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#termos"]
-  },
-  "vtex.menu@2.x:submenu.accordion#termos": {
-    "children": [
-      "link#inst-envio",
-      "link#inst-politica",
-      "link#inst-privacidade",
-      "link#inst-pagamento",
-      "link#inst-termos"
-    ]
-  },
-  "link#inst-envio": {
-		"props": {
-			"label": "Política de Envio",
-			"href": "/institucional/politica-de-envio",
-      "blockClass": "link-redirect"
-		}
-	},
-  "link#inst-politica": {
-		"props": {
-			"label": "Política de Troca",
-			"href": "/institucional/politica",
-      "blockClass": "link-redirect"
-		}
-	},
-  "link#inst-privacidade": {
-		"props": {
-			"label": "Política de Privacidade",
-			"href": "/institucional/privacidade",
-      "blockClass": "link-redirect"
-		}
-	},
-  "link#inst-pagamento": {
-		"props": {
-			"label": "Política de pagamento",
-			"href": "/institucional/politica-de-pagamento",
-      "blockClass": "link-redirect"
-		}
-	},
-  "link#inst-termos": {
-		"props": {
-			"label": "Termos de Uso",
-			"href": "/institucional/termos",
-      "blockClass": "link-redirect"
-		}
-	}
+  }
 }

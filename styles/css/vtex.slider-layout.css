@@ -9,8 +9,8 @@
   padding: 10px;
 }
 
-.paginationDotsContainer--carousel {
-  bottom: 20px;
+.sliderLayoutContainer--e-banner-principal .paginationDotsContainer--carousel {
+  bottom: 20px !important;
 }
 
 .paginationDot--carousel {
@@ -104,5 +104,9 @@
   .sliderLayoutContainer--shelf .sliderRightArrow--shelf {
     right: -10px;
     top: 20%;
+  }
+
+  .paginationDotsContainer {
+    bottom: -30px;
   }
 }

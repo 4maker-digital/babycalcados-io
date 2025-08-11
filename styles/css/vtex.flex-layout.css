@@ -537,13 +537,11 @@ flex-direction: column;
 
   .flexRowContent--footer__credits .stretchChildrenWidth {
     justify-content: center;
-    margin-top: 30px;
   }
 
   .flexCol--social-logo {
-    align-items: center;
     display: flex;
-    flex-direction: column;
+    margin: 0 1.5rem 35px;
   }
 
   .flexCol--social-logo .flexRowContent {
@@ -555,13 +553,14 @@ flex-direction: column;
 
   .flexRowContent--footer__social {
     display: flex;
-    gap: 0;
+    gap: 10px;
+    flex-wrap: wrap;
   }
 
   .flexRow--footer__social {
     width: 100%;
     padding: 0 1rem;
-    margin: 0 0 30px;
+    margin: 0;
   }
 
   .flexRowContent--footer__security {
@@ -570,11 +569,16 @@ flex-direction: column;
   }
 
   .flexRowContent--footer__credits {
-    height: initial;
+    display: flex;
+    margin-top: 16px;
+  }
+
+  .flexRowContent--footer__menu-mobile .flexRowContent--footer__credits .stretchChildrenWidth {
+    width: auto !important;
   }
 
   .flexCol--footer__left {
-    gap: 40px;
+    gap: 5px;
   }
 
   .flexRow--social-logo {
@@ -601,6 +605,10 @@ flex-direction: column;
 
   .flexRowContent--footer__menu-mobile .stretchChildrenWidth {
     width: 100% !important;
+  }
+
+  .flexRowContent--footer__menu-mobile .flexRowContent--footer__social .stretchChildrenWidth {
+    width: 15% !important;
   }
 
   .flexRow--product-box-mobile {
@@ -721,6 +729,18 @@ flex-direction: column;
 
   .flexRowContent--tech-shelfs-landing {
     margin-bottom: 50px;
+  }
+
+  .flexColChild--banners-desktop {
+    padding: 0 10px;
+  }
+
+  .flexCol--brand-collection {
+    margin: 30px 0;
+  }
+
+  .flexRow--container-shelf :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
+    padding: 0 0 !important;
   }
 }
 
