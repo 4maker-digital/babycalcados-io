@@ -833,4 +833,18 @@ flex-direction: column;
   :global(.vtex-render__container-id-menu-tech) {
     margin: 0 15px;
   }
+
+  .flexCol--orderByCol,
+  .flexCol--filterCol {
+    padding: 0 15px;
+  }
+
+  .flexRowContent--filter-new {
+    align-items: center;
+    display: flex;
+    padding: 0 15px;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
 }

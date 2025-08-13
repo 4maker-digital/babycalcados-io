@@ -67,8 +67,6 @@
     },
     "children": [
       "flex-layout.row#filter-2",
-      "responsive-layout.mobile#background-category",
-      "search-title.v2",
       "flex-layout.row#filter-1"
     ]
   },
@@ -90,8 +88,17 @@
     },
     "children": [
       "breadcrumb.search",
-      "total-products.v2",
-      "search-layout-switcher"
+      "flex-layout.row#filter-new"
+    ]
+  },
+  "flex-layout.row#filter-new": {
+    "props": {
+      "blockClass": "filter-new",
+      "colSizing": "auto"
+    },
+    "children": [
+      "responsive-layout.mobile#background-category",
+      "total-products.v2"
     ]
   },
   "breadcrumb.search": {

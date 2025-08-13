@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/egodoy/.nvm/versions/node/v12.13.0/bin/node /Users/egodoy/.nvm/versions/node/v10.16.3/bin/yarn install
+  /Users/egodoy/.nvm/versions/node/v12.13.0/bin/node /Users/egodoy/.config/yarn/global/node_modules/yarn/bin/yarn.js --non-interactive --ignore-engines
 
 PATH: 
   /Users/egodoy/.nvm/versions/node/v12.13.0/bin:/Users/egodoy/.nvm/versions/node/v10.16.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/egodoy/.nvm/versions/node/v10.16.3/bin
@@ -14,17 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://dev--pegada.myvtex.com/_v/private/typings/linked/v1/pegada.store-theme@0.0.111+build1751346375/public/@types/pegada.store-theme: Request failed "500 Internal Server Error"
-      at ResponseError.ExtendableBuiltin (/Users/egodoy/.nvm/versions/node/v10.16.3/lib/node_modules/yarn/lib/cli.js:696:66)
-      at new ResponseError (/Users/egodoy/.nvm/versions/node/v10.16.3/lib/node_modules/yarn/lib/cli.js:802:124)
-      at Request.<anonymous> (/Users/egodoy/.nvm/versions/node/v10.16.3/lib/node_modules/yarn/lib/cli.js:66215:16)
-      at Request.emit (events.js:210:5)
-      at Request.module.exports.Request.onRequestResponse (/Users/egodoy/.nvm/versions/node/v10.16.3/lib/node_modules/yarn/lib/cli.js:141767:10)
-      at ClientRequest.emit (events.js:210:5)
-      at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:583:27)
-      at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17)
-      at TLSSocket.socketOnData (_http_client.js:456:22)
-      at TLSSocket.emit (events.js:210:5)
+  Error: EPERM: operation not permitted, open '/Users/egodoy/Documents/package.json'
 
 npm manifest: 
   {
@@ -46,7 +36,6 @@ npm manifest:
       "styled-components": "^5.3.3"
     },
     "devDependencies": {
-      "pegada.store-theme": "https://dev--pegada.myvtex.com/_v/private/typings/linked/v1/pegada.store-theme@0.0.111+build1751346375/public/@types/pegada.store-theme",
       "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.30.2/public/@types/vtex.add-to-cart-button",
       "vtex.breadcrumb": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.breadcrumb@1.9.5/public/@types/vtex.breadcrumb",
       "vtex.carousel": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.carousel@2.12.1/public/@types/vtex.carousel",
@@ -827,10 +816,6 @@ Lockfile:
     version "4.1.1"
     resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
     integrity sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==
-  
-  "pegada.store-theme@https://dev--pegada.myvtex.com/_v/private/typings/linked/v1/pegada.store-theme@0.0.111+build1751346375/public/@types/pegada.store-theme":
-    version "0.0.111"
-    resolved "https://dev--pegada.myvtex.com/_v/private/typings/linked/v1/pegada.store-theme@0.0.111+build1751346375/public/@types/pegada.store-theme#df88a4cca0b8ede4948dd9cf254d5f731249d92d"
   
   picocolors@^1.0.0:
     version "1.1.0"

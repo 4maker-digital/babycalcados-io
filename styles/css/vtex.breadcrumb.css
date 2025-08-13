@@ -43,3 +43,9 @@
   line-height: 16px;
   font-weight: 400;
 }
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+}
