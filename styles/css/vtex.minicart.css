@@ -331,3 +331,9 @@
     line-height: 14.63px;
     font-weight: 700;
 }
+
+@media (max-width: 767px) {
+  .minicartQuantityBadgeDefault {
+    right: -10px;
+  }
+}

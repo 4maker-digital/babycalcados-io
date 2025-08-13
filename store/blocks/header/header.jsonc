@@ -16,8 +16,15 @@
   "header-layout.desktop": {
     "title": "Header Desktop",
     "children": [
-      "sticky-layout#header-sticky-desktop"
+      "sticky-layout#header-sticky-desktop",
+      "rich-text#promo-text"
     ]
+  },
+  "rich-text#promo-text": {
+    "props": {
+      "text": "Ganhe **10% OFF** na primeira compra. Utilize o cupom ***PRIMEIRACOMPRA***",
+      "blockClass": "promo-text"
+    }
   },
   "sticky-layout#header-sticky-desktop": {
     "title": "Header - Conteúdo",

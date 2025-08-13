@@ -4,7 +4,8 @@
     "children": [
       "header-mobile-handler",
       "custom-meta-tag",
-      "sticky-layout#header-stick-mobile"
+      "sticky-layout#header-stick-mobile",
+      "rich-text#promo-text"
     ]
   },
   "sticky-layout#header-stick-mobile": {
@@ -34,7 +35,7 @@
   "flex-layout.row#header-main-mobile-left": {
     "title": "Conteúdo - Drawer",
     "props": {
-      // "width": "20%",
+      "width": "10%",
       "blockClass": "header-main-mobile-left",
       "verticalAlign": "middle",
       "horizontalAlign": "left"
@@ -58,7 +59,6 @@
   "flex-layout.row#header-main-mobile-center": {
     "title": "Conteúdo - Logo",
     "props": {
-      "width": "50%",
       "blockClass": "header-main-mobile-center",
       "verticalAlign": "middle",
       "horizontalAlign": "center"
@@ -70,7 +70,7 @@
   "flex-layout.row#header-main-mobile-right": {
     "title": "Conteúdo - Minicart",
     "props": {
-      // "width": "30%",
+      "width": "25%",
       "blockClass": "header-main-mobile-right",
       "verticalAlign": "middle",
       "horizontalAlign": "right"
