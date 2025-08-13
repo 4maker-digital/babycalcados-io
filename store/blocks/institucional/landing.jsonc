@@ -63,7 +63,8 @@
     "props": {
       "blockClass": [
         "banners",
-        "banners-desktop"
+        "banners-desktop",
+        "banners-mobile"
       ]
     }
   },

@@ -356,6 +356,15 @@
   .priceContainer {
     align-items: flex-start;
     flex-direction: column;
+    margin: 0;
+  }
+
+  .price_sellingPriceContainer--productMobile-price::after {
+    content: "no Pix";
+    margin-left: 8px;
+    font-size: 14px;
+    color: #242424;
+    font-weight: 400;
   }
 
   .shareContainer {
@@ -394,6 +403,19 @@
 
   .bannersCustom-slider {
     padding: 0;
+  }
+
+  .swiperBullet--active {
+    color: #000;
+  }
+
+  .shippingContainer :global(.vtex-input-prefix__group) {
+    width: 40%;
+  }
+
+  .shippingContainer :global(.vtex-button) {
+    right: 30%;
+    width: 115px;
   }
 }
 

@@ -336,4 +336,12 @@
   .minicartQuantityBadgeDefault {
     right: -10px;
   }
+
+  .container--content-itens {
+    height: calc(100vh - 350px);
+  }
+
+  .container--footer {
+    height: 300px;
+  }
 }

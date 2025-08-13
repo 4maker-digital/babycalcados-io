@@ -847,4 +847,15 @@ flex-direction: column;
     gap: 10px;
     margin-bottom: 15px;
   }
+
+  .flexRowContent--addMobile {
+    align-items: center;
+    display: flex;
+  }
+
+  .flexColChild--banners-mobile :global(.vtex-store-components-3-x-bannersCustom-list) {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

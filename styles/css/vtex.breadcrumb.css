@@ -48,4 +48,8 @@
   .container {
     padding: 0 15px;
   }
+
+  :global(.vtex-flex-layout-0-x-flexCol--product-box-mobile) .container {
+    padding: 0;
+  }
 }
