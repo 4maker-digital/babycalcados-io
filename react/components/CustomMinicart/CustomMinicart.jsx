@@ -274,6 +274,7 @@ export default function CustomMinicart() {
           </ul>
 
           <a className="vtex-minicart-2-x-container--footer__button" href="/checkout">Finalizar compra</a>
+          <a className="vtex-minicart-2-x-container--footer__button__continue" href="#">Continuar comprando</a>
         </div>
       }
     </>

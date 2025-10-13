@@ -55,8 +55,8 @@
         "type": "internal",
         "href": "/",
         "noFollow": false,
-        "tagTitle": "(19) 3736-8530",
-        "text": "(19) 3736-8530"
+        "tagTitle": "(19) 3736-8515",
+        "text": "(19) 3736-8515"
       }
     }
   },
@@ -115,8 +115,8 @@
         "type": "internal",
         "href": "/",
         "noFollow": false,
-        "tagTitle": "De segunda à sexta das 9:00 as 17:30",
-        "text": "De segunda à sexta das 9:00 as 17:30"
+        "tagTitle": "De segunda à sexta das 8:00 as 17:00",
+        "text": "De segunda à sexta das 8:00 as 17:00"
       }
     }
   },
@@ -148,7 +148,8 @@
       "menu-item#footer-categories-col-2",
       "menu-item#footer-categories-col-3",
       "menu-item#footer-categories-col-4",
-      "menu-item#footer-categories-col-5"
+      "menu-item#footer-categories-col-5",
+      "menu-item#footer-categories-col-6"
     ],
     "props": {
       "blockClass": "footer__left"
@@ -236,7 +237,7 @@
   },
   "menu-item#footer-categories-col-5": {
     "props": {
-      "id": "menu-item-categories-col-4",
+      "id": "menu-item-categories-col-5",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -247,6 +248,22 @@
         "noFollow": false,
         "tagTitle": "Minha Conta",
         "text": "Minha Conta"
+      }
+    }
+  },
+  "menu-item#footer-categories-col-6": {
+    "props": {
+      "id": "menu-item-categories-col-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["menu-institucional", "menu-email"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/trabalhe-conosco",
+        "noFollow": false,
+        "tagTitle": "Trabalhe Conosco",
+        "text": "Trabalhe Conosco"
       }
     }
   },
@@ -341,8 +358,8 @@
         "type": "internal",
         "href": "/institucional/pagamentos",
         "noFollow": false,
-        "tagTitle": "Pagamentos",
-        "text": "Pagamentos"
+        "tagTitle": "Política de pagamento",
+        "text": "Política de pagamento"
       }
     }
   },
@@ -387,7 +404,8 @@
       "image#footer-bb",
       "image#footer-itau",
       "image#footer-pix",
-      "image#footer-boleto"
+      "image#footer-boleto",
+      "image#footer-senff"
     ],
     "props": {
       "blockClass": "footer__social"
@@ -470,6 +488,14 @@
       "src": "assets/boleto.svg",
       "link": "/",
       "blockClass": "footer__social-boleto",
+      "width": "100%"
+    }
+  },
+  "image#footer-senff": {
+    "props": {
+      "src": "assets/senff.svg",
+      "link": "/",
+      "blockClass": "footer__social-senff",
       "width": "100%"
     }
   }

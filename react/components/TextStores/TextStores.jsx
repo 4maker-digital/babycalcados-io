@@ -25,10 +25,10 @@ TextStores.schema = {
   type: "object",
   properties: {
     config: {
-      title: "Config Banners",
+      title: "Texto",
       type: "array",
       items: {
-        title: "Banner",
+        title: "Texto",
         type: "object",
         properties: {
           title: {

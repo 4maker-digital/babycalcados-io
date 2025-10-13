@@ -7,13 +7,25 @@
     "children": [
       "custom-newsletter",
       "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#footer-3-desktop",
+      "image#whatsapp-float"
     ]
   },
 
   // FOOTER MOBILE
   "footer-layout.mobile": {
     "title": "Footer - Mobile",
-    "children": ["custom-newsletter", "flex-layout.row#footer-2-mobile"]
+    "children": ["custom-newsletter", "flex-layout.row#footer-2-mobile", "image#whatsapp-float"]
+  },
+
+  "image#whatsapp-float": {
+    "props": {
+      "blockClass": "whatsapp-float",
+      "src": "assets/ico_whatsapp_bottom.png",
+      "link": {
+        "newTab": true,
+        "url": "https://api.whatsapp.com/send?phone=551937368500"
+      }
+    }
   }
 }

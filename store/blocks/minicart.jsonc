@@ -3,10 +3,10 @@
     "props": {
       "addToCartFeedback": "customEvent",
       "customPixelEventId": "add-to-cart-button",
-      "text": "Comprar"
+      "text": "Comprar",
+      "isOneClickBuy": true
     }
   },
-
   "minicart.v2": {
     "props": {
       "customPixelEventId": "add-to-cart-button"

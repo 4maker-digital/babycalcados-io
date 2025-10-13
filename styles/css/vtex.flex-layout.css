@@ -821,6 +821,11 @@ flex-direction: column;
   }
 }
 
+
+:global(.vtex-account__page) {
+  width: 100%;
+}
+
 @media (max-width: 767px) {
   .flexRow--menu-tech {
     width: 100%;

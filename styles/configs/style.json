@@ -56,12 +56,12 @@
       "semanticColors": {
         "background": {
           "base": "#ffffff",
-          "base--inverted": "#365591",
-          "action-primary": "#294488",
+          "base--inverted": "#E01F26",
+          "action-primary": "#E01F26",
           "action-secondary": "#eef3f7",
-          "emphasis": "#365591",
+          "emphasis": "#E01F26",
           "disabled": "#f2f4f5",
-          "success": "#365591",
+          "success": "#E01F26",
           "success--faded": "#eafce3",
           "danger": "#ff4c4c",
           "danger--faded": "#ffe6e6",
@@ -77,7 +77,7 @@
           "action-primary": "#1a3168",
           "action-secondary": "#dbe9fd",
           "emphasis": "#dd1659",
-          "success": "#365591",
+          "success": "#E01F26",
           "success--faded": "#eafce3",
           "danger": "#e13232",
           "danger--faded": "#ffe6e6",
@@ -90,10 +90,10 @@
           "muted-5": "#f2f4f5"
         },
         "active-background": {
-          "action-primary": "#365591",
+          "action-primary": "#E01F26",
           "action-secondary": "#d2defc",
           "emphasis": "#dd1659",
-          "success": "#365591",
+          "success": "#E01F26",
           "success--faded": "#eafce3",
           "danger": "#ff4c4c",
           "danger--faded": "#ffe6e6",
@@ -106,12 +106,12 @@
           "muted-5": "#f2f4f5"
         },
         "text": {
-          "action-primary": "#365591",
+          "action-primary": "#E01F26",
           "action-secondary": "#eef3f7",
-          "link": "#365591",
-          "emphasis": "#365591",
+          "link": "#E01F26",
+          "emphasis": "#E01F26",
           "disabled": "#979899",
-          "success": "#365591",
+          "success": "#E01F26",
           "success--faded": "#eafce3",
           "danger": "#ff4c4c",
           "danger--faded": "#ffe6e6",
@@ -124,14 +124,14 @@
           "muted-5": "#f2f4f5"
         },
         "visited-text": {
-          "link": "#365591"
+          "link": "#E01F26"
         },
         "hover-text": {
           "action-primary": "#1a3168",
           "action-secondary": "#dbe9fd",
-          "link": "#365591",
+          "link": "#E01F26",
           "emphasis": "#dd1659",
-          "success": "#365591",
+          "success": "#E01F26",
           "success--faded": "#eafce3",
           "danger": "#e13232",
           "danger--faded": "#ffe6e6",
@@ -139,9 +139,9 @@
           "warning--faded": "#fff6e0"
         },
         "active-text": {
-          "link": "#365591",
+          "link": "#E01F26",
           "emphasis": "#dd1659",
-          "success": "#365591",
+          "success": "#E01F26",
           "success--faded": "#eafce3",
           "danger": "#ff4c4c",
           "danger--faded": "#ffe6e6",
@@ -149,11 +149,11 @@
           "warning--faded": "#fff6e0"
         },
         "border": {
-          "action-primary": "#294488",
+          "action-primary": "#E01F26",
           "action-secondary": "#eef3f7",
-          "emphasis": "#365591",
+          "emphasis": "#E01F26",
           "disabled": "#e3e4e6",
-          "success": "#365591",
+          "success": "#E01F26",
           "success--faded": "#eafce3",
           "danger": "#ff4c4c",
           "danger--faded": "#ffe6e6",
@@ -169,7 +169,7 @@
           "action-primary": "#1a3168",
           "action-secondary": "#dbe9fd",
           "emphasis": "#dd1659",
-          "success": "#365591",
+          "success": "#E01F26",
           "success--faded": "#eafce3",
           "danger": "#e13232",
           "danger--faded": "#ffe6e6",
@@ -182,10 +182,10 @@
           "muted-5": "#f2f4f5"
         },
         "active-border": {
-          "action-primary": "#365591",
+          "action-primary": "#E01F26",
           "action-secondary": "#d2defc",
           "emphasis": "#dd1659",
-          "success": "#365591",
+          "success": "#E01F26",
           "success--faded": "#eafce3",
           "danger": "#ff4c4c",
           "danger--faded": "#ffe6e6",
@@ -218,7 +218,7 @@
         },
         "hover-on": {
           "action-primary": "#ffffff",
-          "action-secondary": "#365591",
+          "action-secondary": "#E01F26",
           "emphasis": "#ffffff",
           "success": "#ffffff",
           "success--faded": "#3f3f40",
@@ -229,7 +229,7 @@
         },
         "active-on": {
           "action-primary": "#ffffff",
-          "action-secondary": "#365591",
+          "action-secondary": "#E01F26",
           "emphasis": "#ffffff",
           "success": "#ffffff",
           "success--faded": "#3f3f40",

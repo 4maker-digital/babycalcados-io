@@ -15,3 +15,22 @@
   margin-top: 40px;
   justify-content: end;
 }
+
+.stackItem--wish-list {
+  right: 0;
+  left: initial;
+}
+
+.stackItem--wish-list :global(.vtex-button):hover {
+  background: none;
+}
+
+.stackItem--wish-list :global(.vtex-button__label) {
+  padding: 0;
+}
+
+.stackItem--wish-list :global(.vtex-wish-list-1-x-wishlistIcon) {
+  background: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12.5' cy='12.5' r='12.5' fill='%23E8E8E8'/%3E%3Cpath d='M17.1518 8.8841C16.883 8.60381 16.5639 8.38147 16.2126 8.22977C15.8614 8.07808 15.4849 8 15.1047 8C14.7245 8 14.348 8.07808 13.9968 8.22977C13.6456 8.38147 13.3264 8.60381 13.0577 8.8841L12.4998 9.46502L11.942 8.8841C11.6732 8.6039 11.3541 8.38164 11.0028 8.23C10.6516 8.07837 10.2752 8.00032 9.89498 8.00032C9.51481 8.00032 9.13836 8.07837 8.78712 8.23C8.43589 8.38164 8.11674 8.6039 7.84792 8.8841C7.5791 9.16429 7.36585 9.49692 7.22037 9.86301C7.07488 10.2291 7 10.6215 7 11.0177C7 11.414 7.07488 11.8063 7.22037 12.1724C7.36585 12.5385 7.5791 12.8712 7.84792 13.1514L8.40572 13.7327L12.4998 18L16.594 13.7327L17.1518 13.1514C17.4207 12.8712 17.634 12.5386 17.7795 12.1725C17.9251 11.8064 18 11.414 18 11.0177C18 10.6214 17.9251 10.229 17.7795 9.86295C17.634 9.49686 17.4207 9.16424 17.1518 8.8841Z' stroke='%23242424' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  height: 25px;
+  width: 25px;
+}

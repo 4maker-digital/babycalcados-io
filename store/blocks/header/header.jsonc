@@ -139,13 +139,15 @@
   "image#wishlist": {
     "props": {
       "src": "assets/wishlist.svg",
-      "link": "/wishlist"
+      "link": {
+        "url": "/account#/wishlist"
+      }
     }
   },
   "link#wishlist": {
     "props": {
       "label": "Lista de desejos",
-      "href": "/wishlist"
+      "href": "/account#/wishlist"
     }
   },
   "flex-layout.row#second-row": {

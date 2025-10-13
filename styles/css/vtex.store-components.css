@@ -149,7 +149,7 @@
 
 .shippingContainer :global(.vtex-button) {
   position: absolute;
-  top: 30px;
+  top: 31px;
   height: 38px;
   width: 120px;
   right: 22%;
@@ -201,9 +201,9 @@
 
 .productDescriptionText {
   color: #242424;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 21px;
   margin-bottom: 20px;
 }
 
@@ -445,4 +445,20 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+.imageElementLink--whatsapp-float {
+  position: fixed;
+  right: 10px;
+  bottom: 83px;
+  width: 70px;
+  height: 70px;
+  pointer-events: all;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0px 0px 7px #0000005e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

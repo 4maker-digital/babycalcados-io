@@ -28,8 +28,14 @@
       },
       "children": [
         "product-summary-image#shelf",
-        "product-price-savings#summary"
+        "product-price-savings#summary",
+        "add-to-list-btn"
       ]
+  },
+  "add-to-list-btn": {
+    "props": {
+      "blockClass": "wish-list"
+    }
   },
   "product-summary-image#shelf": {
       "props": {

@@ -57,7 +57,7 @@
     gap: 15px;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 330px);
+    height: calc(100vh - 410px);
     overflow-y: auto;
 }
 
@@ -200,7 +200,7 @@
     box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.25);
     background: rgba(248, 249, 250, 1);
     padding: 5px 15px;
-    height: 250px;
+    height: 330px;
 }
 
 .container--footer-itens {
@@ -247,6 +247,23 @@
     line-height: 14.68px;
     width: 100%;
     margin: 0;
+}
+
+.container--footer__button__continue {
+  background-color: #fff;
+  border: 1px solid #E01F26;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: #E01F26;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 14.68px;
+  width: 100%;
+  margin: 10px 0 0;
 }
 
 .container--footer--scroll {
@@ -308,7 +325,7 @@
 }
 
 .container--content--active .container--content-itens {
-    height: calc(100vh - 330px);
+    height: calc(100vh - 410px);
 }
 
 .container--content {
@@ -335,13 +352,5 @@
 @media (max-width: 767px) {
   .minicartQuantityBadgeDefault {
     right: -10px;
-  }
-
-  .container--content-itens {
-    height: calc(100vh - 350px);
-  }
-
-  .container--footer {
-    height: 300px;
   }
 }
