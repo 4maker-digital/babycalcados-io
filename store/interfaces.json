@@ -90,5 +90,8 @@
     },
     "text-stores": {
         "component": "TextStores"
+    },
+    "custom-insta": {
+        "component": "CustomInsta"
     }
 }

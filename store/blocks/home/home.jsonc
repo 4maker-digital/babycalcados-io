@@ -120,7 +120,7 @@
   "flex-layout.col#banners-3": {
     "children": [
       "rich-text#insta-title",
-      "custom-banners"
+      "custom-insta"
     ],
     "props": {
       "blockClass": [
