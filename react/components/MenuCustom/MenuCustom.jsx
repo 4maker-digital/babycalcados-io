@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function MenuCustom({ menu }) {
+  console.log('menu', menu);
+
   return (
     <div className="vtex-menu-2-x-menuContainerHeader">
       <div className="vtex-menu-2-x-menuContainerHeader-content">
@@ -23,6 +25,16 @@ export default function MenuCustom({ menu }) {
                     <div className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category">
                       {item?.sublevel?.map((_item, index) => (
                         <ul className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category-items">
+                          <li
+                              className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category-items-item"
+                            >
+                              <a
+                                className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category-items-item--title"
+                                href={_item?.url}
+                              >
+                                {_item?.__editorItemTitle}
+                              </a>
+                            </li>
                           {_item?.threeLevel?.map((_data, index) => (
                             <li
                               key={index}
