@@ -20,6 +20,11 @@
     padding: 12px 0;
 }
 
+.menuContainerHeader-content-nav-item:last-child .menuContainerHeader-content-nav-item--title,
+.menuContainerHeader-content-nav-item:last-child:hover .menuContainerHeader-content-nav-item--title {
+  color: #E01F26;
+}
+
 .menuContainerHeader-content-nav-item--title {
     color: #242424;
     text-decoration: none;

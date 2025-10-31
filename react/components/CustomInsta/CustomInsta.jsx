@@ -1,7 +1,4 @@
-import React, { useEffect } from "react";
-
-import { useProduct } from "vtex.product-context";
-import { Helmet } from 'vtex.render-runtime';
+import React from "react";
 
 export default function CustomInsta() {
 
