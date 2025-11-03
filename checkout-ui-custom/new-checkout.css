@@ -1,0 +1,222 @@
+body .cart-template-holder .cart {
+  padding: 30px 0;
+}
+
+body .table.cart-items thead tr {
+  background: #E8E8E8;
+}
+
+body .table.cart-items thead tr th {
+  padding: 20px 0;
+  border: 0;
+}
+
+body .table.cart-items tbody tr {
+  border: 1px solid #DEE2E6;
+  padding: 0 10px;
+}
+
+body .table.cart-items thead tr th.product {
+  width: calc(100% - 255px) !important;
+  text-align: center;
+}
+
+body .table.cart-items td.product-name a,
+body .table.cart-items td.product-name a:hover {
+  color: #212529;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body .table.cart-items td.quantity {
+  border: 0;
+}
+
+body .table.cart-items td.quantity .item-quantity-change i.icon {
+  display: none;
+}
+
+body .table.cart-items td.quantity .item-quantity-change.item-quantity-change-decrement::before {
+  content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 11.25H6C5.586 11.25 5.25 11.586 5.25 12C5.25 12.414 5.586 12.75 6 12.75H18C18.414 12.75 18.75 12.414 18.75 12C18.75 11.586 18.414 11.25 18 11.25Z' fill='black'/%3E%3C/svg%3E%0A");
+  height: 24px;
+}
+
+body .table.cart-items td.quantity .item-quantity-change.item-quantity-change-increment::before {
+  content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 11.25H12.75V6C12.75 5.586 12.414 5.25 12 5.25C11.586 5.25 11.25 5.586 11.25 6V11.25H6C5.586 11.25 5.25 11.586 5.25 12C5.25 12.414 5.586 12.75 6 12.75H11.25V18C11.25 18.414 11.586 18.75 12 18.75C12.414 18.75 12.75 18.414 12.75 18V12.75H18C18.414 12.75 18.75 12.414 18.75 12C18.75 11.586 18.414 11.25 18 11.25Z' fill='black'/%3E%3C/svg%3E%0A");
+  height: 24px;
+}
+
+body .table.cart-items tbody tr td.product-price .new-product-price-label,
+body .table.cart-items tbody tr td.quantity-price .new-product-price-label {
+  display: block;
+}
+
+body .old-product-price,
+body .table.cart-items tbody tr td.product-price>span.list-price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  color: #A0A0A0;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+body .old-product-price:not(:empty)::before {
+  content: "De";
+  color: #A0A0A0;
+  font-size: 12px;
+}
+
+body .table.cart-items tbody tr td.product-price .best-price {
+  color: #242424;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+body .price-details {
+  display: none;
+}
+
+body .btn-secondary,
+body .orderform-template-holder #payment-data #btn-add-gift-card,
+body .orderform-template-holder #payment-data .payment-discounts-list table td.action a,
+body .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .btn,
+body .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a,
+body .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc a,
+body .summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type=submit],
+body .table.cart-items tbody tr td .product-service input[type=submit],
+body .table.cart-items tbody tr td.product-name .add-service.btn,
+body .table.cart-items tbody tr td.product-name .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a.add-service,
+body .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .table.cart-items tbody tr td.product-name a.add-service,
+body .table.cart-items tbody tr td.product-name .clone-item.btn,
+body .table.cart-items tbody tr td.product-name .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a.clone-item,
+body .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .table.cart-items tbody tr td.product-name a.clone-item,
+body .table.cart-items tbody tr td.product-name .add-item-attachment-container a {
+  background: #E01F26;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+}
+
+body .summary-template-holder tbody,
+.summary-template-holder tfoot tr {
+  background: #FAFAFA;
+  padding: 10px;
+  border: 1px solid #DEE2E6;
+  border-bottom: 0;
+}
+
+body .summary-template-holder tbody td {
+  color: #495057;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.summary-template-holder tfoot tr td {
+  color: #495057;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 !important;
+}
+
+body .summary-template-holder tbody td:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+body .full-cart .summary-totalizers tfoot tr {
+  padding-top: 0;
+}
+
+body .full-cart .summary-totalizers .monetary {
+  color: #495057;
+}
+
+body .cart-links.cart-links-bottom .btn-place-order-wrapper {
+  float: initial;
+  display: block;
+  width: 100%;
+}
+
+body .summary-template-holder .cart-links-bottom .btn-success {
+  padding: 0;
+  width: 100%;
+  border: 0;
+  height: 54px;
+  text-align: center;
+  line-height: 54px;
+  text-transform: initial;
+  font-size: 16px;
+}
+
+body .summary-template-holder .cart-links-bottom .btn-success:before {
+  content: "";
+  display: none;
+}
+
+body .cart-more-options .srp-container .srp-address-title.blue {
+  color: #E01F26;
+}
+
+body .orderform-template .cart-template.mini-cart .summary-totalizers tbody {
+  background: #fff;
+  border: 0;
+  border-top: 1px solid #cbcbcb;
+  padding-bottom: 0;
+}
+
+body .btn-success,
+body .btn-success:hover,
+body .btn-success:focus,
+body .btn-success:active {
+  border: 0;
+}
+
+body .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-pickupButton,
+body .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-pickupViewOptionActive,
+body .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-pickupViewOptionActive:hover,
+body .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-pickupViewOptionActive:active,
+body .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-pickupViewOptionActive:focus,
+body .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsTogglePickup,
+body .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsOption.vtex-omnishipping-1-x-deliveryOptionActive {
+  background: #E01F26;
+  border-color: #E01F26;
+}
+
+body .orderform-template .summary-template-holder tfoot tr,
+body .orderform-template .cart-template.mini-cart .summary-totalizers tfoot tr td {
+  padding: 0 !important;
+}
+
+body .orderform-template .cart-template.mini-cart .summary-totalizers tbody td,
+body .orderform-template .cart-template.mini-cart .summary-totalizers tfoot tr td.monetary {
+  color: #495057;
+}
+
+body #shipping-calculate-link {
+  background: #E01F26;
+  border-color: #E01F26;
+  color: #fff;
+}
+
+body .empty-cart-links #cart-choose-products {
+  height: 54px;
+}
+
+@media (max-width: 767px) {
+  body .table.cart-items tbody tr {
+    width: 95%;
+  }
+
+  body .cart-template-holder .cart {
+    margin: 0;
+  }
+
+  body .cart-more-options #shipping-preview-container {
+    display: block !important;
+  }
+}
