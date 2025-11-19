@@ -4,7 +4,7 @@
       "addToCartFeedback": "customEvent",
       "customPixelEventId": "add-to-cart-button",
       "text": "Comprar",
-      "isOneClickBuy": true
+      "isOneClickBuy": false
     }
   },
   "minicart.v2": {
