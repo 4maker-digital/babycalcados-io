@@ -49,7 +49,7 @@
         "component": "MetaTag"
     },
     "form-contact": {
-        "component": "FormContact"
+        "component": "ContactForm"
     },
     "custom-banners": {
         "component": "CustomBanners"

@@ -1,0 +1,119 @@
+.formContato h2 {
+  font-weight: 800;
+  font-size: 26px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.formContato h3 {
+  font-weight: 800;
+  font-size: 18px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.formContato p {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.formContato form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.formContato section {
+  width: 100%;
+}
+
+.formContato form > div {
+  width: 100%;
+}
+
+.form1 div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form1 p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  margin: 0;
+  white-space: nowrap;
+  color: #E01F26;
+}
+
+.form1 input {
+  width: 100%;
+  border: 1px solid #E01F26;
+  height: 35px;
+  padding: 0 5px;
+}
+
+.form2 h2,
+.form3 h2,
+.form4 h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  margin: 40px 0 20px;
+  text-transform: uppercase;
+}
+
+.form2 div,
+.form3 div,
+.form4 div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.form2 label,
+.form3 label,
+.form4 label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.formContato button {
+  border: 0;
+  background: #E01F26;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px
+}
+
+@media (max-width: 768px) {
+  .formContato h2 {
+    font-size: 22px;
+  }
+
+  .formContato {
+    margin-top: 0;
+    padding-left: 0;
+  }
+
+  .formContato form {
+    margin: 50px auto 0;
+    width: 100%;
+  }
+}

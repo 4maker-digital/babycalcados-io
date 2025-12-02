@@ -1,24 +1,67 @@
 {
-	"store.custom#stores": {
+	"store.custom#contact": {
 		"blocks": [
-			"flex-layout.row#breadcrumb-about",
-			"flex-layout.row#stores-content"
+			"flex-layout.row#breadcrumb-contact",
+			"flex-layout.row#contact-us-content"
 		]
 	},
-	"flex-layout.row#stores-content": {
+	"flex-layout.row#contact-us-content": {
 		"children": [
-      "rich-text#about-title",
-			"flex-layout.col#stores"
+      "rich-text#contact-title",
+			"flex-layout.col#contact-us"
 		],
 		"props": {
-			"blockClass": "about"
+			"blockClass": "contact"
 		}
 	},
-	"flex-layout.col#stores": {
-		"children": ["text-stores"],
+	"rich-text#contact-title": {
+		"props": {
+			"text": "# Título da página",
+			"blockClass": "institucional-title"
+		}
+	},
+	"flex-layout.col#contact-us": {
+		"children": ["rich-text#contact-us", "form-contact"],
     "props": {
-      "width": "70%",
-      "blockClass": "stores"
+      "width": "70%"
     }
+	},
+	"flex-layout.row#breadcrumb-contact": {
+		"children": [
+			"link#breadcrumb-home",
+			"icon#breadcrumb",
+			"link#breadcrumb-contact"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "breadcrumb",
+			"colGap": 3
+		}
+	},
+	"link#breadcrumb-home": {
+		"props": {
+			"label": "Home",
+			"href": "/",
+			"blockClass": "breadcrumb-home"
+		}
+	},
+	"icon#breadcrumb": {
+		"props": {
+			"size": 8,
+			"id": "icon-setadireita"
+		}
+	},
+	"link#breadcrumb-contact": {
+		"props": {
+			"label": "Fale Conosco",
+			"blockClass": "active-breadcrumb"
+		}
+	},
+	"rich-text#contact-us": {
+		"props": {
+			"text": "",
+			"blockClass": "institucional-content"
+		}
 	}
 }
