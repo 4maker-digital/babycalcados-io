@@ -21,7 +21,7 @@
 		}
 	},
 	"flex-layout.col#about-us": {
-		"children": ["custom-banners", "rich-text#about-content"],
+		"children": ["rich-text#about-content", "custom-banners"],
     "props": {
       "width": "70%"
     }
