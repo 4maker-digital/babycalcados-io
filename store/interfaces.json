@@ -93,5 +93,8 @@
     },
     "custom-insta": {
         "component": "CustomInsta"
+    },
+    "pdp-script-ga4-add-to-cart" : {
+        "component" : "ProductPageScript"
     }
 }

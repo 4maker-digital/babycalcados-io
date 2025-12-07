@@ -22,6 +22,7 @@
   "responsive-layout.desktop#product": {
     "children": [
       "flex-layout.row#product-breadcrumb",
+      "pdp-script-ga4-add-to-cart",
       "flex-layout.row#product-main",
       "flex-layout.row#benefits",
       "product-reviews",
@@ -297,6 +298,7 @@
   "flex-layout.col#box-mobile": {
     "children": [
       // "floating-buy-button",
+      "pdp-script-ga4-add-to-cart",
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-image-mobile",
       "flex-layout.row#price-box-mobile",
