@@ -1,7 +1,7 @@
 {
   "vendor": "td2154",
   "name": "store-theme",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "builders": {
     "store": "0.x",
     "react": "3.x",
