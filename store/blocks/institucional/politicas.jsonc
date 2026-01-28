@@ -1,0 +1,76 @@
+{
+    "store.custom#politicas": {
+        "blocks": [
+            "flex-layout.row#politicas-wrapper"
+        ]
+    },
+    "flex-layout.row#politicas-wrapper": {
+        "children": [
+            "flex-layout.col#politicas"
+        ],
+        "props": {
+            "blockClass": [
+                "institutional-wrapper"
+            ]
+        }
+    },
+    "flex-layout.col#politicas": {
+        "children": [
+            "rich-text#politicas-title1",
+            "rich-text#politicas-content1"
+        ],
+        "props": {
+            "blockClass": [
+                "institutional-content"
+            ]
+        }
+    },
+    "rich-text#politicas-title1": {
+        "props": {
+            "text": "## Título 1",
+            "blockClass": [
+                "institutional-title"
+            ]
+        }
+    },
+    "rich-text#politicas-content1": {
+        "props": {
+            "text": "Conteúdo 1",
+            "blockClass": [
+                "institutional-content"
+            ]
+        }
+    },
+    "rich-text#politicas-title2": {
+        "props": {
+            "text": "## Título 2",
+            "blockClass": [
+                "institutional-title"
+            ]
+        }
+    },
+    "rich-text#politicas-content2": {
+        "props": {
+            "text": "Conteúdo 2",
+            "blockClass": [
+                "institutional-content"
+            ]
+        }
+    },
+    "rich-text#politicas-title3": {
+        "props": {
+            "text": "## Título 3",
+            "blockClass": [
+                "institutional-title"
+            ]
+        }
+    },
+    "rich-text#politicas-content3": {
+        "props": {
+            "text": "Conteúdo 3",
+            "blockClass": [
+                "institutional-content"
+            ]
+        }
+    }
+}

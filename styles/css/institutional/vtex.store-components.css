@@ -1,0 +1,10 @@
+.imageElement--institutional-banner {
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .imageElement--institutional-banner {
+        border-radius: 0;
+        /* width: 90%; */
+    }
+}

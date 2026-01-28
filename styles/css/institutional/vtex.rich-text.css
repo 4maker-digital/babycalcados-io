@@ -1,0 +1,10 @@
+.heading--institutional-title {
+    margin: 10px 0 10px 0;
+    /* text-align: center; */
+    border-bottom: 1px solid #eee;
+    padding: 0px 0px 10px 0px;
+}
+
+:global(.vtex-rich-text-0-x-link--institutional-content) {
+    color: #E01F26;
+}

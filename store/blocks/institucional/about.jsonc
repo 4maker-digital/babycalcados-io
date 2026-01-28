@@ -2,12 +2,11 @@
 	"store.custom#about": {
 		"blocks": [
 			"flex-layout.row#breadcrumb-about",
-			"flex-layout.row#about-us-content"
+			"flex-layout.row#about_wrapper"
 		]
 	},
 	"flex-layout.row#about-us-content": {
 		"children": [
-      "rich-text#about-title",
 			"flex-layout.col#about-us"
 		],
 		"props": {
@@ -21,10 +20,12 @@
 		}
 	},
 	"flex-layout.col#about-us": {
-		"children": ["rich-text#about-content", "custom-banners"],
-    "props": {
-      "width": "70%"
-    }
+		"children": [
+			"rich-text#about-content"
+		],
+		"props": {
+			"width": "70%"
+		}
 	},
 	"flex-layout.row#breadcrumb-about": {
 		"children": [
@@ -62,6 +63,60 @@
 		"props": {
 			"text": "Coloque aqui seu texto",
 			"blockClass": "institucional-content"
+		}
+	},
+	// New institutional model
+	"flex-layout.row#about_wrapper": {
+		"children": [
+			"flex-layout.row#about-left",
+			"flex-layout.row#about-right"
+		],
+		"props": {
+			"blockClass": [
+				"institutional-wrapper"
+			]
+		}
+	},
+	"flex-layout.row#about-left": {
+		"children": [
+			"flex-layout.col#texts"
+		]
+	},
+	"flex-layout.col#texts": {
+		"children": [
+			"rich-text#about_title",
+			"rich-text#about_paragraph"
+		]
+	},
+	"rich-text#about_title": {
+		"props": {
+			"text": "## Sobre Nós",
+			"textColor": "c-action-primary",
+			"blockClass": [
+				"institutional-title"
+			]
+		}
+	},
+	"rich-text#about_paragraph": {
+		"props": {
+			"text": "Desde 1946, a Baby Calçados faz parte da história e do dia a dia das famílias da região de Campinas. O que começou como uma loja local cresceu ao longo das décadas, e hoje contamos com 22 unidades espalhadas por Campinas, Sumaré, Jundiaí, Piracicaba, Paulínia e Hortolândia. \n\n Oferecemos calçados femininos, masculinos e infantis, além de acessórios e produtos esportivos. Nosso compromisso é garantir conforto, estilo e qualidade para todas as fases da vida sempre com atendimento próximo, variedade e cuidado em cada detalhe. ",
+			"blockClass": [
+				"institutional-paragraph"
+			]
+		}
+	},
+	// Right side
+	"flex-layout.row#about-right": {
+		"children": [
+			"image#institutional_banner"
+		]
+	},
+	"image#institutional_banner": {
+		"props": {
+			"src": "https://td2154.vtexassets.com/assets/vtex.file-manager-graphql/images/6644cde2-ce27-46a5-99de-5478e5f438ca___965b624d5fe788edf2f02b0a8c6ab16a.jpeg",
+			"blockClass": [
+				"institutional-banner"
+			]
 		}
 	}
 }

@@ -72,16 +72,15 @@
     "benefits": {
         "component": "Benefits"
     },
-    "custom-categories" : {
+    "custom-categories": {
         "component": "CustomCategories"
     },
     "sliderCustom": {
         "component": "SliderCustom"
     },
-    "header-mobile-handler" : {
+    "header-mobile-handler": {
         "component": "HeaderMobileHandler"
     },
-
     "floating-buy-button": {
         "component": "FloatingBuyButton"
     },
@@ -94,7 +93,13 @@
     "custom-insta": {
         "component": "CustomInsta"
     },
-    "pdp-script-ga4-add-to-cart" : {
-        "component" : "ProductPageScript"
+    "pdp-script-ga4-add-to-cart": {
+        "component": "ProductPageScript"
+    },
+    "nossas-lojas": {
+        "component": "NossasLojas"
+    },
+    "fale-conosco": {
+        "component": "FaleConosco"
     }
 }

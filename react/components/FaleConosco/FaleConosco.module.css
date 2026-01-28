@@ -1,0 +1,99 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #E01F26;
+    /* Primary Red */
+    padding-bottom: 20px;
+    display: inline-block;
+    /* To make border match text width roughly or just style choice */
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.cardHeader {
+    background-color: #E01F26;
+    /* Primary Red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cardBody {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.icon {
+    color: #E01F26;
+    /* Primary Red */
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.itemContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    color: #E01F26;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: #c41b21;
+    text-decoration: underline;
+}
+
+.text {
+    color: #666;
+}
+
+.subText {
+    font-size: 13px;
+    color: #888;
+    margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
