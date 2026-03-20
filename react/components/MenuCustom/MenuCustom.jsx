@@ -7,8 +7,8 @@ export default function MenuCustom({ menu }) {
     <div className="vtex-menu-2-x-menuContainerHeader">
       <div className="vtex-menu-2-x-menuContainerHeader-content">
         <ul className="vtex-menu-2-x-menuContainerHeader-content-nav">
-          {menu?.map((item, index) => (
-            <li
+          {menu?.map((item, index) => {
+            return <li
               key={index}
               className="vtex-menu-2-x-menuContainerHeader-content-nav-item"
             >
@@ -23,8 +23,8 @@ export default function MenuCustom({ menu }) {
                 <div className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown">
                   <div className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items">
                     <div className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category">
-                      {item?.sublevel?.map((_item, index) => (
-                        <ul className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category-items">
+                      {item?.sublevel?.map((_item, index) => {
+                        return <ul className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category-items">
                           <li
                               className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category-items-item"
                             >
@@ -35,8 +35,9 @@ export default function MenuCustom({ menu }) {
                                 {_item?.__editorItemTitle}
                               </a>
                             </li>
-                          {_item?.threeLevel?.map((_data, index) => (
-                            <li
+                            
+                          {_item?.threeLevel?.map((_data, index) => {
+                            return <li
                               key={index}
                               className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category-items-item"
                             >
@@ -47,8 +48,7 @@ export default function MenuCustom({ menu }) {
                                 {_data?.__editorItemTitle}
                               </a>
                             </li>
-                          ))}
-
+                          })}
                           {_item?.buttonSeeAll && (
                             <a
                               className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-category--see-all"
@@ -57,18 +57,18 @@ export default function MenuCustom({ menu }) {
                               {_item?.buttonSeeAll}
                             </a>
                           )}
-                        </ul>
-                      ))}
+                        </ul>                        
+                      })}
                     </div>
                     {item?.numberLink?.length && (
                       <div className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-number">
                         <h3 className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-number__title">
-                          {item?.numberLink[0]?.__editorItemTitle}
+                          {item?.numberLink[0]?.__editorItemTitle} 
                         </h3>
-                        {item?.numberLink?.map((_item, index) => (
-                          <ul className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-number-items">
-                            {_item?.threeLevel?.map((_data, index) => (
-                              <li
+                        {item?.numberLink?.map((_item, index) => {
+                          return <ul className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-number-items">
+                            {_item?.threeLevel?.map((_data, index) => {
+                              return <li
                                 key={index}
                                 className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-number-items-item"
                               >
@@ -79,28 +79,28 @@ export default function MenuCustom({ menu }) {
                                   {_data?.__editorItemTitle}
                                 </a>
                               </li>
-                            ))}
+                            })}
                           </ul>
-                        ))}
+                        })}
                       </div>
-                    )}
+                    ) || null}
 
                     {item?.banners?.length && (
                       <ul className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-banners">
-                        {item?.banners?.map((_item, index) => (
-                          <li className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-banners-item">
+                        {item?.banners?.map((_item, index) => {
+                          return <li className="vtex-menu-2-x-menuContainerHeader-content-nav-item--dropdown-items-banners-item">
                             <a href={_item?.url}>
                               <img src={_item?.banner} title={_item?.title} />
                             </a>
                           </li>
-                        ))}
+                        })}
                       </ul>
-                    )}
+                    ) || null}
                   </div>
                 </div>
               )}
             </li>
-          ))}
+          })}
         </ul>
       </div>
     </div>
