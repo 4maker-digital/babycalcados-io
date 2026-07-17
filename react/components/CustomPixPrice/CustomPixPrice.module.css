@@ -1,0 +1,42 @@
+/* Vitrine (card de produto) */
+.customPixPrice {
+    display: block;
+    color: #242424;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+    margin: 2px 0;
+}
+
+/* Página de produto */
+.customPixPricePdp {
+    display: block;
+    color: #242424;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 2px 0 4px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #242424;
+    margin-left: 8px;
+}
+
+.customPixPrice .label {
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+@media screen and (max-width: 768px) {
+    .customPixPricePdp {
+        font-size: 26px;
+    }
+
+    .customPixPrice {
+        font-size: 16px;
+    }
+}

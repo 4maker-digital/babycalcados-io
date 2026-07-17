@@ -6,6 +6,7 @@
           "flex-layout.row#shelf-list-price",
           "product-selling-price#shelf",
           "product-installments#shelf",
+          "custom-pix-price",
           "vtex.product-highlights@2.x:product-highlights"
       ]
   },
@@ -97,7 +98,7 @@
   "product-selling-price#shelf": {
       "props": {
           "blockClass": "shelf",
-          "message": "{sellingPriceValue} no Pix"
+          "message": "{sellingPriceValue}"
       }
   },
 	"product-installments#shelf": {

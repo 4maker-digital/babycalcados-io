@@ -30,6 +30,18 @@
   font-weight: 700;
 }
 
+.installments--pdp {
+  color: #242424;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+}
+
+.installments--pdp .installmentsNumber,
+.installments--pdp .installmentValue {
+  font-weight: 700;
+}
+
 .savings {
   background: #fff;
   width: max-content;
@@ -41,6 +53,7 @@
   display: block;
   text-transform: uppercase;
   border: 1px solid #E01F26;
+  /* margin: 10px; */
 }
 
 .savings--pdp-horizontal {

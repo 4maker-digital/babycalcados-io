@@ -1,4 +1,7 @@
 {
+    "custom-pix-price": {
+        "component": "CustomPixPrice"
+    },
     "custom-menu": {
         "component": "MenuCustom"
     },

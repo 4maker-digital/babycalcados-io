@@ -75,6 +75,7 @@
     },
     "children": [
       "vtex.store-components:product-name#productDesk-name",
+      "product-identifier.product",
       "vtex.product-highlights@2.x:product-highlights",
       "flex-layout.row#productDesk-boxPrice",
       "disclosure-layout#description",
@@ -92,9 +93,22 @@
       "blockClass": "product-main-info"
     }
   },
+  "custom-pix-price#pdp": {
+    "props": {
+      "variant": "pdp"
+    }
+  },
+  "product-installments#pdp": {
+    "props": {
+      "blockClass": "pdp",
+      "message": "Ou {installmentsNumber} x de {installmentValue} sem juros"
+    }
+  },
   "flex-layout.col#price-box": {
     "children": [
       "product-price#productDesk-price",
+      "custom-pix-price#pdp",
+      "product-installments#pdp",
       "custom-pdp-similars",
       "sku-selector",
       "product-assembly-options",
@@ -119,7 +133,7 @@
   },
   "product-price#productDesk-price": {
     "props": {
-      "showInstallments": true,
+      "showInstallments": false,
       "showSavings": true,
       "showLabels": true,
       "blockClass": "productDesk-price"
@@ -315,7 +329,8 @@
   },
   "flex-layout.col#price-box-mobile": {
     "children": [
-      "vtex.store-components:product-name#productDesk-name"
+      "vtex.store-components:product-name#productDesk-name",
+      "product-identifier.product"
     ],
     "props": {
       "blockClass": "product-main-info"
@@ -335,7 +350,9 @@
   },
   "flex-layout.row#prices": {
     "children": [
-      "product-price#productMobile-price"
+      "product-price#productMobile-price",
+      "custom-pix-price#pdp",
+      "product-installments#pdp"
     ],
     "props": {
       "marginTop": 5,
@@ -345,7 +362,7 @@
   },
   "product-price#productMobile-price": {
     "props": {
-      "showInstallments": true,
+      "showInstallments": false,
       "showSavings": true,
       "showLabels": true,
       "blockClass": "productMobile-price"
