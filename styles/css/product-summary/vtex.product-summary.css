@@ -13,6 +13,10 @@
     padding: 0;
     position: relative;
     background: transparent;
+
+    /*  */
+    border: 1px solid #f0f0f0;
+    padding: 10px;
 }
 
 .container .element .imageContainer {
@@ -39,7 +43,7 @@
   display: block;
   padding: 0;
   height: 45px;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .brandName {

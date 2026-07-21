@@ -17,6 +17,17 @@
   color: #777;
   font-weight: 400;
   font-size: 12px;
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .listPriceValue--shelf,
+  .listPriceValue--shelf .currencyContainer--shelf {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
 }
 
 .installments--value {

@@ -3,11 +3,11 @@
       "children": [
           "stack-layout#prodsum",
           "product-summary-name",
+          "vtex.product-highlights@2.x:product-highlights",
           "flex-layout.row#shelf-list-price",
           "product-selling-price#shelf",
           "product-installments#shelf",
-          "custom-pix-price",
-          "vtex.product-highlights@2.x:product-highlights"
+          "custom-pix-price"
       ]
   },
   "product-specification-badges": {
