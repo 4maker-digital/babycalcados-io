@@ -9,13 +9,11 @@ export default function PDPSimilars() {
     const response = await fetch(`/api/catalog_system/pub/products/crossselling/similars/${context?.product?.productId}`);
     const data = await response.json();
 
-    console.log("data", data)
-
     const uniqueProductsMap = new Map();
     data.forEach(product => {
-      const color = product['Cor / Tonalidade'][0];
-      if (!uniqueProductsMap.has(color)) {
-        uniqueProductsMap.set(color, product);
+      const urlIdentifier = product.productId; // ID único do produto
+      if (!uniqueProductsMap.has(urlIdentifier)) {
+        uniqueProductsMap.set(urlIdentifier, product);
       }
     });
 
@@ -40,11 +38,26 @@ export default function PDPSimilars() {
     <div className="vtex-product-summary-2-x-similars-pdp-container">
       <span className="vtex-product-summary-2-x-similars-pdp-title">Selecione uma cor:</span>
       <div className="vtex-product-summary-2-x-similars-pdp-item">
-        {uniqueProducts.map((product, index) => (
-          <a className="vtex-product-summary-2-x-similars-pdp-item-link" key={index} href={product?.link} onClick={handleClick}>
-            <img className="vtex-product-summary-2-x-similars-pdp-item-link-img" src={product?.items[0]?.images[0]?.imageUrl} />
-          </a>
-        ))}
+        {uniqueProducts.map((product, index) => {
+          const isSameProduct = context?.product?.productId === product.productId;
+
+          return (
+            <a
+              title={product['Cor / Tonalidade']?.[0]}
+              className="vtex-product-summary-2-x-similars-pdp-item-link"
+              key={index}
+              href={product?.link}
+              onClick={handleClick}
+              style={{
+                border: isSameProduct ? '1px solid #034ea1' : 'none',
+                padding: isSameProduct ? '4px' : '',
+                borderRadius: isSameProduct ? '30px' : '',
+              }}
+            >
+              <img className="vtex-product-summary-2-x-similars-pdp-item-link-img" src={product?.items[0]?.images[0]?.imageUrl} />
+            </a>
+          );
+        })}
       </div>
     </div>
   );

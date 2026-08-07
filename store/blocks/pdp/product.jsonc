@@ -379,12 +379,11 @@
   },
   "product-images": {
     "props": {
-      "displayMode": "list",
+      "displayMode": "carousel",
       "aspectRatio": {
         "desktop": "1:1",
         "phone": "16:9"
-      },
-      "zoomMode": "disabled"
+      }
     }
   },
   "flex-layout.row#product-image-mobile": {
