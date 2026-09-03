@@ -489,6 +489,12 @@
   width: 100% !important;
 }
 
+.flexRowContent--mainInfos .stretchChildrenWidth:first-child {
+  align-self: flex-start;
+  position: sticky;
+  top: 20px;
+}
+
 .flexRowContent--row-buyButton {
   margin: 20px 0 40px;
 }
