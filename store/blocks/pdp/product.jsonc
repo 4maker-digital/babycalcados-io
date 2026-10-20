@@ -429,10 +429,20 @@
       "product-assembly-options",
       "modal-trigger#medidas",
       "flex-layout.row#add-to-cart-mobile",
-      "flex-layout.row#shipping-simulator"
+      "flex-layout.row#shipping-simulator",
+      "flex-layout.row#disclosure-mobile"
     ],
     "props": {
       "blockClass": "productMobile"
+    }
+  },
+  "flex-layout.row#disclosure-mobile": {
+    "children": [
+      "disclosure-layout#description",
+      "disclosure-layout#specification"
+    ],
+    "props": {
+      "blockClass": "disclosure-mobile"
     }
   },
   "flex-layout.row#add-to-cart-mobile": {

@@ -213,6 +213,19 @@
   flex-direction: column;
 }
 
+/* disclosure-layout não tem wrapper próprio: trigger e content renderizam
+   como irmãos dentro do stretchChildrenWidth da row, que fica em row
+   (título e descrição lado a lado). O blockClass fica na row que envolve. */
+.flexRowContent--disclosure-mobile {
+  flex-direction: column;
+}
+
+.flexRowContent--disclosure-mobile .stretchChildrenWidth {
+  flex-direction: column !important;
+  width: 100% !important;
+  align-items: stretch !important;
+}
+
 .flexRowContent--productSpecificationGroup {
   background: #E9ECEF;
   border-radius: 0 0 5px 5px;

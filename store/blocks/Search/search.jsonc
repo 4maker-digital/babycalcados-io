@@ -18,7 +18,7 @@
     ],
     "props": {
       "context": {
-        "orderByField": "OrderByReleaseDateDESC",
+        "orderByField": "OrderByScoreDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 16,
         "skusFilter": "ALL",
@@ -37,7 +37,7 @@
         "maxItemsPerPage": 16,
         "simulationBehavior": "default",
         "__unstableProductOriginVtex": true,
-        "orderByField": "OrderByReleaseDateDESC"
+        "orderByField": "OrderByScoreDESC"
       }
     }
   },
@@ -51,7 +51,7 @@
         "maxItemsPerPage": 16,
         "simulationBehavior": "default",
         "__unstableProductOriginVtex": true,
-        "orderByField": "OrderByReleaseDateDESC"
+        "orderByField": "OrderByScoreDESC"
       }
     }
   },
@@ -65,7 +65,7 @@
         "maxItemsPerPage": 16,
         "simulationBehavior": "default",
         "__unstableProductOriginVtex": true,
-        "orderByField": "OrderByReleaseDateDESC"
+        "orderByField": "OrderByScoreDESC"
       }
     }
   },
@@ -100,7 +100,7 @@
   "search-result-layout.customQuery": {
     "props": {
       "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
+        "orderByField": "OrderByScoreDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 24,
         "queryField": "138",

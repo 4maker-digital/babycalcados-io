@@ -415,7 +415,7 @@
   }
 }
 
-:global(.vtex-store-components-3-x-productImageTag) {
+:global(.vtex-store-components-3-x-productImageTag--main) {
   object-fit: cover!important;
   aspect-ratio: 1 / 1;
   position: relative;
@@ -424,28 +424,28 @@
 }
 
 @media screen and (min-width: 768px) {
-  :global(.vtex-store-components-3-x-productImageTag) {
+  :global(.vtex-store-components-3-x-productImageTag--main) {
     max-width: 565px!important;
     left: 39px;
   } 
 }
 
 @media screen and (max-width: 1366px) {
-  :global(.vtex-store-components-3-x-productImageTag) {
+  :global(.vtex-store-components-3-x-productImageTag--main) {
     max-width: 500px!important;
     left: 49px;
   } 
 }
 
 @media screen and (max-width: 1180px) {
-  :global(.vtex-store-components-3-x-productImageTag) {
+  :global(.vtex-store-components-3-x-productImageTag--main) {
     max-width: 445px!important;
     left: 17px;
   } 
 }
 
 @media screen and (min-width: 1600px) {
-  :global(.vtex-store-components-3-x-productImageTag) {
+  :global(.vtex-store-components-3-x-productImageTag--main) {
     max-width: 665px!important;
     left: 29px;
   }
@@ -453,7 +453,7 @@
 
 
 @media screen and (min-width: 1601px) and (max-width: 1800px) {
-  :global(.vtex-store-components-3-x-productImageTag) {
+  :global(.vtex-store-components-3-x-productImageTag--main) {
     max-width: 765px!important;
     left: 19px;
   }
@@ -461,7 +461,7 @@
 
 
 @media screen and (min-width: 1801px) {
-  :global(.vtex-store-components-3-x-productImageTag) {
+  :global(.vtex-store-components-3-x-productImageTag--main) {
     max-width: 100%!important;
     left: 0;
   }
